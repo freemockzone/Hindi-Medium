@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="hi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>यूपीएससी सारथी | सिविल सेवा की ओर आपका मार्ग</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Hindi:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="container header-flex">
+            <div class="logo">
+                <span>यूपीएससी सारथी</span>
+                <p class="slogan">सिविल सेवा की ओर आपका मार्ग।</p>
+            </div>
+
+            <button id="menu-toggle" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <nav id="main-nav-bar">
+                <a href="#daily-updates" data-section="daily-updates">समसामयिकी</a>
+                <a href="#notes" data-section="notes">नोट्स</a>
+                <a href="#mcqs" data-section="mcqs">बहुविकल्पीय प्रश्न</a>
+                <a href="#infographics" data-section="infographics">इन्फोग्राफिक्स</a>
+                <a href="#glossary-widget" data-section="glossary-widget">शब्दावली</a>
+                <a href="#answer-writing" data-section="answer-writing">उत्तर लेखन</a>
+                <a href="#">संपर्क करें</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="top-bar-section">
+            <input type="text" id="search-input" placeholder="लेख, नोट्स, या शब्दों की खोज करें...">
+
+            <div class="subject-quick-links">
+                <span>विषय-संबंधी समाचार:</span>
+                <a href="#daily-updates" class="subject-filter-link" data-subject="Polity">राजव्यवस्था</a>
+                <a href="#daily-updates" class="subject-filter-link" data-subject="Economy">अर्थव्यवस्था</a>
+                <a href="#daily-updates" class="subject-filter-link" data-subject="Geography">भूगोल</a>
+                <a href="#daily-updates" class="subject-filter-link" data-subject="Environment">पर्यावरण</a>
+                <a href="#daily-updates" class="subject-filter-link" data-subject="History">इतिहास</a>
+                <a href="#daily-updates" class="subject-filter-link" data-subject="Science">विज्ञान</a>
+                <a href="#daily-updates" class="subject-filter-link" data-subject="SocialJustice">सामाजिक न्याय</a>
+                <a href="#daily-updates" class="subject-filter-link" data-subject="IR">अंतर्राष्ट्रीय संबंध</a>
+                <a href="#daily-updates" class="subject-filter-link" data-subject="Security">सुरक्षा</a>
+                <a href="#daily-updates" class="subject-filter-link" data-subject="Ethics">नीतिशास्त्र</a>
+                <a href="#daily-updates" class="subject-filter-link all-filter" data-subject="All">सभी विषय</a>
+            </div>
+        </section>
+
+        <div class="content-grid-layout">
+
+            <div class="main-content-area">
+
+                <section class="hero-section">
+                    <h1>हिंदी माध्यम के यूपीएससी अभ्यर्थियों को सशक्त बनाना</h1>
+                    <p>दैनिक समाचार, अनूदित विश्लेषण, नोट्स और बहुविकल्पीय प्रश्नों को एक ही स्थान पर प्राप्त करें।</p>
+                    <a href="#daily-updates" class="cta-button">आज की समीक्षा शुरू करें</a>
+                </section>
+
+                <section class="daily-updates" id="daily-updates">
+                    <h2 id="current-affairs">दैनिक यूपीएससी अपडेट</h2>
+                    <div class="tabs">
+                        <button class="tab-button active" data-tab="top-news" id="top-news-button">प्रमुख
+                            समाचार</button>
+                        <button class="tab-button" data-tab="exam-notes">समाचार सारांश</button>
+                        <button class="tab-button" data-tab="daily-digest-full">वन-लाइनर सार</button>
+                    </div>
+
+                    <div id="top-news" class="tab-content active">
+                        <p style="padding: 1rem; color: #78909c;">समाचार लोड हो रहे हैं...</p>
+                    </div>
+
+                    <div id="exam-notes" class="tab-content">
+                        <ul class="summary-list">
+                            <li><strong>वैश्विक न्यूनतम कर:</strong> विकासशील अर्थव्यवस्थाओं पर प्रभाव, भारत की स्थिति
+                                और ओईसीडी ढांचा। **(अर्थव्यवस्था)**</li>
+                            <li><strong>एकीकृत थिएटर कमांड:</strong> सैन्य सुधारों में इसकी आवश्यकता, चुनौतियाँ और
+                                त्रि-सेवा समन्वय का महत्व। **(आंतरिक सुरक्षा)**</li>
+                            <li><strong>हरित हाइड्रोजन मिशन:</strong> भारत के लिए ऊर्जा स्वतंत्रता और शुद्ध-शून्य
+                                उत्सर्जन लक्ष्यों को प्राप्त करने में इसकी भूमिका। **(विज्ञान और प्रौद्योगिकी)**</li>
+                            <li><strong>महिला आरक्षण विधेयक:</strong> संवैधानिक प्रावधान, ऐतिहासिक पृष्ठभूमि और
+                                कार्यान्वयन में संभावित चुनौतियाँ। **(राजव्यवस्था)**</li>
+                        </ul>
+                    </div>
+
+                    <div id="daily-digest-full" class="tab-content">
+                        <p class="source-tag">**(यह अनुभाग त्वरित दोहराव और प्रारंभिक परीक्षा के लिए महत्वपूर्ण है)**
+                        </p>
+                        <ul class="summary-list">
+                            <li>मेडागास्कर में 'अंगों का त्योहार' (Festival of Bones) मनाया जाता है। (संस्कृति)</li>
+                            <li>'ला नीना' प्रभाव इस वर्ष शीतकालीन वर्षा को प्रभावित कर सकता है। (भूगोल)</li>
+                            <li>वित्त मंत्रालय ने सूक्ष्म, लघु और मध्यम उद्यमों (MSMEs) के लिए 5 नए क्लस्टर को मंजूरी
+                                दी। (अर्थव्यवस्था)</li>
+                            <li>G-20 विदेश मंत्रियों की बैठक के लिए भारत को अध्यक्ष चुना गया। (अंतर्राष्ट्रीय संबंध)
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="daily-digest-main content-section">
+                    <h2>दैनिक सार (Quick Digest)</h2>
+                    <div class="digest-cards">
+                        <article class="digest-card">
+                            <h4>01/10/2025</h4>
+                            <ul class="digest-list">
+                                <li>आरबीआई ने रेपो दर को 6.5% पर अपरिवर्तित रखा।</li>
+                                <li>गगनयान के पहले क्रू मॉड्यूल का परीक्षण सफल रहा।</li>
+                                <li>सरकार ने 'ई-कॉमर्स नीति 2025' को मंजूरी दी।</li>
+                            </ul>
+                        </article>
+                        <article class="digest-card">
+                            <h4>30/09/2025</h4>
+                            <ul class="digest-list">
+                                <li>प्रस्तावना (Preamble) भारतीय संविधान का भाग है, सुप्रीम कोर्ट ने माना।</li>
+                                <li>COP28 में भारत ने 'ग्रीन क्रेडिट' पहल को बढ़ावा दिया।</li>
+                                <li>एशियाई खेलों में भारतीय दल ने रिकॉर्ड 100 पदक जीते।</li>
+                            </ul>
+                        </article>
+                    </div>
+                    <a href="#" class="view-all-link">सभी दिनांक-वार सार देखें</a>
+                </section>
+
+                <section class="mcq-hero" id="mcqs">
+                    <div class="mcq-hero-content">
+                        <h2>अपने ज्ञान का परीक्षण करें: अभ्यास बहुविकल्पीय प्रश्न</h2>
+                        <p>विषयवार अभ्यास परीक्षण।</p>
+                        <a href="mcq.html" class="cta-button">अभी क्विज़ शुरू करें</a>
+                    </div>
+                </section>
+
+                <section class="content-section" id="answer-writing">
+                    <h2>📝 मुख्य परीक्षा उत्तर लेखन अभ्यास</h2>
+                    <p class="source-tag">दैनिक प्रश्न, मॉडल उत्तर और फीडबैक प्राप्त करें।</p>
+                    <ul class="notes-list">
+                        <li><a href="#">**आज का प्रश्न (जीएस-3):** क्या भारत के रक्षा आधुनिकीकरण में निजी क्षेत्र की
+                                भागीदारी एक आवश्यकता है या एक विकल्प? (250 शब्द)</a></li>
+                        <li><a href="#">**पिछले प्रश्न का मॉडल उत्तर:** 'भारत में संघवाद' (डाउनलोड करें)</a></li>
+                    </ul>
+                    <a href="answer-writing.html" class="cta-button" style="background-color: #ff9800;">उत्तर लिखना शुरू
+                        करें</a>
+                </section>
+
+                <section class="content-section" id="infographics">
+                    <h2>दृश्य शिक्षण: इन्फोग्राफिक्स</h2>
+                    <div class="infographic-grid">
+                        <a href="infographics.html?post=IndianRivers" class="infographic-card"
+                            style="background-image: url('placeholder-map-rivers.jpg');">
+                            <h4>भारतीय नदियों का मानचित्र</h4>
+                        </a>
+                        <a href="infographics.html?post=GSTStructure" class="infographic-card"
+                            style="background-image: url('placeholder-chart-gst.jpg');">
+                            <h4>जीएसटी संरचना समझाई गई</h4>
+                        </a>
+                        <a href="infographics.html?post=UNSCReform" class="infographic-card"
+                            style="background-image: url('placeholder-reform-unsc.jpg');">
+                            <h4>UNSC सुधार की चुनौतियाँ</h4>
+                        </a>
+                        <a href="infographics.html?post=BudgetTerms" class="infographic-card"
+                            style="background-image: url('placeholder-budget-terms.jpg');">
+                            <h4>बजट शब्दावली</h4>
+                        </a>
+                    </div>
+                </section>
+
+                <section class="content-section" id="notes">
+                    <h2>विषयवार नोट्स और लेख</h2>
+                    <p class="source-tag">मॉडल उत्तर लेखन के लिए महत्वपूर्ण</p>
+                    <ul class="notes-list">
+                        <li><a href="#"><strong>जीएस पेपर 2: भारत में संघवाद की चुनौतियाँ (पीडीएफ)</strong></a></li>
+                        <li><a href="#"><strong>लेख: भारत में भूमि सुधारों का आलोचनात्मक विश्लेषण</strong></a></li>
+                    </ul>
+                </section>
+
+            </div>
+
+            <div class="sidebar-area">
+
+                <div class="sidebar-widget">
+                    <h3>राज्य-विशिष्ट समाचार (State News)</h3>
+                    <p class="source-tag">**(सिविल सेवा परीक्षा के लिए महत्वपूर्ण)**</p>
+                    <ul class="quick-links-list" id="state-news-links">
+                        <li><a href="#" class="state-link" data-state="Uttar Pradesh">उत्तर प्रदेश विशेष</a></li>
+                        <li><a href="#" class="state-link" data-state="Bihar">बिहार विशेष</a></li>
+                        <li><a href="#" class="state-link" data-state="Madhya Pradesh">मध्य प्रदेश विशेष</a></li>
+                        <li><a href="#" class="state-link" data-state="Rajasthan">राजस्थान विशेष</a></li>
+                        <li><a href="#" class="state-link" data-state="Tamil Nadu">तमिलनाडु विशेष</a></li>
+                        <li><a href="#" class="state-link" data-state="International">अन्तराष्ट्रिय</a></li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-widget">
+                    <h3>त्वरित लिंक</h3>
+                    <ul class="quick-links-list">
+                        <li><a href="#">यूपीएससी पाठ्यक्रम (पीडीएफ)</a></li>
+                        <li><a href="#">पिछले वर्ष के प्रश्न पत्र (हिंदी)</a></li>
+                        <li><a href="#">हिंदी माध्यम के लिए पुस्तक सूची</a></li>
+                        <li><a href="#">टॉपर्स के इंटरव्यू और कॉपियाँ</a></li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-widget" id="glossary-widget">
+                    <h3>आज की शब्दावली</h3>
+                    <div class="glossary-item">
+                        <p><strong>न्यायिक सक्रियता (Judicial Activism)</strong></p>
+                        <p class="glossary-desc">न्यायपालिका द्वारा शासन के अन्य अंगों के कार्यों में हस्तक्षेप करने की
+                            प्रवृत्ति।</p>
+                    </div>
+                    <div class="glossary-item">
+                        <p><strong>राजकोषीय समेकन (Fiscal Consolidation)</strong></p>
+                        <p class="glossary-desc">एक निश्चित अवधि में सरकार के राजस्व-व्यय के अंतर को कम करने का प्रयास।
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-col footer-signup-mobile">
+                <h4>दैनिक सार प्राप्त करें</h4>
+                <form id="footer-subscribe-form">
+                    <input type="email" placeholder="आपका ईमेल..." required>
+                    <button type="submit">साइनअप</button>
+                </form>
+            </div>
+            <div class="footer-col">
+                <h4>यूपीएससी सारथी</h4>
+                <p>सी.एस.ई. तैयारी के लिए उच्च गुणवत्ता वाले संसाधन प्रदान करने हेतु समर्पित।</p>
+            </div>
+            <div class="footer-col">
+                <h4>कानूनी</h4>
+                <a href="#">गोपनीयता नीति</a>
+                <a href="#">उपयोग की शर्तें</a>
+            </div>
+            <div class="footer-col">
+                <h4>जुड़े</h4>
+                <div class="social-icons">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Youtube"><i class="fab fa-youtube"></i></a>
+                    <a href="#" aria-label="Telegram"><i class="fab fa-telegram-plane"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 यूपीएससी सारथी। सर्वाधिकार सुरक्षित।</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
