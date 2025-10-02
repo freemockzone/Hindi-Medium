@@ -12,7 +12,8 @@
   --cta-success-color: #43a047; /* Green for CTA/Success (Aspiration/Growth) */
 
   /* Subject Colors (for visual distinction) */
-  --sub-polity: #1a73e8; /* Blue */
+  --sub-opinion: #1a73e8; /* Blue */
+  --sub-polity: #9ab90c; /* Yellow-Green */
   --sub-economy: #c54a32; /* Brick Red */
   --sub-environment: #388e3c; /* Dark Green */
   --sub-science: #8e24aa; /* Purple */
@@ -182,6 +183,11 @@ header {
 }
 
 /* Subject Link Color Coding */
+a[data-subject="Opinion"] {
+  border-color: var(--sub-opinion);
+  color: var(--sub-opinion);
+}
+
 a[data-subject="Polity"] {
   border-color: var(--sub-polity);
   color: var(--sub-polity);
@@ -415,15 +421,92 @@ a.all-filter {
   padding-bottom: 5px;
   margin-bottom: 10px;
 }
+.quick-links-list,
+.summary-list,
+.notes-list {
+  list-style-type: decimal;
+  padding-left: 20px; /* so numbers align nicely */
+}
+
 .quick-links-list li,
 .summary-list li,
 .notes-list li {
-  list-style: none;
+  list-style: inherit; /* inherit the numbering */
   padding: 5px 0;
   border-bottom: 1px dashed #eceff1;
 }
-.quick-links-list li:last-child {
-  border-bottom: none;
+
+.quick-links-list li {
+  list-style-type: decimal;
+  margin-bottom: 8px;
+}
+
+/* Date list styling */
+.date-list {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+/* Summary list styling */
+.summary-list {
+  list-style-type: decimal !important;
+  padding-left: 40px !important;
+  margin-top: 0 !important;
+  color: black !important;
+  counter-reset: item !important;
+}
+
+.summary-list li {
+  display: list-item !important;
+  margin-bottom: 8px;
+}
+
+/* Different colors for entire list item (number + text) */
+.summary-list li:nth-child(1) {
+  color: #1e88e5;
+}
+.summary-list li:nth-child(2) {
+  color: #9ccc65;
+}
+.summary-list li:nth-child(3) {
+  color: #d84315;
+}
+.summary-list li:nth-child(4) {
+  color: #2e7d32;
+}
+.summary-list li:nth-child(5) {
+  color: #6a1b9a;
+}
+.summary-list li:nth-child(6) {
+  color: #5d4037;
+}
+.summary-list li:nth-child(7) {
+  color: #00897b;
+}
+.summary-list li:nth-child(8) {
+  color: #512da8;
+}
+.summary-list li:nth-child(9) {
+  color: #e53935;
+}
+.summary-list li:nth-child(10) {
+  color: #ffb300;
+}
+.summary-list li:nth-child(11) {
+  color: #ff5722;
+}
+.summary-list li:nth-child(12) {
+  color: #009688;
+}
+.summary-list li:nth-child(13) {
+  color: #673ab7;
+}
+.summary-list li:nth-child(14) {
+  color: #795548;
+}
+.summary-list li:nth-child(15) {
+  color: #3f51b5;
 }
 
 .glossary-item {
