@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="hi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>भारत की आर्थिक वृद्धि का अनोखा मामला</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Load Inter Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        /* Custom styles for colors and typography */
+        :root {
+            --primary-color: #4f46e5;
+            /* Indigo 600 */
+            --secondary-color: #ec4899;
+            /* Pink 500 */
+            --accent-color: #f59e0b;
+            /* Amber 500 */
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6;
+            color: #1f2937;
+            /* Dark Gray */
+        }
+
+        /* Custom scrollbar for ToC on desktop */
+        .toc-sticky {
+            top: 6rem;
+            /* Below navbar */
+            max-height: calc(100vh - 8rem);
+            overflow-y: auto;
+        }
+
+        /* Style for the MCQ options */
+        .mcq-option {
+            transition: all 0.3s ease;
+            cursor: pointer;
+            border-left: 5px solid var(--primary-color);
+            background-color: #ffffff;
+        }
+
+        .mcq-option:hover {
+            background-color: #eef2ff;
+            /* Indigo 50 */
+            transform: translateY(-2px);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.06);
+        }
+
+        .correct {
+            background-color: #d1fae5;
+            /* Green 100 */
+            border-left-color: #10b981;
+            /* Green 500 */
+        }
+
+        .incorrect {
+            background-color: #fee2e2;
+            /* Red 100 */
+            border-left-color: #ef4444;
+            /* Red 500 */
+        }
+    </style>
+</head>
+
+<body class="antialiased">
+
+    <!-- Navbar -->
+    <nav class="sticky top-0 z-50 bg-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div
+                    class="flex-shrink-0 text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-pink-500">
+                    अर्थ दर्पण
+                </div>
+                <!-- Navigation Links -->
+                <div class="hidden md:flex space-x-4">
+                    <a href="index.html"
+                        class="text-gray-600 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium transition duration-150 ease-in-out hover:bg-gray-50">होम</a>
+                    <a href="#"
+                        class="text-gray-600 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium transition duration-150 ease-in-out hover:bg-gray-50">अर्थशास्त्र</a>
+                    <a href="#"
+                        class="text-gray-600 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium transition duration-150 ease-in-out hover:bg-gray-50">नीति</a>
+                    <a href="#"
+                        class="text-gray-600 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium transition duration-150 ease-in-out hover:bg-gray-50">यूपीएससी</a>
+                </div>
+                <!-- Mobile Menu Button (Placeholder for toggling, though this is a single static file) -->
+                <button class="md:hidden text-gray-500 hover:text-indigo-600 p-2 rounded-md">
+                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16m-7 6h7" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content Grid -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-8 pb-16">
+        <div class="lg:grid lg:grid-cols-12 lg:gap-x-12">
+
+            <!-- Left Column: Table of Contents (Sticky on Desktop) -->
+            <div class="lg:col-span-3 hidden lg:block">
+                <div class="sticky toc-sticky p-4 bg-white rounded-xl shadow-lg border border-gray-100">
+                    <h3 class="text-lg font-bold mb-4 text-indigo-600 border-b pb-2">विषय-सूची (Table of Contents)</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#title-intro"
+                                class="block text-gray-700 hover:text-pink-500 transition duration-150">शीर्षक और
+                                परिचय</a></li>
+                        <li><a href="#paradox"
+                                class="block text-gray-700 hover:text-pink-500 transition duration-150">विरोधाभास</a>
+                        </li>
+                        <li><a href="#alternative-view"
+                                class="block text-gray-700 hover:text-pink-500 transition duration-150">एक वैकल्पिक
+                                दृष्टिकोण</a></li>
+                        <li><a href="#data-analysis"
+                                class="block text-gray-700 hover:text-pink-500 transition duration-150">आंकड़े क्या
+                                दर्शाते हैं</a></li>
+                        <li><a href="#conclusion"
+                                class="block text-gray-700 hover:text-pink-500 transition duration-150">नतीज़ा</a></li>
+                        <li><a href="#upsc-summary"
+                                class="block text-gray-700 hover:text-pink-500 transition duration-150">यूपीएससी
+                                सारांश</a></li>
+                        <li><a href="#mcq-section"
+                                class="block text-gray-700 hover:text-pink-500 transition duration-150">बहुविकल्पीय
+                                प्रश्न (MCQs)</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Right Column: Article Content -->
+            <div class="lg:col-span-9 bg-white p-6 sm:p-8 rounded-xl shadow-2xl">
+
+                <!-- Header and Read Time -->
+                <header id="title-intro" class="mb-8 border-b pb-4">
+                    <h1
+                        class="text-3xl sm:text-4xl font-extrabold mb-2 text-transparent bg-clip-text bg-gradient-to-r from-indigo-700 to-pink-600">
+                        एक्सप्लेन स्पीकिंग: भारत की आर्थिक वृद्धि का अनोखा मामला
+                    </h1>
+                    <div class="flex flex-wrap justify-between items-center text-sm text-gray-500 mt-2">
+                        <div class="flex items-center space-x-4">
+                            <span>Source: Indian Express</span>
+                            <span>Date: 03-10-2025</span>
+                        </div>
+                        <div class="flex items-center space-x-1 font-semibold text-indigo-500">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                            <span>अनुमानित पठन समय: 8 मिनट</span>
+                        </div>
+                    </div>
+                </header>
+
+                <div class="prose max-w-none text-gray-700 space-y-5">
+
+                    <p class="text-lg font-serif">
+                        प्रिय पाठकों,
+                        अगर आप भारतीय अर्थव्यवस्था को दूर से देख रहे हैं, तो कुछ गड़बड़ है।
+                    </p>
+
+                    <p>
+                        एक ओर, आधिकारिक आँकड़े बताते हैं कि भारत की <strong>"वास्तविक" जीडीपी वृद्धि दर</strong> - यानी
+                        मुद्रास्फीति
+                        के प्रभाव को हटाने के बाद - अक्सर आश्चर्यजनक रूप से ऊपर की ओर रही है।
+                    </p>
+
+                    <p class="font-bold">
+                        जीडीपी मूलतः भारतीय अर्थव्यवस्था का समग्र आकार है और इसकी गणना देश में विभिन्न संस्थाओं
+                        (व्यक्तियों, कंपनियों और सरकारों, सभी) द्वारा किए गए सभी विभिन्न प्रकार के व्ययों को जोड़कर की
+                        जाती है।
+                    </p>
+
+                    <p>
+                        पहली तिमाही या पहली तिमाही (अप्रैल, मई और जून) में <strong>7.8% की जीडीपी वृद्धि दर</strong>
+                        इसका एक अच्छा
+                        उदाहरण है। इसने सभी को चौंका दिया, यहाँ तक कि आरबीआई गवर्नर जैसे नीति निर्माताओं को भी,
+                        जिन्होंने बुधवार को नवीनतम मौद्रिक नीति वक्तव्य की घोषणा करते हुए यही कहा। निश्चित रूप से, पहली
+                        तिमाही में 7.8% की जीडीपी वृद्धि (आंकड़े 29 अगस्त को जारी किए गए) भारत के दीर्घकालिक औसत से कहीं
+                        अधिक है, चाहे वह पिछले एक दशक का हो या पिछले तीन दशकों का।
+                    </p>
+
+                    <p>
+                        वर्तमान सरकार ने कहा है कि भारत दुनिया की <strong>सबसे तेज़ी से बढ़ती प्रमुख
+                            अर्थव्यवस्था</strong> बना हुआ
+                        है, जबकि अधिकांश अन्य बड़ी अर्थव्यवस्थाएँ आर्थिक संकुचन से निपटने के लिए संघर्ष कर रही हैं।
+                    </p>
+
+                    <h2 id="paradox" class="text-2xl font-bold pt-4 pb-2 text-indigo-600 border-b border-pink-200">
+                        विरोधाभास</h2>
+
+                    <p>
+                        और फिर भी, अगर हम जीडीपी के आंकड़ों की घोषणा के दिनों को छोड़ दें, तो पिछले कुछ वर्षों में
+                        अधिकांश बड़े नीतिगत कदम मूल रूप से <strong>समग्र माँग को बढ़ावा देने और भारत के उपभोग स्तर को
+                            बढ़ाने
+                            के लिए कुछ न कुछ कर राहत देने</strong> के बारे में रहे हैं।
+                    </p>
+
+                    <ul class="list-disc list-inside space-y-2 pl-4 bg-gray-50 p-4 rounded-lg">
+                        <li>सबसे पहले, आम चुनाव से ठीक पहले, फरवरी 2023 में, केंद्र सरकार ने आयकर छूट की सीमा बढ़ाकर
+                            <strong>7
+                                लाख रुपये</strong> प्रति वर्ष कर दी।
+                        </li>
+                        <li>फिर, फरवरी 2025 में, प्रधानमंत्री नरेंद्र मोदी के कम जनादेश के साथ सत्ता में आने के एक साल
+                            के भीतर (भाजपा ने 2024 में अपनी 20% लोकसभा सीटें खो दीं), यह छूट सीमा बढ़ाकर <strong>12 लाख
+                                रुपये</strong> प्रति वर्ष कर दी गई।</li>
+                        <li>जनवरी 2019 में आयकर छूट की सीमा केवल 2.5 लाख रुपये प्रति वर्ष थी।</li>
+                        <li>हाल ही में, केंद्र सरकार ने - राज्य सरकारों के साथ, जो जीएसटी परिषद का भी हिस्सा हैं -
+                            <strong>जीएसटी दरों में भी कटौती</strong> करने का फैसला किया है।
+                        </li>
+                    </ul>
+
+                    <p class="font-semibold text-pink-600">
+                        आप सोच रहे होंगे कि ये दोनों रुझान अजीब क्यों हैं?
+                    </p>
+                    <p>
+                        क्योंकि अगर अर्थव्यवस्था तेज़ी से बढ़ रही है, और वास्तव में इतनी तेज़ी से कि विकास दर नीति
+                        निर्माताओं और बाज़ारों को भी बार-बार हैरान कर रही है, तो समग्र माँग और उपभोग को कृत्रिम रूप से
+                        बढ़ाने की कोई ज़रूरत नहीं है। ध्यान रहे कि 2023 के बाद से ज़्यादातर समय मुद्रास्फीति चिंता का
+                        विषय रही है; पिछले कुछ महीनों में ही मुद्रास्फीति में नरमी आई है।
+                    </p>
+
+                    <p>
+                        आमतौर पर, जब कोई अर्थव्यवस्था तेज़ गति से बढ़ती है, तो मुद्रास्फीति बढ़ जाती है क्योंकि वस्तुओं
+                        और सेवाओं की कुल आपूर्ति उच्च माँग की पूर्ति नहीं कर पाती। दूसरी ओर, जब अर्थव्यवस्था में माँग कम
+                        होती है, तो मुद्रास्फीति कम हो जाती है, और नीति निर्माताओं को सभी प्रकार की कर कटौती और ब्याज
+                        दरों में कटौती जैसे उपायों से माँग को बढ़ावा देने की आवश्यकता होती है।
+                    </p>
+
+                    <p>
+                        ऊपर से, भारत में, विकास दर तेज़ी से बढ़ रही है, फिर भी सभी प्रकार के नीति निर्माता माँग को
+                        बढ़ावा देने की कोशिश कर रहे हैं। <strong>वित्त मंत्री निर्मला सीतारमण</strong> ने जीएसटी कटौती
+                        को मंज़ूरी
+                        मिलने पर कथित तौर पर क्या कहा, इसका एक उदाहरण देखें:
+                    </p>
+                    <blockquote class="border-l-4 border-amber-500 pl-4 italic text-gray-600 my-4">
+                        “जीएसटी दरें कम होने से खपत बढ़ सकती है। माँग जितनी ज़्यादा होगी, इन उत्पादों को बेचने वाली
+                        कंपनियों को ज़्यादा निवेश और उत्पादन करना होगा। ज़्यादा उत्पादन से रोज़गार के अवसर बढ़ेंगे,
+                        जिसका मतलब है कि कर का दायरा बढ़ेगा क्योंकि ज़्यादा लोगों के पास चीज़ें ख़रीदने और कर चुकाने के
+                        लिए आय होगी। इससे करों में और भी कमी आने का आधार तैयार होगा,” सीतारमण ने कलकत्ता में कहा।
+                    </blockquote>
+
+                    <h2 id="alternative-view"
+                        class="text-2xl font-bold pt-4 pb-2 text-indigo-600 border-b border-pink-200">एक वैकल्पिक
+                        दृष्टिकोण</h2>
+                    <p>
+                        क्या होगा अगर इन दोनों में से कोई एक रुझान उतना मज़बूत न हो जितना कोई सोच सकता है? बेशक, कर
+                        कटौती वास्तविक है, और उपभोग और समग्र माँग को बढ़ावा देने के सरकार के प्रयास भी।
+                    </p>
+                    <p class="font-bold">
+                        इसलिए, जाँच का स्वाभाविक विषय विकास दर है।
+                    </p>
+                    <p>
+                        आमतौर पर, और उचित कारणों से, वास्तविक जीडीपी विकास दर को देखा जाता है। लेकिन वास्तविक जीडीपी एक
+                        ऐसी संख्या है जो <strong>नाममात्र जीडीपी वृद्धि (Nominal GDP Growth)</strong> से मुद्रास्फीति के
+                        प्रभाव को
+                        हटाकर प्राप्त या गणना की जाती है, जो कि वास्तव में एकत्रित किया गया डेटा होता है।
+                    </p>
+
+                    <div class="p-4 bg-yellow-50 border-l-4 border-yellow-500 rounded-lg my-4">
+                        <p class="font-semibold">नोट:</p>
+                        <p>पिछले कुछ वर्षों में वास्तविक जीडीपी विकास दर की गणना कुछ संदेह और सवालों के घेरे में रही है।
+                            व्यापक मुद्दा यह है कि सरकार के बाहर कई लोगों ने दावा किया है कि वास्तविक जीडीपी विकास दर
+                            भारत की आर्थिक गति को बढ़ा-चढ़ाकर बता रही है।</p>
+                    </div>
+
+                    <p>
+                        विकास का आकलन करते समय वास्तविक जीडीपी आंकड़ों को देखना हमेशा बेहतर होता है, लेकिन कम से कम चार
+                        कारणों से <strong>नाममात्र जीडीपी वृद्धि के रुझानों पर नज़र डालना उपयोगी हो सकता है:</strong>
+                    </p>
+                    <ol class="list-decimal list-inside space-y-2 pl-4">
+                        <li>यह वास्तविक रूप से देखा गया चर है और इस हद तक, इस पर सवाल उठाए जाने की संभावना कम होती है।
+                        </li>
+                        <li>देश के लगभग सभी प्रमुख आर्थिक चरों के लिए नाममात्र जीडीपी मुख्य मानदंड है (जैसे: कर संग्रह,
+                            कुल ऋण, राजकोषीय घाटा)।</li>
+                        <li>अगले केंद्रीय बजट की प्रक्रिया जल्द ही शुरू होगी, और नाममात्र जीडीपी सभी गणनाओं का प्रारंभिक
+                            बिंदु होगी।</li>
+                        <li>नाममात्र जीडीपी <strong>अर्थव्यवस्था की मांग की कहानी</strong> को बेहतर ढंग से दर्शाती है,
+                            जबकि वास्तविक
+                            जीडीपी आपूर्ति की कहानी को बेहतर ढंग से दर्शाती है।</li>
+                    </ol>
+
+                    <!-- Placeholder for Image 1 (IE01-03-10-25.png) -->
+                    <div class="my-6">
+                        <img src="IE01-03-10-25.png"
+                            onerror="this.onerror=null; this.src='https://placehold.co/600x350/a78bfa/ffffff?text=आंकड़ों+का+रेखाचित्र';"
+                            alt="आंकड़ों का रेखाचित्र दिखाने वाला प्लेसहोल्डर"
+                            class="w-full h-auto rounded-lg shadow-xl">
+                        <p class="text-sm text-center text-gray-500 mt-2">चित्र 1: आर्थिक वृद्धि और नीतिगत विरोधाभास को
+                            दर्शाता है।</p>
+                    </div>
+
+                    <h2 id="data-analysis"
+                        class="text-2xl font-bold pt-4 pb-2 text-indigo-600 border-b border-pink-200">आंकड़े क्या
+                        दर्शाते हैं</h2>
+
+                    <p>
+                        तालिका 1 में पहली तिमाही की नाममात्र जीडीपी वृद्धि दर को एक साथ रखा गया है, जो 2012 तक जाती है।
+                        तालिका में नाममात्र सकल घरेलू उत्पाद की वर्ष-दर-वर्ष वृद्धि दर के साथ-साथ सकल घरेलू उत्पाद के
+                        तीन मुख्य घटकों को दर्शाया गया है:
+                    </p>
+
+                    <ol class="list-decimal list-inside space-y-2 pl-4">
+                        <li><strong>निजी अंतिम उपभोग व्यय (PFCE):</strong> भारत में सकल घरेलू उत्पाद वृद्धि का सबसे बड़ा
+                            इंजन, जो सकल
+                            घरेलू उत्पाद का <strong>55% से 60%</strong> हिस्सा है।</li>
+                        <li><strong>सकल स्थिर पूंजी निर्माण (GFCF):</strong> निवेश (निजी व्यवसायों और सरकार दोनों
+                            द्वारा) पर किया गया
+                            व्यय। यह भारत के सकल घरेलू उत्पाद का <strong>25%-30%</strong> हिस्सा है।</li>
+                        <li><strong>सरकारी व्यय:</strong> सरकार द्वारा अपने दैनिक कार्यों को चलाने के लिए किया गया व्यय।
+                            यह सकल घरेलू
+                            उत्पाद का शेष <strong>10%</strong> है।</li>
+                    </ol>
+
+                    <!-- Placeholder for Table 1 (IE02-03-10-25.png) -->
+                    <div class="my-6">
+                        <img src="IE02-03-10-25.png"
+                            onerror="this.onerror=null; this.src='https://placehold.co/600x400/10b981/ffffff?text=नाममात्र+GDP+विकास+दर+तालिका';"
+                            alt="नाममात्र जीडीपी विकास दर दर्शाने वाली तालिका का प्लेसहोल्डर"
+                            class="w-full h-auto rounded-lg shadow-xl">
+                        <p class="text-sm text-center text-gray-500 mt-2">तालिका 1: नाममात्र जीडीपी वृद्धि दर और मुख्य
+                            घटक (2012 से पहली तिमाही के आंकड़े)।</p>
+                    </div>
+
+                    <!-- Text Summary of Table 1 -->
+                    <div class="p-4 bg-purple-100 rounded-lg shadow-inner">
+                        <p class="font-semibold mt-3 text-purple-800">प्रमुख निष्कर्ष (तालिका से):</p>
+                        <ul class="list-disc list-inside text-sm pl-4">
+                            <li>चालू वर्ष की पहली तिमाही में, <strong>सरकारी व्यय (9.7%)</strong> से विकास को बढ़ावा मिल
+                                रहा है।</li>
+                            <li>विकास के दो सबसे बड़े इंजन (<strong>निजी उपभोग माँग</strong> और <strong>निजी निवेश
+                                    व्यय</strong>) समग्र विकास दर
+                                से कम दर से बढ़े हैं, जो <strong>कमजोरी<strong> दर्शाती है।</li>
+                            <li>पिछले दो वर्षों में PFCE और GFCF दोनों के लिए नाममात्र विकास दर में <strong>गिरावट काफी
+                                    महत्वपूर्ण</strong> रही है।</li>
+                            <li>कॉर्पोरेट भारत में कुल आय की वृद्धि दर नाममात्र जीडीपी वृद्धि दर के अनुरूप है, जो इस
+                                धारणा की पुष्टि करती है कि भारत का <strong>उपभोग अभी भी एक कमज़ोर बिंदु</strong> बना हुआ
+                                है।</li>
+                        </ul>
+                    </div>
+
+                    <h2 id="conclusion" class="text-2xl font-bold pt-4 pb-2 text-indigo-600 border-b border-pink-200">
+                        नतीज़ा</h2>
+
+                    <p>
+                        हालाँकि नाममात्र जीडीपी दीर्घकालिक वृद्धि की तुलना करने का सबसे अच्छा साधन नहीं है, इस तालिका पर
+                        एक नज़र डालने से <strong>नाममात्र जीडीपी वृद्धि दर में तेज़ गिरावट</strong> दिखाई देती है। यह
+                        समझना मुश्किल
+                        नहीं है कि यह सभी नीति निर्माताओं के लिए चिंता का विषय क्यों होगा: नाममात्र जीडीपी वृद्धि दर देश
+                        में आर्थिक विकास की सीमा तय करती है।
+                    </p>
+                    <p>
+                        ऐतिहासिक रूप से, भारत के लिए सामान्य गणना कुछ इस प्रकार होती थी: <strong>12% नाममात्र जीडीपी
+                            वृद्धि,
+                            4% मुद्रास्फीति, और परिणामस्वरूप, 8% वास्तविक जीडीपी वृद्धि दर।</strong>
+                    </p>
+                    <p>
+                        लेकिन अगर नाममात्र जीडीपी वृद्धि दर 8% या 9% के आसपास मंडराने लगे, तो यह वास्तविक जीडीपी वृद्धि
+                        के लिए एक चुनौती बन सकती है। यही कारण है कि मजबूत वास्तविक जीडीपी वृद्धि दरों का सार्वजनिक रूप
+                        से बचाव करने के बावजूद, भारत के नीति निर्माता ऐसा व्यवहार करते रहते हैं मानो अर्थव्यवस्था वास्तव
+                        में बहुत कमज़ोर है।
+                    </p>
+
+                    <h2 id="upsc-summary" class="text-2xl font-bold pt-4 pb-2 text-indigo-600 border-b border-pink-200">
+                        यूपीएससी उम्मीदवारों के लिए सारांश
+                    </h2>
+                    <div class="p-6 bg-pink-50 border-l-4 border-pink-500 rounded-lg mt-4 text-sm space-y-4">
+                        <h3 class="text-xl font-bold text-pink-600">
+                            यूपीएससी सिविल सेवा परीक्षा के उम्मीदवारों के लिए नोट्स: भारत के आर्थिक विकास के रुझानों का
+                            विश्लेषण
+                        </h3>
+
+                        <p class="font-semibold text-gray-800">मुख्य बातें:</p>
+                        <p>भारत की मज़बूत <strong>वास्तविक जीडीपी वृद्धि</strong> (जैसे, FY 2024 Q1 में 7.8%) के बावजूद,
+                            सरकार द्वारा <strong>उपभोग और माँग को प्रोत्साहित</strong> करने के लिए किए गए राजकोषीय
+                            उपायों (जैसे
+                            कर और जीएसटी कटौती) के बीच विरोधाभास देखा गया है। यह भारत की आर्थिक मजबूती पर प्रश्नचिन्ह
+                            लगाता है।</p>
+
+                        <p class="font-semibold text-gray-800">1. वास्तविक जीडीपी वृद्धि:</p>
+                        <p>वास्तविक जीडीपी मुद्रास्फीति समायोजन के बाद की वृद्धि को दर्शाती है। सरकार इसे दुनिया में
+                            सबसे तेज़
+                            वृद्धि में से एक बताती है, लेकिन साथ ही नीतियाँ दर्शाती हैं कि यह वृद्धि <strong>माँग में
+                                स्थायित्व</strong>
+                            से जुड़ी नहीं है।</p>
+
+                        <p class="font-semibold text-gray-800">2. माँग बढ़ाने के लिए आर्थिक नीतिगत उपाय:</p>
+                        <p><strong>आयकर छूट</strong> (2023 में ₹7 लाख, 2025 में ₹12 लाख) और <strong>जीएसटी दरों में
+                                कटौती</strong>
+                            जैसे कदम उठाए गए हैं ताकि <strong>उपभोग</strong> को प्रोत्साहित किया जा सके। इसका उद्देश्य
+                            उत्पादन,
+                            निवेश और कर आधार का विस्तार है।</p>
+
+                        <p class="font-semibold text-gray-800">3. वियोग: विकास और उपभोग:</p>
+                        <p>आम तौर पर तेज़ विकास के साथ उच्च उपभोग होता है, लेकिन भारत में उच्च वृद्धि के बावजूद
+                            <strong>मुद्रास्फीति
+                                कम</strong> रही है और उपभोग कमजोर। आलोचक कहते हैं कि <strong>वास्तविक जीडीपी
+                                आंकड़े</strong> शायद
+                            स्थिति को बेहतर दिखाते हैं, जबकि <strong>नाममात्र जीडीपी</strong> वास्तविक आर्थिक गतिविधि को
+                            बेहतर दर्शाती है।</p>
+
+                        <p class="font-semibold text-gray-800">4. नाममात्र जीडीपी और मांग के रुझान:</p>
+                        <p>नाममात्र जीडीपी वृद्धि माँग का बेहतर संकेतक है। <strong>निजी अंतिम उपभोग व्यय (PFCE)</strong>
+                            में
+                            कमी और <strong>कॉर्पोरेट आय</strong> की स्थिरता, माँग में कमजोरी को दर्शाते हैं।</p>
+
+                        <p class="font-semibold text-gray-800">5. चुनौतियाँ और चिंताएँ:</p>
+                        <p>भारत की पारंपरिक <strong>नाममात्र जीडीपी वृद्धि दर 12%</strong> के आसपास रही है। यदि यह
+                            <strong>8-9%</strong>
+                            तक गिरती है, तो यह <strong>वास्तविक विकास</strong> और <strong>राजकोषीय मजबूती</strong> दोनों
+                            के लिए चुनौती बन सकती है।</p>
+
+                        <p class="font-semibold text-gray-800">6. कोविड के बाद आर्थिक सुधार:</p>
+                        <p>कोविड से पूर्व ही अर्थव्यवस्था में सुस्ती थी। महामारी के बाद विकास में सुधार देखा गया लेकिन
+                            यह
+                            <strong>सांख्यिकीय आधार प्रभाव</strong> और <strong>आपूर्ति श्रृंखला व्यवधानों</strong> के
+                            कारण विकृत हो सकता है।
+                        </p>
+
+                        <p class="font-semibold text-gray-800">7. नीति निर्माताओं के लिए निहितार्थ:</p>
+                        <p>नीतिगत रुख यह दर्शाता है कि सरकार को <strong>वास्तविक विकास बनाए रखने के लिए निरंतर
+                                प्रोत्साहन</strong>
+                            देना पड़ रहा है। <strong>नाममात्र जीडीपी</strong> एक चेतावनी संकेत के रूप में काम कर रही है।
+                        </p>
+
+                        <p class="font-semibold text-gray-800">8. निष्कर्ष:</p>
+                        <p>भारत की आर्थिक वृद्धि की तस्वीर उतनी सकारात्मक नहीं है जितनी <strong>वास्तविक जीडीपी</strong>
+                            आंकड़ों से प्रतीत होती है।
+                            <strong>नीति निर्माताओं</strong> को उपभोग और निवेश की कमजोरियों से निपटने के लिए सक्रिय रहना
+                            होगा।
+                        </p>
+
+                        <p class="font-semibold text-gray-800">प्रासंगिक यूपीएससी विषय:</p>
+                        <ul class="list-disc list-inside text-gray-700 space-y-1">
+                            <li><strong>आर्थिक विकास और प्रगति:</strong> जीडीपी, मुद्रास्फीति और नीतिगत प्रभाव का
+                                विश्लेषण।</li>
+                            <li><strong>भारतीय अर्थव्यवस्था:</strong> व्यापक आर्थिक संकेतकों की समझ।</li>
+                            <li><strong>सरकारी बजट और कराधान:</strong> कर नीतियाँ और उनकी माँग पर भूमिका।</li>
+                            <li><strong>आर्थिक संकट और सुधार:</strong> कोविड और वैश्विक घटनाओं का आर्थिक प्रभाव।</li>
+                        </ul>
+                    </div>
+
+
+
+                    <!-- MCQ Section -->
+                    <h2 id="mcq-section"
+                        class="text-2xl font-bold pt-6 pb-3 text-indigo-700 border-b-2 border-indigo-300">बहुविकल्पीय
+                        प्रश्न (MCQs)</h2>
+                    <div id="mcq-container" class="space-y-6">
+
+                        <!-- Question 1 -->
+                        <div class="mcq-question p-4 bg-gray-50 rounded-lg shadow-md">
+                            <p class="font-bold text-gray-800 mb-3">1. भारत की आर्थिक वृद्धि के संबंध में वर्तमान
+                                विरोधाभास क्या है?</p>
+                            <div class="space-y-2 text-sm text-gray-700">
+                                <div class="mcq-option p-3 rounded-lg shadow-sm" data-correct="false"
+                                    onclick="checkAnswer(this, 1)">
+                                    A. वास्तविक जीडीपी में गिरावट के बावजूद सरकार केवल निवेश को बढ़ावा दे रही है।
+                                </div>
+                                <div class="mcq-option p-3 rounded-lg shadow-sm" data-correct="false"
+                                    onclick="checkAnswer(this, 1)">
+                                    B. उच्च मुद्रास्फीति दर के बावजूद निर्यात में तेजी आ रही है।
+                                </div>
+                                <div class="mcq-option p-3 rounded-lg shadow-sm" data-correct="true"
+                                    onclick="checkAnswer(this, 1)">
+                                    C. मजबूत वास्तविक जीडीपी वृद्धि के बावजूद, सरकार समग्र मांग और उपभोग को बढ़ाने के
+                                    लिए कर राहत जैसे उपाय कर रही है।
+                                </div>
+                                <div class="mcq-option p-3 rounded-lg shadow-sm" data-correct="false"
+                                    onclick="checkAnswer(this, 1)">
+                                    D. नाममात्र जीडीपी वास्तविक जीडीपी से बहुत अधिक है, जो आर्थिक संकुचन का संकेत है।
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Question 2 -->
+                        <div class="mcq-question p-4 bg-gray-50 rounded-lg shadow-md">
+                            <p class="font-bold text-gray-800 mb-3">2. हाल ही में जीएसटी दरों में कटौती और आयकर छूट सीमा
+                                में वृद्धि जैसे नीतिगत कदमों का प्राथमिक उद्देश्य क्या है?</p>
+                            <div class="space-y-2 text-sm text-gray-700">
+                                <div class="mcq-option p-3 rounded-lg shadow-sm" data-correct="false"
+                                    onclick="checkAnswer(this, 2)">
+                                    A. राजकोषीय घाटे को कम करना।
+                                </div>
+                                <div class="mcq-option p-3 rounded-lg shadow-sm" data-correct="false"
+                                    onclick="checkAnswer(this, 2)">
+                                    B. देश की उत्पादक क्षमता बढ़ाना।
+                                </div>
+                                <div class="mcq-option p-3 rounded-lg shadow-sm" data-correct="true"
+                                    onclick="checkAnswer(this, 2)">
+                                    C. मांग को बढ़ावा देना और भारत के उपभोग स्तर को बढ़ाना।
+                                </div>
+                                <div class="mcq-option p-3 rounded-lg shadow-sm" data-correct="false"
+                                    onclick="checkAnswer(this, 2)">
+                                    D. सरकारी व्यय को 10% से कम करना।
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Question 3 -->
+                        <div class="mcq-question p-4 bg-gray-50 rounded-lg shadow-md">
+                            <p class="font-bold text-gray-800 mb-3">3. भारत के सकल घरेलू उत्पाद (GDP) का सबसे बड़ा घटक
+                                क्या है, जो 55% से 60% हिस्सा है?</p>
+                            <div class="space-y-2 text-sm text-gray-700">
+                                <div class="mcq-option p-3 rounded-lg shadow-sm" data-correct="false"
+                                    onclick="checkAnswer(this, 3)">
+                                    A. सकल स्थिर पूंजी निर्माण (GFCF)।
+                                </div>
+                                <div class="mcq-option p-3 rounded-lg shadow-sm" data-correct="false"
+                                    onclick="checkAnswer(this, 3)">
+                                    B. सरकारी दैनिक व्यय।
+                                </div>
+                                <div class="mcq-option p-3 rounded-lg shadow-sm" data-correct="false"
+                                    onclick="checkAnswer(this, 3)">
+                                    C. कॉर्पोरेट भारत की कुल आय।
+                                </div>
+                                <div class="mcq-option p-3 rounded-lg shadow-sm" data-correct="true"
+                                    onclick="checkAnswer(this, 3)">
+                                    D. निजी अंतिम उपभोग व्यय (PFCE)।
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Question 4 -->
+                        <div class="mcq-question p-4 bg-gray-50 rounded-lg shadow-md">
+                            <p class="font-bold text-gray-800 mb-3">4. नाममात्र जीडीपी (Nominal GDP) वास्तविक जीडीपी की
+                                तुलना में अर्थव्यवस्था की किस कहानी को बेहतर ढंग से दर्शाती है?</p>
+                            <div class="space-y-2 text-sm text-gray-700">
+                                <div class="mcq-option p-3 rounded-lg shadow-sm" data-correct="false"
+                                    onclick="checkAnswer(this, 4)">
+                                    A. केवल राजकोषीय घाटा।
+                                </div>
+                                <div class="mcq-option p-3 rounded-lg shadow-sm" data-correct="false"
+                                    onclick="checkAnswer(this, 4)">
+                                    B. दीर्घकालिक आपूर्ति क्षमता।
+                                </div>
+                                <div class="mcq-option p-3 rounded-lg shadow-sm" data-correct="true"
+                                    onclick="checkAnswer(this, 4)">
+                                    C. अर्थव्यवस्था की मांग की कहानी।
+                                </div>
+                                <div class="mcq-option p-3 rounded-lg shadow-sm" data-correct="false"
+                                    onclick="checkAnswer(this, 4)">
+                                    D. मुद्रास्फीति-समायोजित निवेश।
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="feedback-box"
+                            class="mt-8 p-4 bg-indigo-100 border-l-4 border-indigo-500 rounded-lg font-semibold text-indigo-700 hidden">
+                            कृपया उत्तर देने के लिए एक विकल्प पर क्लिक करें।
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer (Simple) -->
+    <footer class="bg-gray-800 text-white p-4 text-center text-sm mt-8">
+        <p>&copy; 2025 अर्थ दर्पण। सभी अधिकार सुरक्षित।</p>
+    </footer>
+
+    <script>
+        // Function to check the answer and provide feedback
+        function checkAnswer(selectedOption, questionNumber) {
+            const questionDiv = selectedOption.closest('.mcq-question');
+            const options = questionDiv.querySelectorAll('.mcq-option');
+            const feedbackBox = document.getElementById('feedback-box');
+            let isCorrect = selectedOption.getAttribute('data-correct') === 'true';
+
+            // Disable all options for this question after first click
+            options.forEach(option => {
+                option.onclick = null; // Remove click event
+                option.style.cursor = 'default';
+                option.classList.remove('hover:bg-indigo-50');
+                option.classList.remove('hover:text-pink-500');
+            });
+
+            // Highlight the correct/incorrect option
+            if (isCorrect) {
+                selectedOption.classList.add('correct');
+                feedbackBox.classList.remove('hidden', 'bg-red-100', 'border-red-500', 'text-red-700', 'bg-indigo-100', 'border-indigo-500', 'text-indigo-700');
+                feedbackBox.classList.add('bg-green-100', 'border-green-500', 'text-green-700');
+                feedbackBox.textContent = 'सही जवाब! यह लेख के मुख्य विरोधाभास को दर्शाता है।';
+            } else {
+                selectedOption.classList.add('incorrect');
+
+                // Find and highlight the correct answer
+                options.forEach(option => {
+                    if (option.getAttribute('data-correct') === 'true') {
+                        option.classList.add('correct');
+                    }
+                });
+
+                feedbackBox.classList.remove('hidden', 'bg-green-100', 'border-green-500', 'text-green-700', 'bg-indigo-100', 'border-indigo-500', 'text-indigo-700');
+                feedbackBox.classList.add('bg-red-100', 'border-red-500', 'text-red-700');
+                feedbackBox.textContent = 'गलत जवाब। सही उत्तर हरे रंग में हाइलाइट किया गया है।';
+            }
+
+            // Scroll to the feedback box
+            feedbackBox.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+
+    </script>
+
+</body>
+
+</html>

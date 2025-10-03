@@ -1,0 +1,289 @@
+{
+  "heroArticle": {
+    "category": "अर्थव्यवस्था",
+    "title": "भारत की आर्थिक वृद्धि का अनोखा मामला",
+    "summary": "हाल ही में सुप्रीम कोर्ट ने आधार से जुड़ी विभिन्न याचिकाओं पर सुनवाई करते हुए, इसके संवैधानिक पहलू और नागरिकों पर पड़ने वाले इसके प्रभाव को स्पष्ट किया। यह फैसला सरकारी योजनाओं के वितरण और पारदर्शिता के लिए मील का पत्थर साबित होगा।",
+    "source": "Indian Express",
+    "date": "03 अक्टूबर 2025",
+    "image": "IE00-03-10-25.png",
+    "link": "ExplainSpeaking-The-curious-case-of-Indias-economic-growth.html",
+    "read_more_text": "read the full article"
+  },
+  "categories": [
+    "राजव्यवस्था",
+    "शासन",
+    "अंतर्राष्ट्रीय संबंध",
+    "अर्थव्यवस्था",
+    "विज्ञान एवं तकनीक",
+    "भूगोल",
+    "पर्यावरण",
+    "इतिहास",
+    "कला एवं संस्कृति",
+    "सुरक्षा",
+    "आपदा प्रबंधन",
+    "नैतिकता",
+    "समसामयिक मामले"
+  ],
+  "newsArticles": [
+    {
+      "category": "शासन",
+      "title": "उनके गाँव में सड़क नहीं बन रही थी। इसलिए झारखंड की 25 महिलाओं ने खुद ही इस समस्या का समाधान निकाला।",
+      "summary": "सितंबर में, झारखंड के पलामू ज़िले के एक ग्रामीण स्वयं सहायता समूह की महिलाओं ने एक संकल्प लिया: दशहरा से पहले गाँव की पहली पहुँच सड़क बनानी है। चार दिनों की अथक मेहनत के बाद, पिछुलिया गाँव में मोटरगाड़ी चलने लायक सड़क बन गई है।",
+      "source": "Indian Express",
+      "date": "03 अक्टूबर 2025",
+      "image": "IE04-03-10-25.png",
+      "link": "jharkhand-women-build-road.html",
+      "read_more_text": "read the full article"
+    },
+    {
+      "category": "शासन",
+      "title": "सबरीमाला के 'गायब सोने' का अनोखा मामला: केरल सीपीएम नई मुसीबत में, हाईकोर्ट ने दिए जांच के आदेश",
+      "summary": "कांग्रेस और भाजपा ने पिनाराई विजयन सरकार पर त्रावणकोर देवस्वोम बोर्ड के माध्यम से “चोरी को बढ़ावा देने” का आरोप लगाया; इस विवाद से सत्तारूढ़ दल के भीतर भी अंदरूनी कलह छिड़ गई",
+      "source": "Indian Express",
+      "date": "03 अक्टूबर 2025",
+      "image": "IE05-03-10-25.png",
+      "link": "curious-case-sabarimala-missing-gold.html",
+      "read_more_text": "read the full article"
+    },
+    {
+      "category": "शासन",
+      "title": "ई-गवर्नेंस: डिजिटल इंडिया के लाभ और भावी योजनाएँ",
+      "summary": "सरकारी सेवाओं को नागरिकों तक पहुँचाने में ई-गवर्नेंस की सफलता और इससे जुड़ी तकनीकी बाधाएँ।",
+      "source": "The Hindu",
+      "date": "01 अक्टूबर 2025",
+      "image": "https://via.placeholder.com/300x200?text=E-Governance",
+      "link": "shasan_e_governance.html",
+      "read_more_text": "read the full article"
+    },
+    {
+      "category": "शासन",
+      "title": "सिविल सेवा सुधार: क्षमता निर्माण की आवश्यकता",
+      "summary": "मिशन कर्मयोगी के तहत सिविल सेवकों के प्रशिक्षण और क्षमता निर्माण पर नवीनतम पहल।",
+      "source": "PIB",
+      "date": "29 सितंबर 2025",
+      "image": "https://via.placeholder.com/300x200?text=Civil+Service+Reform",
+      "link": "shasan_civil_service_reform.html",
+      "read_more_text": "read the full article"
+    },
+    {
+      "category": "अंतर्राष्ट्रीय संबंध",
+      "title": "भारत-यूरोपीय संघ मुक्त व्यापार समझौता: संभावनाएँ और चिंताएँ",
+      "summary": "द्विपक्षीय संबंधों को मजबूत करने के लिए भारत और यूरोपीय संघ के बीच व्यापार समझौते का महत्व।",
+      "source": "Indian Express",
+      "date": "02 अक्टूबर 2025",
+      "image": "https://via.placeholder.com/300x200?text=India+EU+FTA",
+      "link": "ir_india_eu_fta.html",
+      "read_more_text": "read the full article"
+    },
+    {
+      "category": "अंतर्राष्ट्रीय संबंध",
+      "title": "संयुक्त राष्ट्र सुरक्षा परिषद में भारत की स्थायी सदस्यता की मांग",
+      "summary": "वैश्विक भू-राजनीति में भारत की बढ़ती भूमिका और UNSC में सुधार की आवश्यकता।",
+      "source": "The Hindu",
+      "date": "30 सितंबर 2025",
+      "image": "https://via.placeholder.com/300x200?text=UNSC+Reform",
+      "link": "ir_unsc_reform.html",
+      "read_more_text": "read the full article"
+    },
+    {
+      "category": "अर्थव्यवस्था",
+      "title": "भारतीय अर्थव्यवस्था पर बढ़ती तेल कीमतों का प्रभाव",
+      "summary": "अंतर्राष्ट्रीय बाजार में कच्चे तेल की कीमतों में वृद्धि और भारत की मुद्रास्फीति पर इसका असर।",
+      "source": "The Hindu",
+      "date": "02 अक्टूबर 2025",
+      "image": "https://via.placeholder.com/300x200?text=Oil+Prices",
+      "link": "economy_oil_prices.html",
+      "read_more_text": "read the full article"
+    },
+    {
+      "category": "अर्थव्यवस्था",
+      "title": "बैंकिंग क्षेत्र में गैर-निष्पादित परिसंपत्तियाँ (NPA) और समाधान",
+      "summary": "भारतीय बैंकों की बैलेंस शीट को मजबूत करने के लिए NPA को कम करने के उपाय।",
+      "source": "PIB",
+      "date": "01 अक्टूबर 2025",
+      "image": "https://via.placeholder.com/300x200?text=NPA+Banking",
+      "link": "economy_npa_banking.html",
+      "read_more_text": "read the full article"
+    },
+    {
+      "category": "विज्ञान एवं तकनीक",
+      "title": "गगनयान मिशन: भारत का मानव अंतरिक्ष कार्यक्रम",
+      "summary": "गगनयान की नवीनतम प्रगति, चुनौतियाँ और भविष्य के अंतरिक्ष अनुसंधान के लिए इसका महत्व।",
+      "source": "PIB",
+      "date": "02 अक्टूबर 2025",
+      "image": "https://via.placeholder.com/300x200?text=Gaganyaan+Mission",
+      "link": "sci_tech_gaganyaan.html",
+      "read_more_text": "read the full article"
+    },
+    {
+      "category": "विज्ञान एवं तकनीक",
+      "title": "आर्टिफिशियल इंटेलिजेंस और नैतिक चिंताएँ",
+      "summary": "एआई के तेजी से बढ़ते अनुप्रयोगों के बीच गोपनीयता और नैतिक मानकों को बनाए रखने की चुनौती।",
+      "source": "Indian Express",
+      "date": "28 सितंबर 2025",
+      "image": "https://via.placeholder.com/300x200?text=AI+Ethics",
+      "link": "sci_tech_ai_ethics.html",
+      "read_more_text": "read the full article"
+    },
+    {
+      "category": "भूगोल",
+      "title": "मानसून का बदलता पैटर्न और कृषि पर प्रभाव",
+      "summary": "जलवायु परिवर्तन के कारण भारतीय मानसून में आ रहे दीर्घकालिक बदलावों का विस्तृत विश्लेषण।",
+      "source": "The Hindu",
+      "date": "01 अक्टूबर 2025",
+      "image": "https://via.placeholder.com/300x200?text=Monsoon+Pattern",
+      "link": "geography_monsoon_pattern.html",
+      "read_more_text": "read the full article"
+    },
+    {
+      "category": "भूगोल",
+      "title": "हिमालय क्षेत्र में भूस्खलन के कारण और रोकथाम",
+      "summary": "भूवैज्ञानिक कारक और मानवीय गतिविधियों के कारण हिमालयी क्षेत्र में बढ़ते भूस्खलन का अध्ययन।",
+      "source": "Indian Express",
+      "date": "30 सितंबर 2025",
+      "image": "https://via.placeholder.com/300x200?text=Himalayan+Landslides",
+      "link": "geography_himalayan_landslides.html",
+      "read_more_text": "read the full article"
+    },
+    {
+      "category": "पर्यावरण",
+      "title": "वन्यजीव संरक्षण: प्रोजेक्ट टाइगर की सफलता",
+      "summary": "भारत में बाघों की संख्या में वृद्धि और इसके लिए किए गए सफल संरक्षण प्रयासों की कहानी।",
+      "source": "PIB",
+      "date": "02 अक्टूबर 2025",
+      "image": "https://via.placeholder.com/300x200?text=Project+Tiger",
+      "link": "environment_project_tiger.html",
+      "read_more_text": "read the full article"
+    },
+    {
+      "category": "पर्यावरण",
+      "title": "प्लास्टिक प्रदूषण पर नियंत्रण: एकल-उपयोग प्लास्टिक प्रतिबंध",
+      "summary": "एकल-उपयोग प्लास्टिक के उपयोग पर प्रतिबंध लगाने के सरकारी प्रयासों की समीक्षा और चुनौतियाँ।",
+      "source": "The Hindu",
+      "date": "29 सितंबर 2025",
+      "image": "https://via.placeholder.com/300x200?text=Plastic+Ban",
+      "link": "environment_plastic_ban.html",
+      "read_more_text": "read the full article"
+    },
+    {
+      "category": "इतिहास",
+      "title": "स्वतंत्रता संग्राम में जनजातीय आंदोलनों की भूमिका",
+      "summary": "भारत के स्वतंत्रता संग्राम में विभिन्न जनजातीय विद्रोहों और उनके नायकों का योगदान।",
+      "source": "Indian Express",
+      "date": "01 अक्टूबर 2025",
+      "image": "https://via.placeholder.com/300x200?text=Tribal+Movements",
+      "link": "history_tribal_movements.html",
+      "read_more_text": "read the full article"
+    },
+    {
+      "category": "इतिहास",
+      "title": "प्राचीन भारत में शिक्षा प्रणाली: नालंदा विश्वविद्यालय",
+      "summary": "विश्व के सबसे पुराने और महान शिक्षा केंद्रों में से एक, नालंदा विश्वविद्यालय की भव्यता।",
+      "source": "The Hindu",
+      "date": "28 सितंबर 2025",
+      "image": "https://via.placeholder.com/300x200?text=Nalanda+University",
+      "link": "history_nalanda_university.html",
+      "read_more_text": "read the full article"
+    },
+    {
+      "category": "कला एवं संस्कृति",
+      "title": "भारत की अमूर्त सांस्कृतिक विरासतें: यूनेस्को सूची",
+      "summary": "भारत की उन परंपराओं और प्रथाओं पर एक नज़र जिन्हें यूनेस्को द्वारा मान्यता दी गई है।",
+      "source": "PIB",
+      "date": "02 अक्टूबर 2025",
+      "image": "https://via.placeholder.com/300x200?text=Intangible+Heritage",
+      "link": "art_culture_unesco_heritage.html",
+      "read_more_text": "read the full article"
+    },
+    {
+      "category": "कला एवं संस्कृति",
+      "title": "भारतीय शास्त्रीय संगीत का विकास और क्षेत्रीय शैलियाँ",
+      "summary": "कर्नाटक और हिंदुस्तानी संगीत शैलियों का तुलनात्मक अध्ययन और उनका ऐतिहासिक विकास।",
+      "source": "The Hindu",
+      "date": "30 सितंबर 2025",
+      "image": "https://via.placeholder.com/300x200?text=Classical+Music",
+      "link": "art_culture_classical_music.html",
+      "read_more_text": "read the full article"
+    },
+    {
+      "category": "सुरक्षा",
+      "title": "साइबर सुरक्षा में नई चुनौतियाँ और सरकारी प्रतिक्रिया",
+      "summary": "देश के महत्वपूर्ण डेटा की सुरक्षा के लिए बढ़ते रैंसमवेयर हमलों और नई रणनीतियों पर रिपोर्ट।",
+      "source": "Indian Express",
+      "date": "01 अक्टूबर 2025",
+      "image": "https://via.placeholder.com/300x200?text=Cyber+Security",
+      "link": "security_cyber_security.html",
+      "read_more_text": "read the full article"
+    },
+    {
+      "category": "सुरक्षा",
+      "title": "भारत-चीन सीमा विवाद: नवीनतम घटनाक्रम और समाधान के प्रयास",
+      "summary": "वास्तविक नियंत्रण रेखा (LAC) पर तनाव कम करने के लिए चल रही कूटनीतिक बातचीत।",
+      "source": "The Hindu",
+      "date": "29 सितंबर 2025",
+      "image": "https://via.placeholder.com/300x200?text=India+China+Border",
+      "link": "security_india_china_border.html",
+      "read_more_text": "read the full article"
+    },
+    {
+      "category": "आपदा प्रबंधन",
+      "title": "शहरी बाढ़: तैयारी, प्रतिक्रिया और शमन रणनीतियाँ",
+      "summary": "शहरी क्षेत्रों में अचानक आई बाढ़ के जोखिम को कम करने के लिए प्रभावी प्रबंधन योजनाएँ।",
+      "source": "PIB",
+      "date": "02 अक्टूबर 2025",
+      "image": "https://via.placeholder.com/300x200?text=Urban+Flooding",
+      "link": "disaster_urban_flooding.html",
+      "read_more_text": "read the full article"
+    },
+    {
+      "category": "आपदा प्रबंधन",
+      "title": "भारत में भूकंप जोखिम क्षेत्र और निर्माण मानक",
+      "summary": "भूकंप-प्रवण क्षेत्रों में सुरक्षित बुनियादी ढांचे के लिए लागू किए जाने वाले नए निर्माण कोड।",
+      "source": "Indian Express",
+      "date": "30 सितंबर 2025",
+      "image": "https://via.placeholder.com/300x200?text=Earthquake+Safety",
+      "link": "disaster_earthquake_safety.html",
+      "read_more_text": "read the full article"
+    },
+    {
+      "category": "नैतिकता",
+      "title": "लोक सेवकों के लिए नैतिक दुविधाएँ और आचरण संहिता",
+      "summary": "सरकारी कर्मचारियों के सामने आने वाली नैतिक समस्याओं और उन्हें सुलझाने के लिए मार्गदर्शन।",
+      "source": "The Hindu",
+      "date": "01 अक्टूबर 2025",
+      "image": "https://via.placeholder.com/300x200?text=Ethics+in+Public+Service",
+      "link": "ethics_public_service.html",
+      "read_more_text": "read the full article"
+    },
+    {
+      "category": "नैतिकता",
+      "title": "कॉर्पोरेट सामाजिक जिम्मेदारी (CSR) का नैतिक आधार",
+      "summary": "व्यवसायों के लिए नैतिक अनिवार्यता के रूप में CSR का महत्व और उसके कार्यान्वयन की स्थिति।",
+      "source": "Indian Express",
+      "date": "28 सितंबर 2025",
+      "image": "https://via.placeholder.com/300x200?text=CSR+Ethics",
+      "link": "ethics_csr_ethics.html",
+      "read_more_text": "read the full article"
+    },
+    {
+      "category": "समसामयिक मामले",
+      "title": "नोबेल पुरस्कार 2025: विजेताओं का महत्व",
+      "summary": "विभिन्न क्षेत्रों में नोबेल पुरस्कार विजेताओं की खोजों और उनके वैश्विक प्रभाव का अवलोकन।",
+      "source": "The Hindu",
+      "date": "02 अक्टूबर 2025",
+      "image": "https://via.placeholder.com/300x200?text=Nobel+Prize+2025",
+      "link": "current_affairs_nobel_prize.html",
+      "read_more_text": "read the full article"
+    },
+    {
+      "category": "समसामयिक मामले",
+      "title": "जी20 शिखर सम्मेलन 2025 के प्रमुख परिणाम",
+      "summary": "आगामी G20 शिखर सम्मेलन में वैश्विक अर्थव्यवस्था, जलवायु परिवर्तन और स्वास्थ्य पर सहमति।",
+      "source": "PIB",
+      "date": "27 सितंबर 2025",
+      "image": "https://via.placeholder.com/300x200?text=G20+Summit",
+      "link": "current_affairs_g20_summit.html",
+      "read_more_text": "read the full article"
+    }
+  ]
+}

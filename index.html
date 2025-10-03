@@ -1,0 +1,924 @@
+<!DOCTYPE html>
+<html lang="hi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>सिविल सेवा समाचार: हिंदी माध्यम</title>
+    <style>
+        /* --- CSS Start --- */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Noto+Sans+Devanagari:wght@400;700&display=swap');
+
+        :root {
+            --primary-color: #900C3F;
+            /* Dark Maroon/Red for strong focus */
+            --secondary-color: #581845;
+            /* Darker Purple for contrast */
+            --text-color: #333;
+            --light-bg: #f7f7f7;
+            --white: #ffffff;
+            --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            --accent-color: #FFC300;
+            /* Yellow/Gold for highlight */
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Noto Sans Devanagari', 'Poppins', sans-serif;
+            color: var(--text-color);
+            background-color: var(--light-bg);
+            line-height: 1.6;
+        }
+
+        /* --- Header & Navbar --- */
+        .top-bar {
+            background-color: var(--secondary-color);
+            color: var(--white);
+            padding: 5px 0;
+            text-align: center;
+            font-size: 0.85rem;
+        }
+
+        .header-main {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+            background-color: var(--white);
+            box-shadow: var(--shadow);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo a {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        .logo span {
+            font-size: 0.9rem;
+            display: block;
+            font-weight: 400;
+            color: var(--text-color);
+        }
+
+        .navbar ul {
+            list-style: none;
+            display: flex;
+        }
+
+        .navbar ul li a {
+            text-decoration: none;
+            color: var(--text-color);
+            font-weight: 600;
+            padding: 10px 15px;
+            display: block;
+            transition: all 0.3s ease;
+            font-size: 1rem;
+        }
+
+        .navbar ul li a:hover {
+            color: var(--primary-color);
+            background-color: #f0f0f0;
+            border-radius: 5px;
+        }
+
+        /* --- Subject Navigation --- */
+        .subject-nav-container {
+            background-color: var(--primary-color);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            overflow-x: auto;
+            white-space: nowrap;
+            padding: 8px 30px;
+        }
+
+        .subject-nav {
+            display: flex;
+            justify-content: flex-start;
+        }
+
+        .subject-nav-item {
+            text-decoration: none;
+            color: var(--white);
+            padding: 8px 15px;
+            margin: 0 5px;
+            font-size: 0.9rem;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .subject-nav-item:hover,
+        .subject-nav-item.active {
+            background-color: var(--secondary-color);
+            transform: translateY(-2px);
+        }
+
+        /* --- Main Content Layout (Flexbox for Main + Sidebar) --- */
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 15px;
+            display: flex;
+            /* Enable flexbox for main layout */
+            gap: 20px;
+            /* Space between content and sidebar */
+        }
+
+        .main-content {
+            flex-grow: 1;
+            /* Allows main content to take up available space */
+            min-width: 65%;
+            /* Ensures main content isn't too squished */
+        }
+
+        /* --- Hero Section --- */
+        .hero-section {
+            display: flex;
+            background-color: var(--white);
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+            margin-bottom: 30px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .hero-section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+        }
+
+        .hero-image {
+            flex: 1;
+            min-width: 40%;
+            height: 400px;
+        }
+
+        .hero-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .hero-content {
+            flex: 2;
+            padding: 30px;
+        }
+
+        .hero-category {
+            font-size: 0.9rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+            display: inline-block;
+            border-bottom: 2px solid var(--primary-color);
+        }
+
+        .hero-title {
+            font-size: 2.2rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+            line-height: 1.2;
+        }
+
+        .hero-summary {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+            color: #555;
+        }
+
+        .hero-meta {
+            font-size: 0.9rem;
+            color: #888;
+        }
+
+        .hero-meta span {
+            margin-right: 15px;
+        }
+
+        /* --- Read More Button Styling (New) --- */
+        .read-more-btn {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background-color: var(--accent-color);
+            color: var(--text-color);
+            text-decoration: none;
+            font-weight: 700;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            text-align: center;
+        }
+
+        .read-more-btn:hover {
+            background-color: var(--primary-color);
+            color: var(--white);
+        }
+
+        /* --- News Grid --- */
+        .news-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+
+        .news-article {
+            background-color: var(--white);
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+            overflow: hidden;
+            transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            /* cursor: pointer; REMOVED to make button click obvious */
+        }
+
+        .news-article:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .article-image {
+            width: 100%;
+            height: 200px;
+        }
+
+        .article-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .article-content {
+            padding: 15px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .article-category {
+            font-size: 0.8rem;
+            font-weight: 700;
+            color: var(--secondary-color);
+            margin-bottom: 8px;
+        }
+
+        .article-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: var(--primary-color);
+        }
+
+        .article-summary {
+            font-size: 0.9rem;
+            color: #666;
+            margin-bottom: 15px;
+        }
+
+        .article-meta-group {
+            margin-top: auto;
+            /* Push meta and button to the bottom */
+            padding-top: 10px;
+        }
+
+        .article-meta {
+            font-size: 0.8rem;
+            color: #888;
+            border-top: 1px dashed #eee;
+            padding-bottom: 10px;
+        }
+
+        /* --- Answer Writing Section (New) --- */
+        .answer-writing-section {
+            background-color: #fff;
+            padding: 30px;
+            margin-bottom: 30px;
+            border-left: 5px solid var(--accent-color);
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+        }
+
+        .answer-writing-section h2 {
+            font-size: 1.8rem;
+            color: var(--secondary-color);
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .aw-question {
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-radius: 6px;
+            border: 1px solid #ddd;
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+            font-style: italic;
+        }
+
+        .aw-meta {
+            font-size: 0.9rem;
+            color: #900C3F;
+            font-weight: 600;
+        }
+
+        /* --- Sidebar Styling --- */
+        .sidebar {
+            width: 300px;
+            /* Fixed width for the sidebar */
+            flex-shrink: 0;
+            /* Prevents sidebar from shrinking */
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .sidebar-widget {
+            background-color: var(--white);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+        }
+
+        .sidebar-widget h3 {
+            font-size: 1.2rem;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 5px;
+        }
+
+        .sidebar-widget ul {
+            list-style: none;
+        }
+
+        .sidebar-widget ul li {
+            padding: 8px 0;
+            border-bottom: 1px dashed #eee;
+        }
+
+        .sidebar-widget ul li:last-child {
+            border-bottom: none;
+        }
+
+        .sidebar-widget ul li a {
+            text-decoration: none;
+            color: var(--text-color);
+            font-weight: 500;
+            display: block;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        .sidebar-widget ul li a:hover {
+            color: var(--secondary-color);
+            transform: translateX(5px);
+        }
+
+        .quote-box {
+            background-color: #fcebeb;
+            /* Light accent background */
+            border-left: 5px solid var(--primary-color);
+            padding: 15px;
+            font-style: italic;
+            color: var(--secondary-color);
+            font-size: 1rem;
+            text-align: center;
+        }
+
+        .quote-box span {
+            display: block;
+            margin-top: 10px;
+            font-weight: 600;
+            font-style: normal;
+        }
+
+        /* Styling for One-Liner Summary */
+        .one-liner-summary {
+            text-align: center;
+            background-color: var(--primary-color);
+            color: var(--white);
+            padding: 15px;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            margin-bottom: 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        .one-liner-summary:hover {
+            background-color: var(--secondary-color);
+        }
+
+        .one-liner-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .one-liner-list li {
+            background-color: var(--light-bg);
+            padding: 10px;
+            margin-bottom: 8px;
+            border-radius: 4px;
+            font-size: 0.95rem;
+            border-left: 3px solid var(--accent-color);
+            transition: background-color 0.2s ease;
+        }
+
+        .one-liner-list li:hover {
+            background-color: #fff;
+            border-left: 3px solid var(--secondary-color);
+        }
+
+        /* --- Footer --- */
+        .footer {
+            background-color: var(--secondary-color);
+            color: var(--white);
+            padding: 30px 0;
+            margin-top: 40px;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .footer-section {
+            flex: 1;
+            min-width: 250px;
+            margin: 15px;
+        }
+
+        .footer-section h4 {
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 5px;
+        }
+
+        .footer-section p,
+        .footer-section ul {
+            font-size: 0.9rem;
+            color: #ccc;
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section ul li a {
+            text-decoration: none;
+            color: #ccc;
+            display: block;
+            padding: 4px 0;
+            transition: color 0.3s ease;
+        }
+
+        .footer-section ul li a:hover {
+            color: var(--white);
+            text-decoration: underline;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 20px;
+            margin-top: 20px;
+            border-top: 1px solid #777;
+            font-size: 0.85rem;
+        }
+
+        /* --- Back to Top Button --- */
+        #backToTopBtn {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 99;
+            border: none;
+            outline: none;
+            background-color: var(--primary-color);
+            color: white;
+            cursor: pointer;
+            padding: 15px;
+            border-radius: 50%;
+            font-size: 18px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s ease;
+        }
+
+        #backToTopBtn:hover {
+            background-color: var(--secondary-color);
+        }
+
+        /* --- Responsive Design --- */
+        @media (max-width: 900px) {
+            .header-main {
+                flex-direction: column;
+                padding: 15px;
+            }
+
+            .navbar ul {
+                flex-wrap: wrap;
+                justify-content: center;
+                margin-top: 10px;
+            }
+
+            .navbar ul li a {
+                padding: 8px 12px;
+                font-size: 0.9rem;
+            }
+
+            /* Main content and sidebar stack vertically */
+            .container {
+                flex-direction: column;
+                gap: 30px;
+            }
+
+            .main-content {
+                min-width: 100%;
+            }
+
+            .sidebar {
+                width: 100%;
+                /* Sidebar takes full width */
+                order: 3;
+                /* Push sidebar below the news grid on mobile */
+            }
+
+            .hero-section {
+                flex-direction: column;
+            }
+
+            .hero-image,
+            .hero-image img {
+                height: 300px;
+                min-width: 100%;
+            }
+
+            .hero-title {
+                font-size: 1.8rem;
+            }
+
+            .hero-content {
+                padding: 20px;
+            }
+
+            .subject-nav-container {
+                padding: 8px 15px;
+            }
+
+            .footer-content {
+                justify-content: center;
+                text-align: center;
+            }
+
+            .footer-section {
+                margin: 15px 0;
+            }
+        }
+
+        /* --- CSS End --- */
+    </style>
+</head>
+
+<body>
+
+    <div class="top-bar">
+        <span id="currentDateTime"></span>
+    </div>
+
+    <header class="header-main">
+        <div class="logo">
+            <a href="#">सिविल सेवा समाचार</a>
+            <span>The Hindu, IE, PIB सार</span>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#hero-article">शीर्ष खबर</a></li>
+                <li><a href="#news-section">सभी लेख</a></li>
+                <li><a href="#answer-writing-section">उत्तर लेखन</a></li>
+                <li><a href="#about-us">हमारे बारे में</a></li>
+                <li><a href="#contact">संपर्क</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <nav class="subject-nav-container">
+        <div class="subject-nav" id="subjectNav">
+            <a href="#" class="subject-nav-item active" data-category="सभी विषय">सभी विषय</a>
+        </div>
+    </nav>
+
+    <div class="container">
+
+        <main class="main-content">
+
+            <section id="hero-article" class="hero-section">
+                <div class="hero-image">
+                    <img id="heroImage" src="" alt="Hero Article Image">
+                </div>
+                <div class="hero-content">
+                    <span class="hero-category" id="heroCategory"></span>
+                    <h1 class="hero-title" id="heroTitle"></h1>
+                    <p class="hero-summary" id="heroSummary"></p>
+                    <div class="hero-meta">
+                        <span id="heroSource"></span> | <span id="heroDate"></span>
+                    </div>
+                    <a id="heroLink" href="#" class="read-more-btn">पूरा लेख पढ़ें</a>
+                </div>
+            </section>
+
+            <hr>
+
+            <section id="answer-writing-section" class="answer-writing-section">
+                <h2>📝 मुख्य परीक्षा उत्तर लेखन अभ्यास</h2>
+
+                <div class="aw-question">
+                    **प्रश्न 1 (GS II):** राष्ट्रीय मानवाधिकार आयोग (NHRC) की बदलती भूमिका का समालोचनात्मक विश्लेषण
+                    करें। (150 शब्द)
+                    <div class="aw-meta">स्रोत: राजव्यवस्था | दिनांक: 02 अक्टूबर 2025</div>
+                </div>
+
+                <div class="aw-question">
+                    **प्रश्न 2 (GS III):** भारत के ऊर्जा संक्रमण में हरित हाइड्रोजन की क्षमता और चुनौतियों पर प्रकाश
+                    डालिए। (250 शब्द)
+                    <div class="aw-meta">स्रोत: विज्ञान एवं तकनीक | दिनांक: 01 अक्टूबर 2025</div>
+                </div>
+            </section>
+
+            <section id="news-section">
+                <h2 style="font-size: 1.8rem; margin-bottom: 20px; color: var(--secondary-color);">नवीनतम सिविल सेवा
+                    समाचार</h2>
+                <div class="news-grid" id="newsGrid">
+                </div>
+            </section>
+
+        </main>
+
+        <aside class="sidebar">
+
+            <div class="one-liner-summary">
+                वन-लाइनर सार (Prelims Focus)
+            </div>
+            <div class="sidebar-widget" style="padding: 10px;">
+                <ul class="one-liner-list">
+                    <li>शून्य-पूंजी प्राकृतिक खेती (ZBNF) लोकप्रिय हुई।</li>
+                    <li>RBI ने मुद्रास्फीति लक्ष्य को बनाए रखा।</li>
+                    <li>G7 देशों ने वैश्विक कॉर्पोरेट कर पर सहमति व्यक्त की।</li>
+                    <li>हबल टेलीस्कोप ने नए आकाशगंगा क्लस्टर खोजे।</li>
+                    <li>भारत ने संयुक्त राष्ट्र शांति सेना में महिला दल भेजा।</li>
+                    <li>पश्चिमी घाट में नई मेढ़क प्रजाति मिली।</li>
+                    <li>केन्द्रीय बजट 2026 में बुनियादी ढांचे पर ज़ोर।</li>
+                    <li>ग्रीन बांड जारी करने की योजना को मंजूरी मिली।</li>
+                    <li>इलेक्ट्रॉनिक वोटिंग मशीन (EVM) पर नया नियम।</li>
+                    <li>समुद्री शैवाल की खेती को बढ़ावा देगी सरकार।</li>
+                </ul>
+            </div>
+
+            <div class="sidebar-widget">
+                <h3>महत्वपूर्ण स्रोत (Quick Links)</h3>
+                <ul>
+                    <li><a href="#" target="_blank">The Hindu सार</a></li>
+                    <li><a href="#" target="_blank">Indian Express विश्लेषण</a></li>
+                    <li><a href="#" target="_blank">PIB सरकारी विज्ञप्तियाँ</a></li>
+                    <li><a href="#" target="_blank">आर्थिक समीक्षा व बजट</a></li>
+                    <li><a href="#" target="_blank">राज्य-विशिष्ट समाचार (State News)</a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-widget">
+                <h3>आज की शब्दावली</h3>
+                <ul>
+                    <li><a href="#" target="_blank">अवरोधन (Interception)</a></li>
+                    <li><a href="#" target="_blank">प्रतिपूर्ति (Reimbursement)</a></li>
+                    <li><a href="#" target="_blank">अनिवार्यता (Imperative)</a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-widget">
+                <h3>UPSC CSE संसाधन</h3>
+                <ul>
+                    <li><a href="#" target="_blank">नवीनतम UPSC अधिसूचना</a></li>
+                    <li><a href="#" target="_blank">प्रीलिम्स पाठ्यक्रम (GS I)</a></li>
+                    <li><a href="#" target="_blank">मुख्य परीक्षा पाठ्यक्रम (GS I-IV)</a></li>
+                    <li><a href="#" target="_blank">पिछले वर्षों के प्रश्न पत्र</a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-widget">
+                <h3>टॉपर स्ट्रेटेजी कॉर्नर</h3>
+                <p style="font-size: 0.9rem; margin-bottom: 10px; color: #666;">सफलता के मार्ग पर अग्रसर होने के लिए
+                    आवश्यक रणनीति और मार्गदर्शन:</p>
+                <ul>
+                    <li><a href="#" target="_blank">GS-4 (नैतिकता) अध्ययन योजना</a></li>
+                    <li><a href="#" target="_blank">उत्तर लेखन सुधार तकनीक</a></li>
+                    <li><a href="#" target="_blank">निबंध लेखन के 5 नियम</a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-widget">
+                <h3>आज का सुविचार</h3>
+                <div class="quote-box">
+                    “सफलता अंतिम नहीं है, विफलता घातक नहीं है: यह जारी रखने का साहस है जो मायने रखता है।”
+                    <span>- विंस्टन चर्चिल</span>
+                </div>
+            </div>
+
+        </aside>
+
+    </div>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>हमारा लक्ष्य</h4>
+                <p>हिंदी माध्यम के सिविल सेवा उम्मीदवारों के लिए 'द हिंदू', 'इंडियन एक्सप्रेस', पीआईबी और अन्य
+                    महत्वपूर्ण सरकारी स्रोतों से चयनित, संक्षिप्त और परीक्षा-उन्मुख समाचारों का सार प्रदान करना।</p>
+            </div>
+            <div class="footer-section">
+                <h4>त्वरित लिंक</h4>
+                <ul>
+                    <li><a href="#hero-article">शीर्ष खबर</a></li>
+                    <li><a href="#news-section">समसामयिक मामले</a></li>
+                    <li><a href="#">पिछले अंक</a></li>
+                    <li><a href="#">नियम एवं शर्तें</a></li>
+                </ul>
+            </div>
+            <div class="footer-section" id="contact">
+                <h4>संपर्क करें</h4>
+                <p>ईमेल: contact@upscsamachar.in</p>
+                <p>पता: नई दिल्ली, भारत</p>
+                <p>फ़ोन: +91 9876543210</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; <span id="currentYear"></span> सिविल सेवा समाचार. सर्वाधिकार सुरक्षित।
+        </div>
+    </footer>
+
+    <button onclick="topFunction()" id="backToTopBtn" title="शीर्ष पर जाएँ">↑</button>
+
+    <script>
+        /* --- JavaScript Start --- */
+        const DATA_FILE = 'data.json';
+
+        document.addEventListener('DOMContentLoaded', () => {
+            updateDateTime();
+            loadDataAndRender();
+            window.setInterval(updateDateTime, 1000); // Update time every second
+            document.getElementById('currentYear').textContent = new Date().getFullYear();
+        });
+
+        // Function to update current date and time
+        function updateDateTime() {
+            const now = new Date();
+            const optionsDate = { year: 'numeric', month: 'long', day: 'numeric', weekday: 'long' };
+            const optionsTime = { hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: true };
+            const dateStr = now.toLocaleDateString('hi-IN', optionsDate);
+            const timeStr = now.toLocaleTimeString('hi-IN', optionsTime);
+            document.getElementById('currentDateTime').textContent = `${dateStr}, ${timeStr}`;
+        }
+
+        // Function to fetch data and call render functions
+        async function loadDataAndRender() {
+            try {
+                const response = await fetch(DATA_FILE);
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                const data = await response.json();
+
+                renderHeroArticle(data.heroArticle);
+                renderSubjectNav(data.categories);
+                renderNewsArticles(data.newsArticles, 'सभी विषय');
+
+            } catch (error) {
+                console.error("Could not fetch the news data:", error);
+                document.getElementById('newsGrid').innerHTML = '<p style="grid-column: 1 / -1; text-align:center; padding: 30px; font-size: 1.2rem; color:red;">समाचार डेटा लोड नहीं हो सका। कृपया सुनिश्चित करें कि **data.json** फ़ाइल सही स्थान पर है।</p>';
+            }
+        }
+
+        // --- Rendering Functions ---
+
+        // 1. Render Hero Article
+        function renderHeroArticle(article) {
+            document.getElementById('heroImage').src = article.image;
+            document.getElementById('heroCategory').textContent = article.category;
+            document.getElementById('heroTitle').textContent = article.title;
+            document.getElementById('heroSummary').textContent = article.summary;
+            document.getElementById('heroSource').textContent = `स्रोत: ${article.source}`;
+            document.getElementById('heroDate').textContent = article.date;
+            // NEW: Set the link for the hero article button
+            document.getElementById('heroLink').href = article.link;
+            document.getElementById('heroLink').textContent = article.read_more_text;
+        }
+
+        // 2. Render Subject Navigation
+        function renderSubjectNav(categories) {
+            const navContainer = document.getElementById('subjectNav');
+            categories.forEach(category => {
+                const navItem = document.createElement('a');
+                navItem.href = `#news-section`;
+                navItem.className = 'subject-nav-item';
+                navItem.textContent = category;
+                navItem.setAttribute('data-category', category);
+                navContainer.appendChild(navItem);
+
+                navItem.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    document.querySelectorAll('.subject-nav-item').forEach(item => item.classList.remove('active'));
+                    e.target.classList.add('active');
+                    filterNews(category);
+                });
+            });
+
+            // Set up click for "सभी विषय" (All Topics)
+            document.querySelector('.subject-nav-item[data-category="सभी विषय"]').addEventListener('click', (e) => {
+                e.preventDefault();
+                document.querySelectorAll('.subject-nav-item').forEach(item => item.classList.remove('active'));
+                e.target.classList.add('active');
+                filterNews('सभी विषय');
+            });
+        }
+
+        // 3. Render News Articles in the grid
+        function renderNewsArticles(articles, filterCategory) {
+            const newsGrid = document.getElementById('newsGrid');
+            newsGrid.innerHTML = ''; // Clear existing content
+
+            const filteredArticles = (filterCategory === 'सभी विषय')
+                ? articles
+                : articles.filter(article => article.category === filterCategory);
+
+            if (filteredArticles.length === 0) {
+                newsGrid.innerHTML = `<p style="grid-column: 1 / -1; text-align: center; padding: 30px; font-size: 1.2rem;">इस विषय में कोई लेख उपलब्ध नहीं है।</p>`;
+                return;
+            }
+
+            filteredArticles.forEach(article => {
+                const articleDiv = document.createElement('div');
+                articleDiv.className = 'news-article';
+
+                articleDiv.innerHTML = `
+                    <div class="article-image">
+                        <img src="${article.image}" alt="${article.title}">
+                    </div>
+                    <div class="article-content">
+                        <span class="article-category">${article.category}</span>
+                        <h3 class="article-title">${article.title}</h3>
+                        <p class="article-summary">${article.summary.substring(0, 100)}...</p>
+                        <div class="article-meta-group">
+                            <div class="article-meta">
+                                ${article.source} | ${article.date}
+                            </div>
+                            <a href="${article.link}" class="read-more-btn">${article.read_more_text}</a>
+                        </div>
+                    </div>
+                `;
+                newsGrid.appendChild(articleDiv);
+            });
+        }
+
+        // --- Interactivity Functions ---
+
+        // Filter News Function
+        async function filterNews(category) {
+            const response = await fetch(DATA_FILE);
+            const data = await response.json();
+            renderNewsArticles(data.newsArticles, category);
+        }
+
+        // Back to Top functionality
+        const backToTopBtn = document.getElementById("backToTopBtn");
+
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000) {
+                backToTopBtn.style.display = "block";
+            } else {
+                backToTopBtn.style.display = "none";
+            }
+        }
+
+        function topFunction() {
+            window.scrollTo({ top: 0, behavior: 'smooth' }); // Smooth scroll
+        }
+        /* --- JavaScript End --- */
+    </script>
+</body>
+
+</html>
