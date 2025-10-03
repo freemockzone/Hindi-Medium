@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="hi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>भारत की कृषि 'रेड लाइन': एक विश्लेषण</title>
+    <!-- Load Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom styles for aesthetic and color */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Noto+Sans+Devanagari:wght@400;600;700&display=swap');
+
+        :root {
+            --primary-color: #6d28d9;
+            /* Deep Violet */
+            --secondary-color: #f59e0b;
+            /* Amber */
+            --tertiary-color: #10b981;
+            /* Emerald */
+            --background-light: #fefce8;
+            /* Light Yellow */
+        }
+
+        body {
+            font-family: 'Noto Sans Devangari', 'Inter', sans-serif;
+            background-color: var(--background-light);
+            /* Very colorful light background */
+            color: #1f2937;
+            /* Dark Gray for readability */
+            line-height: 1.75;
+        }
+
+        /* Styling for the strong tag for visual pop */
+        strong {
+            color: var(--primary-color);
+            font-weight: 700;
+        }
+
+        /* Custom style for TOC links */
+        .toc-link {
+            transition: color 0.3s, background-color 0.3s;
+        }
+
+        .toc-link:hover {
+            color: var(--secondary-color);
+            background-color: #fef3c7;
+        }
+
+        /* Custom style for the MCQ option buttons */
+        .mcq-option {
+            background-color: #fff;
+            border-left: 5px solid var(--tertiary-color);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .mcq-option:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Summary Box & Table Styling */
+        .summary-box {
+            border: 3px dashed var(--primary-color);
+            background-color: #f3e8ff;
+            /* Light Purple background */
+        }
+
+        .data-table th,
+        .data-table td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: center;
+        }
+
+        /* Navbar coloring */
+        .navbar-bg {
+            background: linear-gradient(to right, #a78bfa, #8b5cf6);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar-bg p-4 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <!-- Logo -->
+            <div class="text-3xl font-bold text-white tracking-widest">
+                <a href="index.html">विश्लेषण</a>
+            </div>
+            <!-- Navigation Links -->
+            <div class="flex space-x-4">
+                <a href="../index.html"
+                    class="text-white hover:text-yellow-200 transition duration-300 px-3 py-1 rounded-full text-lg font-medium">होम</a>
+                <a href="#"
+                    class="text-white hover:text-yellow-200 transition duration-300 px-3 py-1 rounded-full text-lg font-medium">व्यापार</a>
+                <a href="#"
+                    class="text-white hover:text-yellow-200 transition duration-300 px-3 py-1 rounded-full text-lg font-medium">अर्थव्यवस्था</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content Container -->
+    <main class="max-w-7xl mx-auto p-4 sm:p-6 lg:p-8">
+
+        <!-- Header and Read Time -->
+        <header class="mb-8">
+            <h1 class="text-4xl sm:text-5xl font-extrabold text-red-700 leading-tight mb-2">
+                भारत की कृषि 'रेड लाइन': <strong class="text-red-800">एक लाल रेखा इसके आर-पार जाती है</strong>
+            </h1>
+            <p class="text-xl italic text-gray-600">
+                कृषि की प्रमुखता के कारण यह कल्पना करना मुश्किल है कि वैश्विक व्यापार का दबाव आजीविका पर भारी पड़ सकता
+                है
+            </p>
+            <p class="text-lg text-gray-600 border-b pb-4 mb-4 flex items-center mt-4">
+                <svg class="w-5 h-5 mr-2 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+                अनुमानित पढ़ने का समय: <strong class="ml-1 text-green-700">~6 मिनट</strong>
+            </p>
+        </header>
+
+        <!-- Grid for Content and TOC (TOC hidden on mobile, visible on medium screens) -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+
+            <!-- Table of Contents (TOC) -->
+            <aside class="lg:col-span-4 sticky top-24 lg:block hidden">
+                <div class="p-4 rounded-xl bg-green-100 border-4 border-green-400 shadow-xl">
+                    <h2 class="text-2xl font-bold text-green-800 mb-4 border-b border-green-300 pb-2">विषय-सूची (Table
+                        of Contents)</h2>
+                    <ul class="space-y-2 text-lg">
+                        <li>
+                            <a href="#intro-agricultural-prominence" class="block p-2 rounded-lg toc-link">★ भारत और
+                                अमेरिका के गाँव</a>
+                        </li>
+                        <li>
+                            <a href="#us-india-comparison" class="block p-2 rounded-lg toc-link">★ टैरिफ वार्ता में
+                                अड़चन</a>
+                        </li>
+                        <li>
+                            <a href="#challenges" class="block p-2 rounded-lg toc-link">★ संरचनात्मक चुनौतियाँ</a>
+                        </li>
+                        <li>
+                            <a href="#dairy-challenge" class="block p-2 rounded-lg toc-link">★ डेयरी क्षेत्र की
+                                जटिलता</a>
+                        </li>
+                        <li>
+                            <a href="#mcq-section" class="block p-2 rounded-lg toc-link">★ MCQs (बहुविकल्पीय प्रश्न)</a>
+                        </li>
+                    </ul>
+                </div>
+            </aside>
+
+            <!-- Main Article Content -->
+            <article class="lg:col-span-8">
+
+                <section id="intro-agricultural-prominence" class="mb-8 p-4 bg-yellow-100 rounded-xl shadow-md">
+                    <h2 class="text-3xl font-bold text-orange-700 mb-3 border-b-2 border-orange-300 pb-1">भारत और
+                        अमेरिका के गाँव</h2>
+                    <p class="text-lg">
+                        एक बार, मैं अमेरिकी छात्रों के एक समूह को भारत के ग्रामीण इलाकों के बारे में और जानने के लिए ले
+                        गया। हमने कुछ हफ़्ते एक गाँव में बिताए, जहाँ छात्रों के पीछे-पीछे लगातार हँसते-खेलते बच्चे आ रहे
+                        थे, और उनमें से कई ज़ोर-ज़ोर से सवाल पूछ रहे थे। इसलिए, हमने एक स्कूल में एक सभा आयोजित करने का
+                        फैसला किया जहाँ बच्चे अमेरिका के बारे में जान सकें, और मैं अनुवाद करूँगा। एक सवाल भारत और
+                        अमेरिका के गाँवों के बीच के अंतर के बारे में था।
+                    </p>
+                    <p class="text-lg mt-4">
+                        मेरे एक छात्र ने जवाब दिया, "देखिए, भारतीय और अमेरिकी दोनों किसान कड़ी मेहनत करते हैं, लेकिन
+                        अमेरिकी किसानों के पास ट्रैक्टर और अन्य मशीनों वाले बड़े खेत हैं, इसलिए वे ज़्यादा उत्पादन करते
+                        हैं। पुराने ज़माने में, अमेरिकी किसान भारतीय किसानों की तरह ही बाहरी घरों में रहते थे। लेकिन अब
+                        सबके पास फ्लश वाले शौचालय, ट्रक और रेफ्रिजरेटर हैं।" बच्चे हैरान रह गए। उन्होंने पूछा, "तो क्या
+                        हर कोई गाँव में रहना चाहता है?" जवाब मिला, "बिल्कुल नहीं, बहुत से लोग गाँव छोड़कर शहरों में
+                        नौकरी ढूँढ़ते हैं।" इस पर एक उलझन भरी प्रतिक्रिया आई: "मेरा भाई शहर में पढ़ा था, लेकिन उसे नौकरी
+                        नहीं मिली, इसलिए वह हमारे खेत में मदद कर रहा है। अमेरिका में ज़रूर कुछ अलग होगा।"
+                    </p>
+                </section>
+
+                <section id="us-india-comparison" class="mb-8">
+                    <h2 class="text-3xl font-bold text-blue-700 mb-4 border-b-2 border-blue-300 pb-1">टैरिफ वार्ता में
+                        अड़चन</h2>
+                    <p>
+                        प्रधानमंत्री नरेंद्र मोदी और अमेरिकी राष्ट्रपति डोनाल्ड ट्रंप के सामने आने वाली चुनौतियों में
+                        यही अंतर है। अमेरिकी कृषि और डेयरी उत्पादों के लिए भारतीय बाज़ारों को खोलना टैरिफ वार्ता में एक
+                        प्रमुख अड़चन बनकर उभरा है। दोनों सरकारों पर लोकतांत्रिक दबाव काफ़ी अलग-अलग हैं। कृषि सब्सिडी,
+                        मशीनीकरण और बड़े खेतों के आकार अमेरिका को किफ़ायती गेहूँ, सोयाबीन और अन्य फ़सलें उगाने में सक्षम
+                        बनाते हैं। भारतीय किसान कम उत्पादकता वाली दुनिया में संघर्ष करते हैं जहाँ वे मुश्किल से गुज़ारा
+                        कर पाते हैं। जहाँ कृषि मज़दूर अमेरिकी मज़दूरों का दो प्रतिशत से भी कम हिस्सा हैं, वहीं भारत में
+                        वे <strong>45 प्रतिशत</strong> हैं। हालाँकि कृषि भारतीय सकल घरेलू उत्पाद का एक छोटा हिस्सा है -
+                        विश्व बैंक के अनुमान के अनुसार केवल लगभग 17 प्रतिशत - कृषि में मज़दूरों का अनुपात लगभग कम नहीं
+                        हुआ है। इस प्रकार, कृषि आय को प्रभावित करने वाली कोई भी चीज़ अमेरिका की तुलना में भारत में आबादी
+                        के कहीं अधिक <strong>बहुत बड़े अनुपात</strong> को प्रभावित करती है।
+                    </p>
+                </section>
+
+                <section id="challenges" class="mb-8">
+                    <h2 class="text-3xl font-bold text-purple-700 mb-4 border-b-2 border-purple-300 pb-1">संरचनात्मक
+                        चुनौतियाँ</h2>
+                    <p>
+                        भारत को अपनी कृषि उत्पादकता बढ़ाने और वैश्विक बाज़ार में प्रभावी ढंग से प्रतिस्पर्धा करने की
+                        ज़रूरत है। कृषि क्षेत्र में भीड़भाड़ कम करने के लिए <strong>विनिर्माण और सेवा उद्योगों</strong>
+                        में अधिक रोज़गार सृजित करने की आवश्यकता है। हालाँकि, ये जटिल चुनौतियाँ हैं जिनका कोई त्वरित
+                        समाधान नहीं है, और इनका समाधान प्रस्तावित टैरिफ समय-सीमाओं के भीतर संभव नहीं है। चूँकि
+                        <strong>65 प्रतिशत</strong> आबादी ग्रामीण क्षेत्रों में रहती है, इसलिए कृषि संकट जनता और
+                        राजनेताओं दोनों के लिए एक वास्तविक चिंता का विषय है। यह आश्चर्य की बात नहीं है कि भारतीय कृषि की
+                        रक्षा वह सीमा रेखा है जिसके इर्द-गिर्द सभी भारतीय राजनीतिक दल एकजुट हैं, चाहे वे सत्ताधारी दल के
+                        हों या विपक्ष के।
+                    </p>
+                </section>
+
+                <section id="dairy-challenge" class="mb-8">
+                    <h2 class="text-3xl font-bold text-red-700 mb-4 border-b-2 border-red-300 pb-1">डेयरी क्षेत्र की
+                        जटिलता</h2>
+                    <p>
+                        डेयरी की बात करें तो चुनौती और भी जटिल है। भारत दुनिया के लगभग एक-चौथाई डेयरी उत्पादों का
+                        उत्पादन करता है। इनमें से लगभग सभी का <strong>स्थानीय स्तर पर</strong> ही उपभोग किया जाता है,
+                        आयात-निर्यात बहुत कम होता है। अमेरिका में डेयरी उत्पादन के निगमीकरण के विपरीत, भारत का दूध
+                        उत्पादन मुख्य रूप से उन परिवारों से आता है जिनके पास दो या तीन दूध देने वाली गायें या भैंसें
+                        होती हैं। पशुओं की देखभाल और दूध दुहने का काम मुख्यतः <strong>महिलाएँ</strong> ही करती हैं।
+                        परिवार दूध का उपयोग घर में खपत के लिए करते हैं, लेकिन अधिक उत्पादन होने पर वे इसे बेच भी देते
+                        हैं। <strong>अमूल</strong> और <strong>मदर डेयरी</strong> जैसी दुग्ध सहकारी समितियाँ बाज़ार पर
+                        हावी हैं। वे ग्रामीण महिलाओं से <strong>ग्राम-स्तरीय सहकारी समितियों</strong> के माध्यम से दूध
+                        खरीदती हैं, उसे एकत्रित करती हैं और उसका प्रसंस्करण करती हैं। कुछ अनुमानों के अनुसार, डेयरी
+                        क्षेत्र में लगभग <strong>80 मिलियन डेयरी किसान</strong> शामिल हैं।
+                    </p>
+                    <p class="mt-4">
+                        करोड़ों भारतीयों के जीवन में कृषि और डेयरी फार्मिंग की प्रमुखता ही ऐसी स्थिति की कल्पना करना
+                        मुश्किल बनाती है जिसमें वैश्विक व्यापार दबाव और कॉर्पोरेट मुनाफ़ा ग्रामीण परिवारों की
+                        <strong>आजीविका</strong> पर हावी हो जाएँ। गुजरात सहकारी डेयरी का जन्मस्थान है, जहाँ
+                        <strong>अमूल</strong> का मुनाफ़ा तीन करोड़ से ज़्यादा सदस्यों में वितरित किया जाता है। 2019 में,
+                        जब डेयरी क्षेत्र को एक क्षेत्रीय व्यापार समझौते में शामिल करने की संभावना थी, तो प्रधानमंत्री के
+                        मेलबॉक्स में गुजरात की महिलाओं के हज़ारों हस्तलिखित पोस्टकार्डों की बाढ़ आ गई, जिसके कारण भारत
+                        ने क्षेत्रीय साझेदारी से हाथ खींच लिए।
+                    </p>
+                    <p class="mt-4">
+                        कृषि संरक्षण पर भारतीय विमर्श, आव्रजन पर अमेरिकी विमर्श जैसा ही है। रिपब्लिकन और डेमोक्रेट, कुल
+                        मिलाकर, इस बात पर एकमत हैं कि अनियंत्रित आव्रजन टिकाऊ नहीं है। बड़ी संख्या में प्रवासियों के साथ
+                        कम श्रम लागत के आर्थिक लाभ चाहे जो भी हों, सामाजिक लागत, खासकर गरीबी के करीब रहने वाले श्रमिकों
+                        के लिए, अस्वीकार्य है। यह समझ से परे है कि भारतीय किसानों, खासकर महिला डेयरी किसानों, जिनके पास
+                        रोज़गार के अन्य साधन कम हैं, के प्रति यही सहानुभूति क्यों नहीं दिखाई जा सकती।
+                    </p>
+                    <p class="mt-4">
+                        उम्मीद है कि किसी दिन भारत में विनिर्माण और सेवा क्षेत्र फल-फूलेंगे, जिससे कृषि पर दबाव कम होगा।
+                        हालाँकि, जब तक वह दिन नहीं आ जाता, ट्रम्प और उनके सलाहकारों को यह जानकर आश्चर्य नहीं होना चाहिए
+                        कि मोदी के लिए कृषि शुल्कों को छोड़ना उतना ही मुश्किल क्यों होगा जितना कि अमेरिका के लिए कृषि
+                        सब्सिडी को छोड़ना होगा - ये शुल्क 1933 में शुरू हुए थे और हाल के वर्षों में 9 से 55 अरब डॉलर के
+                        बीच रहे हैं।
+                    </p>
+                    <p class="mt-6 text-sm italic text-gray-500">
+                        लेखिका मैरीलैंड कॉलेज पार्क विश्वविद्यालय में प्रतिष्ठित एमेरिटा प्रोफेसर और नई दिल्ली स्थित
+                        नेशनल काउंसिल ऑफ एप्लाइड इकोनॉमिक रिसर्च में प्रोफेसर हैं। ये उनके निजी विचार हैं।
+                    </p>
+                </section>
+
+                <!-- UPSC Summary Section -->
+                <section id="upsc-summary" class="mb-8">
+                    <h2 class="text-3xl font-bold text-gray-700 mb-4 border-b-2 border-gray-400 pb-1">UPSC उम्मीदवारों
+                        के लिए सारांश</h2>
+                    <div class="summary-box p-6 rounded-2xl space-y-4">
+
+                        <div class="border-l-4 border-red-500 pl-3">
+                            <h3 class="text-xl font-bold text-red-800">I. मुख्य मुद्दा: भारत की 'रेड लाइन' के रूप में
+                                कृषि</h3>
+                            <ul class="list-disc ml-6 mt-2 text-lg space-y-1">
+                                <li><strong>संदर्भ:</strong> द्विपक्षीय/वैश्विक व्यापार वार्ताओं (जैसे, अमेरिका के साथ
+                                    टैरिफ पर) के दौरान भारतीय बाज़ारों (विशेषकर अमेरिकी कृषि और डेयरी उत्पादों के लिए)
+                                    को खोलने में कठिनाई।</li>
+                                <li><strong>"रेड लाइन":</strong> भारतीय कृषि की रक्षा करना सभी भारतीय दलों का एक एकीकृत
+                                    राजनीतिक रुख है।</li>
+                                <li><strong>कारण:</strong> वैश्विक व्यापार दबावों और कॉर्पोरेट मुनाफ़े को करोड़ों
+                                    ग्रामीण परिवारों की <strong>आजीविका</strong> पर हावी होने की अनुमति नहीं दी जा सकती।
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="border-l-4 border-blue-500 pl-3 pt-4 border-t border-gray-300">
+                            <h3 class="text-xl font-bold text-blue-800">II. संरचनात्मक अंतर: भारत बनाम अमेरिकी कृषि</h3>
+                            <div class="overflow-x-auto mt-2">
+                                <table class="data-table w-full bg-white rounded-lg shadow-inner">
+                                    <thead>
+                                        <tr class="bg-blue-200 text-blue-800 font-semibold">
+                                            <th>विशेषता</th>
+                                            <th>भारत</th>
+                                            <th>संयुक्त राज्य अमेरिका</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="font-medium">श्रमिक अनुपात</td>
+                                            <td>कुल कार्यबल का लगभग <strong>45%</strong></td>
+                                            <td>कुल कार्यबल का लगभग <strong>2%</strong></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="font-medium">जीडीपी योगदान</td>
+                                            <td>लगभग 17% (विश्व बैंक के अनुमान के अनुसार)।</td>
+                                            <td>एक छोटा सा हिस्सा; अत्यधिक मशीनीकृत।</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="font-medium">सब्सिडी</td>
+                                            <td>रक्षात्मक संरक्षण (टैरिफ)।</td>
+                                            <td>उच्च आक्रामक सब्सिडी (हाल के वर्षों में $9 बिलियन से $55 बिलियन तक)।
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <div class="border-l-4 border-green-500 pl-3 pt-4 border-t border-gray-300">
+                            <h3 class="text-xl font-bold text-green-800">III. भारतीय कृषि क्षेत्र में चुनौतियाँ</h3>
+                            <ul class="list-disc ml-6 mt-2 text-lg space-y-1">
+                                <li><strong>उच्च भीड़भाड़:</strong> सकल घरेलू उत्पाद (17%) में कृषि के घटते योगदान के
+                                    बावजूद, कृषि क्षेत्र में श्रमिकों का अनुपात (45%) लगभग कम हुआ है। यह
+                                    <strong>प्रच्छन्न बेरोजगारी</strong> को दर्शाता है।
+                                </li>
+                                <li><strong>कम उत्पादकता:</strong> भारतीय किसान कम उत्पादकता वाले वातावरण में काम करते
+                                    हैं।</li>
+                                <li><strong>जटिल समाधान:</strong> उच्च भीड़भाड़ से निपटने के लिए <strong>विनिर्माण और
+                                        सेवा उद्योगों</strong> में अधिक रोजगार सृजित करने की आवश्यकता है।</li>
+                            </ul>
+                        </div>
+
+                        <div class="border-l-4 border-yellow-500 pl-3 pt-4 border-t border-gray-300">
+                            <h3 class="text-xl font-bold text-yellow-800">IV. डेयरी क्षेत्र: एक और भी कठिन चुनौती</h3>
+                            <ul class="list-disc ml-6 mt-2 text-lg space-y-1">
+                                <li><strong>संरचना:</strong> अमेरिका में निगमीकरण के विपरीत, भारतीय दूध उत्पादन
+                                    विकेन्द्रीकृत मॉडल पर आधारित है, जिसमें मुख्य रूप से छोटे परिवार शामिल हैं।</li>
+                                <li><strong>श्रम:</strong> पशुओं की देखभाल और दूध निकालने के लिए मुख्य रूप से
+                                    <strong>महिलाएँ</strong> ज़िम्मेदार हैं।
+                                </li>
+                                <li><strong>पैमाना:</strong> इसमें लगभग <strong>80 मिलियन डेयरी किसान</strong> शामिल
+                                    हैं।</li>
+                                <li><strong>सहकारिता:</strong> <strong>अमूल</strong> और <strong>मदर डेयरी</strong> जैसे
+                                    सहकारी आंदोलन बाज़ार पर हावी हैं।</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- MCQ Section -->
+                <section id="mcq-section" class="mb-8 p-6 bg-red-50 rounded-2xl shadow-xl">
+                    <h2 class="text-3xl font-bold text-red-700 mb-6 border-b-2 border-red-300 pb-2">यूपीएससी सिविल सेवा
+                        प्रारंभिक परीक्षा पैटर्न MCQs</h2>
+
+                    <!-- MCQ 1 -->
+                    <div class="mb-8 p-6 bg-white rounded-xl shadow-lg border border-red-200">
+                        <h3 class="text-xl font-bold text-gray-800 mb-4">
+                            1. निम्नलिखित में से कौन सा कथन सबसे अच्छी तरह से बताता है कि भारतीय कृषि बाज़ार को विदेशी
+                            उत्पादों के लिए खोलना भारत के लिए वैश्विक व्यापार वार्ताओं में एक प्रमुख 'अड़चन' क्यों है?
+                        </h3>
+
+                        <div class="space-y-3 mt-4">
+                            <div class="mcq-option p-3 rounded-lg border-gray-200">A. भारत का कृषि सकल घरेलू उत्पाद में
+                                योगदान बहुत अधिक है, जो इसे संरक्षण के लिए एक आकर्षक बाज़ार बनाता है।</div>
+                            <div class="mcq-option p-3 rounded-lg border-gray-200">B. भारतीय किसान मुख्य रूप से आनुवंशिक
+                                रूप से संशोधित बीजों का उपयोग करते हैं, जिन्हें वैश्विक प्रतिस्पर्धा से राज्य संरक्षण की
+                                आवश्यकता होती है।</div>
+                            <div class="mcq-option p-3 rounded-lg border-gray-200 bg-green-100 font-bold">C. कृषि पर
+                                निर्भर भारतीय कार्यबल का अनुपात असाधारण रूप से उच्च है, जिससे कृषि आय संरक्षण एक
+                                महत्वपूर्ण राजनीतिक और आजीविका संबंधी मुद्दा बन जाता है। <span
+                                    class="text-green-700">(सही उत्तर)</span></div>
+                            <div class="mcq-option p-3 rounded-lg border-gray-200">D. भारत की कृषि सब्सिडी संयुक्त राज्य
+                                अमेरिका जैसे विकसित देशों द्वारा प्रदान की जाने वाली सब्सिडी से काफी अधिक है, जिससे एक
+                                अनुचित प्रतिस्पर्धात्मक लाभ पैदा होता है।</div>
+                        </div>
+
+                        <div class="mt-6 p-4 bg-yellow-100 border-l-4 border-yellow-500 rounded-lg">
+                            <h5 class="text-lg font-bold text-yellow-800 mb-2">स्पष्टीकरण:</h5>
+                            <ul class="list-disc ml-6 space-y-1">
+                                <li>कथन C <strong>सही</strong> है। लेख में इस बात पर प्रकाश डाला गया है कि सकल घरेलू
+                                    उत्पाद में इसका योगदान कम (लगभग 17%) होने के बावजूद, लगभग <strong>45%</strong>
+                                    भारतीय कार्यबल कृषि क्षेत्र में है।</li>
+                                <li>कथन A <strong>गलत</strong> है। सकल घरेलू उत्पाद में योगदान अपेक्षाकृत कम है।</li>
+                                <li>कथन D <strong>गलत</strong> है। लेख में अमेरिकी सब्सिडी को एक प्रमुख समस्या के रूप
+                                    में उद्धृत किया गया है (हाल के वर्षों में $9 बिलियन से $55 बिलियन के बीच)।</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- MCQ 2 -->
+                    <div class="mb-8 p-6 bg-white rounded-xl shadow-lg border border-red-200">
+                        <h3 class="text-xl font-bold text-gray-800 mb-4">
+                            2. भारतीय डेयरी क्षेत्र के संदर्भ में, निम्नलिखित कथनों पर विचार करें:
+                        </h3>
+                        <ol class="list-decimal ml-6 space-y-2 text-lg">
+                            <li>भारत वैश्विक स्तर पर डेयरी उत्पादों का एक प्रमुख शुद्ध निर्यातक है।</li>
+                            <li>भारतीय डेयरी उत्पादन मॉडल की विशेषता अमेरिका के समान बड़े पैमाने पर निगमीकरण है।</li>
+                            <li>अमूल सहकारी मॉडल में लाखों सदस्यों, मुख्यतः ग्रामीण परिवारों को लाभ वितरित करना शामिल
+                                है।</li>
+                        </ol>
+
+                        <h4 class="text-lg font-semibold mt-6 mb-3 text-red-600">ऊपर दिए गए कथनों में से कितने सही हैं?
+                        </h4>
+                        <div class="space-y-3 mt-4">
+                            <div class="mcq-option p-3 rounded-lg border-gray-200 bg-green-100 font-bold">A. केवल एक
+                                <span class="text-green-700">(सही उत्तर)</span>
+                            </div>
+                            <div class="mcq-option p-3 rounded-lg border-gray-200">B. केवल दो</div>
+                            <div class="mcq-option p-3 rounded-lg border-gray-200">C. तीनों</div>
+                            <div class="mcq-option p-3 rounded-lg border-gray-200">D. कोई नहीं</div>
+                        </div>
+
+                        <div class="mt-6 p-4 bg-yellow-100 border-l-4 border-yellow-500 rounded-lg">
+                            <h5 class="text-lg font-bold text-yellow-800 mb-2">स्पष्टीकरण:</h5>
+                            <ul class="list-disc ml-6 space-y-1">
+                                <li>कथन 1 <strong>गलत</strong> है। लेख में कहा गया है कि लगभग सभी डेयरी उत्पादन
+                                    <strong>स्थानीय स्तर पर</strong> खपत किया जाता है और आयात या निर्यात बहुत कम होता
+                                    है।
+                                </li>
+                                <li>कथन 2 <strong>गलत</strong> है। लेख में कहा गया है कि भारतीय मॉडल की विशेषता छोटे
+                                    परिवारों (2-3 पशु) का स्वामित्व है, जो अमेरिका में निगमीकरण के विपरीत है।</li>
+                                <li>कथन 3 <strong>सही</strong> है। लेख में विशेष रूप से <strong>अमूल</strong> मॉडल का
+                                    उल्लेख किया गया है जहाँ लाभ तीन करोड़ से अधिक सदस्यों (ग्रामीण परिवारों/किसानों) में
+                                    वितरित किया जाता है।</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <footer class="text-center mt-12 pt-6 border-t border-gray-300">
+                    <p class="text-gray-600 italic">भारतीय कृषि और ग्रामीण आजीविका पर उनके विचारों के लिए लेखिका को
+                        धन्यवाद।</p>
+                </footer>
+
+            </article>
+        </div>
+
+    </main>
+</body>
+
+</html>

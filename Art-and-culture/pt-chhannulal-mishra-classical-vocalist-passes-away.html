@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="hi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>पंडित छन्नूलाल मिश्र: श्रद्धांजलि और विश्लेषण</title>
+    <!-- Load Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom styles for aesthetic and color */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Noto+Sans+Devanagari:wght@400;600;700&display=swap');
+
+        :root {
+            --primary-color: #6d28d9;
+            /* Deep Violet */
+            --secondary-color: #f59e0b;
+            /* Amber */
+            --tertiary-color: #10b981;
+            /* Emerald */
+            --background-light: #fefce8;
+            /* Light Yellow */
+        }
+
+        body {
+            font-family: 'Noto Sans Devanagari', 'Inter', sans-serif;
+            background-color: var(--background-light);
+            /* Very colorful light background */
+            color: #1f2937;
+            /* Dark Gray for readability */
+            line-height: 1.75;
+        }
+
+        /* Styling for the strong tag for visual pop */
+        strong {
+            color: var(--primary-color);
+            font-weight: 700;
+        }
+
+        /* Custom style for TOC links */
+        .toc-link {
+            transition: color 0.3s, background-color 0.3s;
+        }
+
+        .toc-link:hover {
+            color: var(--secondary-color);
+            background-color: #fef3c7;
+        }
+
+        /* Custom style for the MCQ option buttons */
+        .mcq-option {
+            background-color: #fff;
+            border-left: 5px solid var(--tertiary-color);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .mcq-option:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        /* UPSC Summary Box */
+        .summary-box {
+            border: 3px dashed var(--primary-color);
+            background-color: #f3e8ff;
+            /* Light Purple background */
+        }
+
+        /* Navbar coloring */
+        .navbar-bg {
+            background: linear-gradient(to right, #a78bfa, #8b5cf6);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar-bg p-4 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <!-- Logo -->
+            <div class="text-3xl font-bold text-white tracking-widest">
+                <a href="index.html">श्रद्धांजलि</a>
+            </div>
+            <!-- Navigation Links -->
+            <div class="flex space-x-4">
+                <a href="../index.html"
+                    class="text-white hover:text-yellow-200 transition duration-300 px-3 py-1 rounded-full text-lg font-medium">होम</a>
+                <a href="#"
+                    class="text-white hover:text-yellow-200 transition duration-300 px-3 py-1 rounded-full text-lg font-medium">संगीत</a>
+                <a href="#"
+                    class="text-white hover:text-yellow-200 transition duration-300 px-3 py-1 rounded-full text-lg font-medium">संस्कृति</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content Container -->
+    <main class="max-w-7xl mx-auto p-4 sm:p-6 lg:p-8">
+
+        <!-- Header and Read Time -->
+        <header class="mb-8">
+            <h1 class="text-4xl sm:text-5xl font-extrabold text-red-700 leading-tight mb-2">
+                पंडित छन्नूलाल मिश्र: एक युग का अवसान
+            </h1>
+            <p class="text-lg text-gray-600 border-b pb-4 mb-4 flex items-center">
+                <svg class="w-5 h-5 mr-2 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+                अनुमानित पढ़ने का समय: <strong class="ml-1 text-green-700">~5 मिनट</strong>
+            </p>
+        </header>
+
+        <!-- Grid for Content and TOC (TOC hidden on mobile, visible on medium screens) -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+
+            <!-- Table of Contents (TOC) -->
+            <aside class="lg:col-span-4 sticky top-24 lg:block hidden">
+                <div class="p-4 rounded-xl bg-green-100 border-4 border-green-400 shadow-xl">
+                    <h2 class="text-2xl font-bold text-green-800 mb-4 border-b border-green-300 pb-2">विषय-सूची (Table
+                        of Contents)</h2>
+                    <ul class="space-y-2 text-lg">
+                        <li>
+                            <a href="#intro" class="block p-2 rounded-lg toc-link">★ प्रारंभिक जानकारी</a>
+                        </li>
+                        <li>
+                            <a href="#biography" class="block p-2 rounded-lg toc-link">★ जीवन और संगीत यात्रा</a>
+                        </li>
+                        <li>
+                            <a href="#contribution" class="block p-2 rounded-lg toc-link">★ संगीत शैली और योगदान</a>
+                        </li>
+                        <li>
+                            <a href="#upsc-summary" class="block p-2 rounded-lg toc-link">★ UPSC उम्मीदवारों के लिए
+                                सारांश</a>
+                        </li>
+                        <li>
+                            <a href="#mcq-section" class="block p-2 rounded-lg toc-link">★ MCQs (बहुविकल्पीय प्रश्न)</a>
+                        </li>
+                    </ul>
+                </div>
+            </aside>
+
+            <!-- Main Article Content -->
+            <article class="lg:col-span-8">
+
+                <section id="intro" class="mb-8 p-4 bg-yellow-100 rounded-xl shadow-md">
+                    <h2 class="text-3xl font-bold text-orange-700 mb-3 border-b-2 border-orange-300 pb-1">प्रारंभिक
+                        जानकारी</h2>
+                    <p class="text-xl">
+                        भक्ति और <strong>पूरब अंग गायकी</strong> में रचे-बसे शास्त्रीय गायक पंडित छन्नूलाल मिश्र का 89
+                        वर्ष की आयु में निधन हो गया।
+                    </p>
+                    <div class="p-3 mt-4 bg-red-100 border-l-4 border-red-500 rounded-lg">
+                        <p class="text-lg">
+                            <strong>स्वास्थ्य में अचानक गिरावट के बाद उन्हें वाराणसी के बनारस हिंदू विश्वविद्यालय
+                                (बीएचयू) के सर सुंदर लाल अस्पताल में भर्ती कराया गया था।</strong>
+                        </p>
+                    </div>
+                </section>
+
+                <section id="biography" class="mb-8">
+                    <h2 class="text-3xl font-bold text-blue-700 mb-4 border-b-2 border-blue-300 pb-1">जीवन और संगीत
+                        यात्रा</h2>
+                    <p>
+                        हिंदुस्तानी शास्त्रीय गायक पंडित छन्नूलाल मिश्र, जिनके जीवन का संगीत अक्सर राम की दुनिया से
+                        जुड़ा रहा – एक ऐसी जगह जहाँ उन्होंने तुलसीदास की रामचरितमानस को इतने उत्साह से गाया कि श्रोता इन
+                        प्रस्तुतियों को अपने आप में एक पूजा अनुष्ठान मानते थे – का गुरुवार को <strong>दशहरे</strong> की
+                        सुबह मिर्जापुर में निधन हो गया। मिश्र के लिए यह विदाई एक आदर्श विदाई की तरह लगती है। वह 89 वर्ष
+                        के थे।
+                    </p>
+                    <p class="mt-4">
+                        स्वास्थ्य में अचानक गिरावट के बाद उन्हें वाराणसी के बनारस हिंदू विश्वविद्यालय (बीएचयू) के सर
+                        सुंदर लाल अस्पताल में भर्ती कराया गया था।
+                    </p>
+                    <p class="mt-4">
+                        इससे पहले, उनका मिर्जापुर के रामकृष्ण सेवा आश्रम में इलाज चल रहा था, जहाँ वे अपनी बेटी के साथ
+                        रहते थे। वे पिछले सात महीनों से अस्वस्थ थे और वाराणसी अस्पताल के एक बयान के अनुसार, उनका टाइप-2
+                        मधुमेह, उच्च रक्तचाप, ऑस्टियोआर्थराइटिस और सौम्य प्रोस्टेटिक हाइपरप्लासिया का इलाज चल रहा था।
+                        बीमारी के दौरान, उन्हें बिस्तर पर घाव भी हो गए थे, जो सेप्टीसीमिया से और भी जटिल हो गए थे, और वे
+                        एक्यूट रेस्पिरेटरी डिस्ट्रेस सिंड्रोम (ARDS) से पीड़ित थे।
+                    </p>
+                    <p class="mt-4">
+                        कुछ सुधार के संकेत मिलने पर उन्हें छुट्टी दे दी गई। सुबह तड़के जब उनका निधन हुआ, तब वे मिर्जापुर
+                        में अपनी बेटी के घर पर थे। आज शाम राजकीय अंतिम संस्कार से पहले उनके पार्थिव शरीर को अंतिम
+                        श्रद्धांजलि देने के लिए वाराणसी लाया जाएगा।
+                    </p>
+                    <div class="mt-6 p-4 bg-indigo-100 rounded-xl shadow-md">
+                        <h3 class="text-xl font-bold text-indigo-700 mb-2">प्रधानमंत्री की श्रद्धांजलि</h3>
+                        <p>
+                            प्रधानमंत्री मोदी ने मिश्रा के निधन पर शोक व्यक्त करते हुए X पर लिखा, "प्रसिद्ध शास्त्रीय
+                            गायक पंडित छन्नूलाल मिश्रा जी के निधन से मुझे गहरा दुख हुआ है। वे जीवन भर भारतीय कला और
+                            संस्कृति के संवर्धन के लिए समर्पित रहे। शास्त्रीय संगीत को जन-जन तक पहुँचाने के साथ-साथ
+                            उन्होंने भारतीय परंपरा को वैश्विक मंच पर स्थापित करने में भी अमूल्य योगदान दिया।"
+                        </p>
+                        <p class="mt-2 text-sm text-indigo-600 italic">
+                            मिश्रा ने 2014 में मोदी की उम्मीदवारी का प्रस्ताव रखा था और उसी साल शपथ ग्रहण समारोह में
+                            उन्हें आमंत्रित भी किया गया था।
+                        </p>
+                    </div>
+                </section>
+
+                <section id="contribution" class="mb-8">
+                    <h2 class="text-3xl font-bold text-purple-700 mb-4 border-b-2 border-purple-300 pb-1">संगीत शैली और
+                        योगदान</h2>
+                    <p>
+                        मिश्रा देश के उन गिने-चुने गायकों में से एक थे जो किराना घराने की ख़याल गायकी और बनारस घराने के
+                        अर्ध-शास्त्रीय संगीत में पारंगत थे। दरअसल, गिरिजा देवी जैसे कलाकारों के साथ उनके प्रयासों ने ही
+                        ठुमरी और <strong>पूरब अंग गायकी</strong> को एक 'गंभीर दर्जा' दिलाया। उन्होंने इंडियन एक्सप्रेस
+                        को दिए एक साक्षात्कार में कहा था, "बहुत से लोग कहेंगे कि यह आसान है। लेकिन ऐसा नहीं है।" इसके
+                        अलावा, राम, शिव और कृष्ण के लिए उनके उत्कृष्ट भजनों ने भी उन्हें खूब प्रसिद्धि दिलाई।
+                    </p>
+                    <p class="mt-4">
+                        लेकिन लोकप्रिय संगीत की दुनिया ने उन्हें 2012 में ही पहचाना। प्रकाश झा की फ़िल्म 'आरक्षण' मिश्रा
+                        की 75 साल की उम्र में बॉलीवुड में पहली फ़िल्म थी, जिसमें उन्होंने <strong>"सांस अलबेली"</strong>
+                        गाया था, जो नाज़ुक और कठिन <strong>राग तोड़ी</strong> में रचित एक गीत, संगीत और गायन की दृष्टि
+                        से प्रभावशाली रचना थी।
+                    </p>
+                    <p class="mt-4">
+                        हरिहरपुर में पले-बढ़े मिश्रा ने किराना घराने के उस्ताद अब्दुल गनी खान से प्रशिक्षण लेने से पहले
+                        अपने पिता से संगीत सीखना शुरू किया था। मिश्रा को कभी यह एहसास नहीं हुआ कि वह संगीत की पढ़ाई
+                        करेंगे। मिश्रा ने 2014 में इस रिपोर्टर को दिए एक साक्षात्कार में कहा था, "मैं सुबह अपने उस्ताद
+                        की पत्नी की घरेलू कामों में मदद करता था और खान साहब मुझे शाम को सिखाते थे।" इंटरव्यू में मिश्रा
+                        हर सवाल के जवाब के बाद रामचरितमानस का एक श्लोक सुनाते थे। दरअसल, शुरुआत में वह ठुमरी नहीं गाते
+                        थे क्योंकि यह शैली वेश्याओं से जुड़ी थी। लेकिन बाद में उन्होंने लोगों की मांग पर प्रदर्शन करने
+                        का फैसला किया और ये उनकी कुछ बेहतरीन प्रस्तुतियां हैं, भजन और अन्य यूपी लोकगीत भी। लेकिन जिस तरह
+                        से उन्होंने राम की कहानियों को आत्मसात किया और गाया- बचपन, शादी, वनवास, घर वापसी की महिमा- उन
+                        प्रतिष्ठित ठुमरियों के अलावा लोगों की यादों में अंकित रहेंगी।
+                    </p>
+                </section>
+
+                <!-- UPSC Summary Section -->
+                <section id="upsc-summary" class="mb-8">
+                    <h2 class="text-3xl font-bold text-gray-700 mb-4 border-b-2 border-gray-400 pb-1">UPSC उम्मीदवारों
+                        के लिए सारांश</h2>
+                    <div class="summary-box p-6 rounded-2xl space-y-4">
+
+                        <div class="border-l-4 border-red-500 pl-3">
+                            <h3 class="text-xl font-bold text-red-800">I. प्रमुख व्यक्ति एवं संदर्भ</h3>
+                            <ul class="list-disc ml-6 mt-2 text-lg space-y-1">
+                                <li><strong>नाम:</strong> पंडित छन्नूलाल मिश्र (1936–2025)।</li>
+                                <li><strong>पेशा:</strong> प्रसिद्ध <strong>हिंदुस्तानी शास्त्रीय गायक</strong> और
+                                    अर्ध-शास्त्रीय शैलियों के प्रतिपादक।</li>
+                                <li><strong>निधन:</strong> <strong>दशहरा</strong> (अक्टूबर 2025) को 89 वर्ष की आयु में
+                                    निधन हो गया।</li>
+                            </ul>
+                        </div>
+
+                        <div class="border-l-4 border-blue-500 pl-3 pt-4 border-t border-gray-300">
+                            <h3 class="text-xl font-bold text-blue-800">II. संगीत शैली और योगदान</h3>
+                            <ul class="list-disc ml-6 mt-2 text-lg space-y-1">
+                                <li><strong>गायक शैली:</strong> भक्ति परंपरा और <strong>पूरब अंग गायकी</strong> में
+                                    निहित।</li>
+                                <li><strong>शास्त्रीय:</strong> ख्याल गायन में निपुण, मुख्य रूप से <strong>किराना
+                                        घराने</strong> का प्रतिनिधित्व करते हुए।</li>
+                                <li><strong>अर्ध-शास्त्रीय/हल्का शास्त्रीय:</strong> <strong>बनारस घराने</strong> के
+                                    अर्ध-शास्त्रीय संगीत में भी एक अग्रणी हस्ती।</li>
+                                <li><strong>योगदान:</strong> मिश्र जी ने <strong>गिरिजा देवी</strong> जैसे कलाकारों के
+                                    साथ मिलकर <strong>ठुमरी</strong> और <strong>पूरब अंग</strong> शैलियों जैसी
+                                    अर्ध-शास्त्रीय विधाओं को <strong>'गंभीर दर्जा'</strong> दिलाने में महत्वपूर्ण भूमिका
+                                    निभाई।</li>
+                                <li><strong>विशेष प्रस्तुति:</strong> <strong>तुलसीदास के रामचरितमानस</strong> के गायन
+                                    के लिए अत्यधिक प्रसिद्ध।</li>
+                            </ul>
+                        </div>
+
+                        <div class="border-l-4 border-green-500 pl-3 pt-4 border-t border-gray-300">
+                            <h3 class="text-xl font-bold text-green-800">III. प्रशिक्षण और करियर की मुख्य विशेषताएँ</h3>
+                            <ul class="list-disc ml-6 mt-2 text-lg space-y-1">
+                                <li><strong>प्रारंभिक प्रशिक्षण:</strong> अपने पिता से, उसके बाद <strong>किराना
+                                        घराने</strong> के उस्ताद अब्दुल गनी खान से।</li>
+                                <li><strong>फ़िल्मी शुरुआत:</strong> फ़िल्म <strong>आरक्षण</strong> (2012) के गीत
+                                    <strong>"सांस
+                                        अलबेली"</strong> से बॉलीवुड में पदार्पण (राग <strong>तोड़ी</strong> में रचित)।
+                                </li>
+                                <li><strong>राजनीतिक महत्व:</strong> 2014 में प्रधानमंत्री मोदी की उम्मीदवारी का
+                                    प्रस्ताव रखा।</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- MCQ Section -->
+                <section id="mcq-section" class="mb-8 p-6 bg-red-50 rounded-2xl shadow-xl">
+                    <h2 class="text-3xl font-bold text-red-700 mb-6 border-b-2 border-red-300 pb-2">यूपीएससी सिविल सेवा
+                        प्रारंभिक परीक्षा पैटर्न MCQs</h2>
+
+                    <!-- MCQ 1 -->
+                    <div class="mb-8 p-6 bg-white rounded-xl shadow-lg border border-red-200">
+                        <h3 class="text-xl font-bold text-gray-800 mb-4">
+                            1. पंडित छन्नूलाल मिश्र के संबंध में निम्नलिखित कथनों पर विचार करें:
+                        </h3>
+                        <ol class="list-decimal ml-6 space-y-2 text-lg">
+                            <li>वे मुख्य रूप से कर्नाटक शास्त्रीय संगीत में अपनी निपुणता के लिए जाने जाते थे।</li>
+                            <li>वे किराना घराने से संबंधित ख़याल शैली के एक प्रतिपादक थे।</li>
+                            <li>उन्होंने गिरिजा देवी के साथ मिलकर पूरब अंग गायकी की प्रतिष्ठा को ऊँचा उठाने में मदद की।
+                            </li>
+                            <li>उनका लोकप्रिय फ़िल्मी पहला गीत, "सांस अलबेली", राग भैरवी पर आधारित था।</li>
+                        </ol>
+
+                        <h4 class="text-lg font-semibold mt-6 mb-3 text-red-600">ऊपर दिए गए कथनों में से कितने सही हैं?
+                        </h4>
+                        <div class="space-y-3">
+                            <div class="mcq-option p-3 rounded-lg border-gray-200">A. केवल एक</div>
+                            <div class="mcq-option p-3 rounded-lg border-gray-200 bg-green-100 font-bold">B. केवल दो
+                                <span class="text-green-700">(सही उत्तर)</span>
+                            </div>
+                            <div class="mcq-option p-3 rounded-lg border-gray-200">C. केवल तीन</div>
+                            <div class="mcq-option p-3 rounded-lg border-gray-200">D. सभी चार</div>
+                        </div>
+
+                        <div class="mt-6 p-4 bg-yellow-100 border-l-4 border-yellow-500 rounded-lg">
+                            <h5 class="text-lg font-bold text-yellow-800 mb-2">स्पष्टीकरण:</h5>
+                            <ul class="list-disc ml-6 space-y-1">
+                                <li>कथन 1 <strong>गलत</strong> है। वे एक प्रसिद्ध <strong>हिंदुस्तानी</strong> शास्त्रीय
+                                    गायक थे, कर्नाटकी नहीं।</li>
+                                <li>कथन 2 <strong>सही</strong> है। वे <strong>किराना घराने</strong> के ख़याल में निपुण
+                                    थे।</li>
+                                <li>कथन 3 <strong>सही</strong> है। उन्हें और गिरिजा देवी को ठुमरी और <strong>पूरब अंग
+                                        गायकी</strong> को "गंभीर दर्जा" देने का श्रेय दिया जाता है।</li>
+                                <li>कथन 4 <strong>गलत</strong> है। <strong>"सांस अलबेली"</strong> गीत <strong>राग
+                                        तोड़ी</strong> में रचा गया था, न कि राग भैरवी में।</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- MCQ 2 -->
+                    <div class="mb-8 p-6 bg-white rounded-xl shadow-lg border border-red-200">
+                        <h3 class="text-xl font-bold text-gray-800 mb-4">
+                            2. 'पूरब अंग गायकी' शब्द, जिसके साथ स्वर्गीय पंडित छन्नूलाल मिश्र का गहरा संबंध था,
+                            सामान्यतः किससे जुड़ा है:
+                        </h3>
+
+                        <div class="space-y-3 mt-4">
+                            <div class="mcq-option p-3 rounded-lg border-gray-200">A. ग्वालियर घराने की ध्रुपद शैली।
+                            </div>
+                            <div class="mcq-option p-3 rounded-lg border-gray-200">B. मैहर घराने का शास्त्रीय वाद्य
+                                संगीत।</div>
+                            <div class="mcq-option p-3 rounded-lg border-gray-200 bg-green-100 font-bold">C. बनारस घराने
+                                की अर्ध-शास्त्रीय परंपराएँ। <span class="text-green-700">(सही उत्तर)</span></div>
+                            <div class="mcq-option p-3 rounded-lg border-gray-200">D. दिल्ली सल्तनत काल का सूफी भक्ति
+                                संगीत (कव्वाली)।</div>
+                        </div>
+
+                        <div class="mt-6 p-4 bg-yellow-100 border-l-4 border-yellow-500 rounded-lg">
+                            <h5 class="text-lg font-bold text-yellow-800 mb-2">स्पष्टीकरण:</h5>
+                            <p>
+                                <strong>पूरब अंग</strong> (पूर्वी शैली) में <strong>ठुमरी, दादरा, कजरी, चैती और
+                                    होरी</strong> जैसी हल्की/अर्ध-शास्त्रीय शैलियाँ शामिल हैं जो उत्तर प्रदेश के पूर्वी
+                                भाग में, विशेष रूप से <strong>वाराणसी (बनारस घराना)</strong> के आसपास के क्षेत्र में
+                                फली-फूलीं। पंडित छन्नूलाल मिश्र इस परंपरा के अग्रणी प्रवर्तक थे।
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <footer class="text-center mt-12 pt-6 border-t border-gray-300">
+                    <p class="text-gray-600 italic">भारतीय शास्त्रीय संगीत में उनके अमूल्य योगदान के लिए पंडित छन्नूलाल
+                        मिश्र को सादर नमन।</p>
+                </footer>
+
+            </article>
+        </div>
+
+    </main>
+</body>
+
+</html>
