@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="hi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>असम-नागालैंड सीमा संघर्ष: एक यूपीएससी विश्लेषण</title>
+    <style>
+        /* सामान्य शैली और रंग योजना */
+        :root {
+            --primary-color: #ff6f61;
+            /* हल्का लाल-नारंगी */
+            --secondary-color: #6a0572;
+            /* गहरा बैंगनी (लोगो/मुख्य फोकस) */
+            --accent-color: #ffeead;
+            /* हल्का पीला (पृष्ठभूमि) */
+            --text-color: #333333;
+            /* गहरा ग्रे */
+            --light-text-color: #f7f7f7;
+            /* बहुत हल्का ग्रे */
+            --border-color: #cccccc;
+            --mcq-correct: #a2d2ff;
+            /* हल्का नीला */
+            --mcq-wrong: #ffc8dd;
+            /* हल्का गुलाबी */
+            --table-header: #84dccf;
+            /* हल्का नीला-हरा */
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--accent-color);
+            /* हल्का पीला पृष्ठभूमि */
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        /* NavBar */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: var(--primary-color);
+            padding: 10px 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo a {
+            color: var(--secondary-color);
+            font-size: 1.5em;
+            font-weight: bold;
+            text-decoration: none;
+            text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.7);
+        }
+
+        .nav-links {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        .nav-links li a {
+            color: var(--light-text-color);
+            text-decoration: none;
+            padding: 8px 15px;
+            display: block;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .nav-links li a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        /* Mobile Responsive Navigation (Hamburger Menu) */
+        .menu-toggle {
+            display: none;
+            font-size: 1.5em;
+            cursor: pointer;
+            color: var(--light-text-color);
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                position: absolute;
+                top: 50px;
+                left: 0;
+                background-color: var(--primary-color);
+                box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+                z-index: 10;
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .nav-links li {
+                text-align: center;
+                margin: 5px 0;
+            }
+
+            .menu-toggle {
+                display: block;
+            }
+        }
+
+        /* मुख्य सामग्री लेआउट */
+        .container {
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        /* अनुमानित पढ़ने का समय */
+        .read-time {
+            text-align: right;
+            font-size: 0.9em;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+            font-style: italic;
+        }
+
+        /* सामग्री तालिका (Table of Contents - TOC) */
+        .toc {
+            background-color: #f0f0f0;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 8px;
+            border-left: 5px solid var(--secondary-color);
+        }
+
+        .toc h2 {
+            margin-top: 0;
+            color: var(--secondary-color);
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 5px;
+        }
+
+        .toc ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .toc ul li a {
+            text-decoration: none;
+            color: var(--text-color);
+            padding: 5px 0;
+            display: block;
+            transition: color 0.3s;
+        }
+
+        .toc ul li a:hover {
+            color: var(--primary-color);
+            font-weight: bold;
+        }
+
+        /* अनुभाग शीर्षक */
+        h1,
+        h2,
+        h3 {
+            color: var(--secondary-color);
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 5px;
+            margin-top: 30px;
+        }
+
+        /* तालिकाओं के लिए स्टाइल */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        th,
+        td {
+            border: 1px solid var(--border-color);
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: var(--table-header);
+            color: var(--text-color);
+            font-weight: bold;
+        }
+
+        /* पैराग्राफ और एम्फ़ेसिस */
+        em {
+            font-style: italic;
+            color: var(--primary-color);
+        }
+
+        /* MCQ स्टाइल */
+        .mcq-section {
+            padding: 20px;
+            background-color: #f7fff7;
+            border: 1px dashed var(--primary-color);
+            border-radius: 8px;
+            margin-top: 30px;
+        }
+
+        .mcq-question {
+            margin-bottom: 20px;
+            padding: 15px;
+            border: 1px solid var(--border-color);
+            border-radius: 5px;
+            background-color: #e9f7ef;
+        }
+
+        .mcq-question h3 {
+            color: var(--secondary-color);
+            margin-top: 0;
+            padding-bottom: 5px;
+            border-bottom: 1px dashed var(--border-color);
+        }
+
+        .options label {
+            display: block;
+            padding: 10px;
+            margin: 5px 0;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            background-color: #ffffff;
+            border: 1px solid #d0d0d0;
+        }
+
+        .options label:hover {
+            background-color: #f5f5f5;
+        }
+
+        .options input[type="radio"] {
+            margin-right: 10px;
+        }
+
+        /* उत्तर विभाजन के लिए CSS (केवल प्रदर्शन के लिए) */
+        .feedback {
+            margin-top: 10px;
+            font-weight: bold;
+            display: none;
+            /* डिफ़ॉल्ट रूप से छुपाएँ */
+        }
+
+        .correct-answer {
+            background-color: var(--mcq-correct);
+            border: 2px solid darkblue;
+        }
+
+        .explanation {
+            font-size: 0.9em;
+            color: #666;
+            margin-top: 5px;
+            padding: 5px 10px;
+            border-left: 3px solid var(--secondary-color);
+        }
+
+        /* विभाजन रेखा */
+        hr {
+            border: 0;
+            height: 1px;
+            background-color: var(--border-color);
+            margin: 20px 0;
+        }
+
+        /* फुटर (यदि आवश्यक हो) */
+        .footer {
+            text-align: center;
+            padding: 10px;
+            font-size: 0.8em;
+            color: #777;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="logo"><a href="#">असम-नागालैंड संघर्ष</a></div>
+        <ul class="nav-links">
+            <li><a href="../index.html">होम</a></li>
+            <li><a href="#toc">सामग्री तालिका</a></li>
+            <li><a href="#">करेंट अफेयर्स</a></li>
+            <li><a href="#">टेस्ट शृंखला</a></li>
+        </ul>
+        <div class="menu-toggle">&#9776;</div>
+    </nav>
+
+    <div class="container">
+
+        <div class="read-time">
+            अनुमानित पठन समय: ~5 मिनट
+        </div>
+
+        <h1>असम-नागालैंड सीमा पर उपद्रवियों ने 100 घरों में आग लगा दी: यूपीएससी के लिए एक गहन विश्लेषण</h1>
+
+        <p><strong>स्रोत:</strong> द हिंदू | <strong>दिनांक:</strong> 04-10-2025</p>
+
+        <p><em>असम-नागालैंड सीमा पर चल रहे विवाद के बीच हथियारबंद हमलावरों ने 100 घरों में आग लगा दी, जिनमें से
+                ज़्यादातर प्रवासी थे। इस बढ़ते विवाद के बारे में और जानने के लिए क्लिक करें।</em></p>
+
+        <p>गुरुवार रात हथियारबंद उपद्रवियों के एक बड़े समूह ने असम-नागालैंड सीमा के एक विवादित क्षेत्र में लगभग 100 घरों
+            पर हमला किया और उन्हें आग लगा दी।</p>
+
+        <p>पूर्वी असम के गोलाघाट ज़िले के अधिकारियों ने बताया कि कथित तौर पर नागालैंड के उपद्रवियों ने उन घरों में आग
+            लगाने से पहले गोलियां चलाईं और ग्रेनेड फेंके, जो ज़्यादातर प्रवासी मुसलमानों के थे। यह घटना रात 11.45 बजे
+            अंतर-राज्यीय सीमा के बी सेक्टर में हुई।</p>
+
+        <p>प्रभावित ग्रामीणों ने बताया कि उपद्रवियों ने उन्हें बाहर खींचकर उनके घरों में आग लगा दी। एक ग्रामीण ने बताया
+            कि हमलावरों द्वारा हवा में गोलियां चलाने के बाद घबराए लोग सुरक्षित इलाकों में भाग गए।</p>
+
+        <p>सरूपथार विधायक विश्वजीत फुकन ने X पर पोस्ट किया, "मैं असम-नागालैंड सीमा पर नागा उपद्रवियों द्वारा किए गए हमले
+            की कड़ी निंदा करता हूँ और मुख्यमंत्री से सख्त से सख्त कार्रवाई करने का अनुरोध करता हूँ।"</p>
+
+        <h2>सीआरपीएफ तैनात</h2>
+
+        <p>ज़िले के पुलिस अधीक्षक राजेन सिंह सहित वरिष्ठ अधिकारियों ने स्थिति का आकलन करने के लिए इलाके का दौरा किया।
+            केंद्रीय रिजर्व पुलिस बल की 155वीं बटालियन के जवानों को इलाके में तैनात किया गया है।</p>
+
+        <p>असम और नागालैंड के बीच 1960 के दशक से सीमा विवाद चला आ रहा है और सीमा पर संघर्षों में 150 से ज़्यादा लोगों की
+            जान जा चुकी है।</p>
+
+        <hr>
+
+        <div class="toc" id="toc">
+            <h2>सामग्री तालिका</h2>
+            <ul>
+                <li><a href="#upsc-notes">यूपीएससी नोट्स सेक्शन</a></li>
+                <li><a href="#flashpoint">1. मुख्य घटना विश्लेषण (फ्लैशपॉइंट)</a></li>
+                <li><a href="#context">2. लंबे समय से चले आ रहे विवाद का संदर्भ</a></li>
+                <li><a href="#mapping">3. यूपीएससी प्रासंगिकता मानचित्रण (जीएस पेपर)</a></li>
+                <li><a href="#forward">4. आगे का रास्ता (मुख्य परीक्षा के निष्कर्ष के लिए बिंदु)</a></li>
+                <li><a href="#mcq-section">प्रैक्टिस एमसीक्यू</a></li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <h2 id="upsc-notes">यूपीएससी नोट्स सेक्शन</h2>
+        <p>यह यूपीएससी परीक्षा के लिए एक महत्वपूर्ण विषय है, जो <strong>आंतरिक सुरक्षा, संघवाद और सामाजिक न्याय</strong>
+            के अंतर्गत आता है। यह एक सक्रिय संघर्ष क्षेत्र और सीमा विवाद समाधान की विफलता को दर्शाता है।</p>
+
+        <hr>
+
+        <h2 id="flashpoint">असम-नागालैंड अंतर-राज्यीय सीमा संघर्ष</h2>
+
+        <h3>1. मुख्य घटना विश्लेषण (फ्लैशपॉइंट)</h3>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>विवरण</th>
+                    <th>वर्णन</th>
+                    <th>प्रासंगिकता</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>स्थान</strong></td>
+                    <td>बी सेक्टर, <strong>असम</strong> (गोलाघाट जिला) और <strong>नागालैंड</strong> के बीच अंतर-राज्यीय
+                        सीमा।</td>
+                    <td><strong>संघर्ष की भौगोलिक स्थिति</strong> (प्रारंभिक)।</td>
+                </tr>
+                <tr>
+                    <td><strong>कार्रवाई</strong></td>
+                    <td><strong>सशस्त्र बदमाशों</strong> के एक बड़े समूह ने हमला किया और लगभग <strong>100 घरों</strong>
+                        में आग लगा दी।</td>
+                    <td><strong>आंतरिक सुरक्षा</strong> का खतरा, <strong>कानून और व्यवस्था</strong> की विफलता।</td>
+                </tr>
+                <tr>
+                    <td><strong>विधि</strong></td>
+                    <td><strong>बंदूकों और हथगोले</strong> का प्रयोग; कथित तौर पर घरों में आग लगाने से पहले ग्रामीणों को
+                        घसीटकर बाहर निकाला गया।</td>
+                    <td>हिंसा में वृद्धि; लक्षित हमला (प्रारंभिक और मुख्य परीक्षा GS-III)।</td>
+                </tr>
+                <tr>
+                    <td><strong>लक्षित जनसंख्या</strong></td>
+                    <td>घर <strong>ज़्यादातर प्रवासी मुसलमानों के थे</strong>।</td>
+                    <td><strong>सामाजिक न्याय/सांप्रदायिक दृष्टिकोण</strong> (GS-I/II): सीमा विवादों में कमज़ोर
+                        अल्पसंख्यक समूहों की सुरक्षा के मुद्दे उठाता है।</td>
+                </tr>
+                <tr>
+                    <td><strong>प्रतिक्रिया</strong></td>
+                    <td><strong>CRPF (केंद्रीय रिज़र्व पुलिस बल)</strong> तैनात किया गया। वरिष्ठ अधिकारियों (SP) ने
+                        क्षेत्र का दौरा किया।</td>
+                    <td>अंतर-राज्यीय विवादों के प्रबंधन में <strong>केंद्रीय सशस्त्र पुलिस बलों (CAPFs)</strong> की
+                        भूमिका (GS-III)।</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <hr>
+
+        <h3 id="context">2. लंबे समय से चले आ रहे विवाद का संदर्भ</h3>
+
+        <p>हालिया हिंसा एक गहरे, लंबे संघर्ष का प्रकटीकरण है जिसके लिए इसकी ऐतिहासिक जड़ों को जानना आवश्यक है।</p>
+
+        <ul>
+            <li><strong>अवधि:</strong> सीमा विवाद <strong>लंबे समय से चला आ रहा है, 1960 के दशक से मौजूद है</strong>।
+            </li>
+            <li><strong>गंभीरता:</strong> इस सीमा पर संघर्ष ऐतिहासिक रूप से अत्यधिक हिंसक रहे हैं, जिनमें समय के साथ
+                <strong>150 से ज़्यादा लोगों की जान</strong> गई है।
+            </li>
+            <li><strong>सीमा निर्धारण:</strong> मुख्य मुद्दा 804 किलोमीटर लंबी सीमा की <strong>विवादित और विवादास्पद
+                    प्रकृति</strong> है, जिसमें नागालैंड ने 1925 की उस अधिसूचना को अस्वीकार कर दिया था जिसमें असम के साथ
+                उसकी सीमा का निर्धारण किया गया था।</li>
+            <li><strong>क्षेत्र वर्गीकरण:</strong> विवादित क्षेत्रों को अक्सर सेक्टरों (जैसे उल्लिखित 'बी सेक्टर') में
+                विभाजित किया जाता है, जहाँ किसी भी राज्य के प्रशासन का नियंत्रण और उपस्थिति अस्थिर या विवादित होती है।
+            </li>
+        </ul>
+
+        <hr>
+
+        <h3 id="mapping">3. यूपीएससी प्रासंगिकता मानचित्रण (जीएस पेपर)</h3>
+
+        <p>यह घटना समसामयिक घटनाओं को मुख्य पाठ्यक्रम विषयों से जोड़ने के लिए आवश्यक है:</p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>जीएस पेपर</th>
+                    <th>विषय क्षेत्र</th>
+                    <th>मुख्य परीक्षा के उत्तर के लिए मुख्य फोकस</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>जीएस-II (राजनीति/शासन)</strong></td>
+                    <td><strong>केंद्र-राज्य संबंध और संघवाद</strong></td>
+                    <td><strong>अंतर-राज्यीय सीमा विवाद:</strong> घटक राज्यों के बीच शांति बनाए रखने में चुनौतियां;
+                        विवाद समाधान के लिए संवैधानिक तंत्र (जैसे, अनुच्छेद 263 या सुप्रीम कोर्ट का हस्तक्षेप) अक्सर
+                        हिंसा द्वारा दरकिनार कर दिए जाते हैं।</td>
+                </tr>
+                <tr>
+                    <td><strong>जीएस-III (आंतरिक सुरक्षा)</strong></td>
+                    <td><strong>आंतरिक सुरक्षा चुनौतियां</strong></td>
+                    <td><strong>केंद्रीय बलों की भूमिका:</strong> सीआरपीएफ की तैनाती संघर्ष क्षेत्रों में <strong>तटस्थ
+                            बलों</strong> की आवश्यकता पर प्रकाश डालती है जहां राज्य पुलिस बलों को पक्षपातपूर्ण माना जा
+                        सकता है। यह सीमा प्रबंधन और आंतरिक शांति बनाए रखने में चुनौतियों से संबंधित है।</td>
+                </tr>
+                <tr>
+                    <td><strong>जीएस-I (समाज)</strong></td>
+                    <td><strong>सामाजिक मुद्दे और प्रवासन</strong></td>
+                    <td><strong>प्रवासी/कमजोर समूहों की सुरक्षा:</strong> प्रवासी मुसलमानों को निशाना बनाना क्षेत्रीय
+                        विवादों में फंसे अल्पसंख्यक समूहों की रक्षा करने में राज्य तंत्र की विफलता और विस्थापन में जातीय
+                        संघर्ष की भूमिका के बारे में सवाल उठाता है।</td>
+                </tr>
+                <tr>
+                    <td><strong>GS-IV (नैतिकता)</strong></td>
+                    <td><strong>नैतिक शासन</strong></td>
+                    <td><strong>जवाबदेही:</strong> राज्य सरकारों और केंद्रीय सुरक्षा बलों की नैतिक ज़िम्मेदारी है कि वे
+                        सभी नागरिकों की सुरक्षा करें, खासकर अशांत क्षेत्रों में, चाहे उनकी जातीय या धार्मिक पहचान कुछ भी
+                        हो।</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <hr>
+
+        <h3 id="forward">4. आगे का रास्ता (मुख्य परीक्षा के निष्कर्ष के लिए बिंदु)</h3>
+
+        <p>अपने मुख्य उत्तरों में, आपको संघर्ष से आगे बढ़ने के लिए हमेशा संस्थागत समाधान सुझाने चाहिए:</p>
+
+        <ol>
+            <li><strong>न्यायिक/संस्थागत समाधान:</strong> <strong>सर्वोच्च न्यायालय</strong> या एक समर्पित सीमा आयोग के
+                माध्यम से सीमा विवाद के निपटारे में तेज़ी लाना।</li>
+            <li><strong>सीएपीएफ की बढ़ी हुई उपस्थिति:</strong> समाधान होने तक पूरी तरह से केंद्रीय बलों द्वारा निगरानी
+                किए जाने वाले <strong>तटस्थ बफर ज़ोन</strong> का निर्माण।</li>
+            <li><strong>द्विपक्षीय तंत्र:</strong> नियमित, उच्च-स्तरीय <strong>मुख्यमंत्री स्तर की वार्ता</strong> और
+                स्थानीय <strong>संयुक्त प्रशासनिक समितियाँ</strong> जमीनी मुद्दों का प्रबंधन करने और तत्काल भड़कने से
+                रोकने के लिए।</li>
+            <li><strong>सामाजिक-आर्थिक विकास:</strong> स्थानीय शिकायतों और अक्सर हिंसा से जुड़ी अवैध गतिविधियों पर
+                निर्भरता को कम करने के लिए उपेक्षित विवादित क्षेत्रों पर विकास प्रयासों पर ध्यान केंद्रित करना।</li>
+        </ol>
+
+        <hr>
+
+        <div class="mcq-section" id="mcq-section">
+            <h2>प्रैक्टिस एमसीक्यू (MCQ)</h2>
+            <p><strong>निर्देश:</strong> निम्नलिखित में से सबसे उपयुक्त उत्तर का चयन करें।</p>
+
+            <form>
+                <div class="mcq-question">
+                    <h3>Q1. असम-नागालैंड सीमा विवाद के संदर्भ में, निम्नलिखित कथनों पर विचार कीजिए:</h3>
+                    <ol type="i">
+                        <li>यह विवाद 1960 के दशक से चला आ रहा है, जिसमें ऐतिहासिक रूप से 150 से ज़्यादा लोगों की जान जा
+                            चुकी है।</li>
+                        <li>नागालैंड 1925 की उस अधिसूचना को अस्वीकार करता है जिसमें असम के साथ उसकी सीमा का निर्धारण
+                            किया गया था।</li>
+                        <li>हालिया हमले का स्थान पूर्वी असम का गोलाघाट जिला और 'बी सेक्टर' है।</li>
+                    </ol>
+                    <p>उपर्युक्त कथनों में से कौन-सा/से सही है/हैं?</p>
+                    <div class="options">
+                        <label class="q1-opt"><input type="radio" name="q1" value="a"> (a) केवल (i) और (ii)</label>
+                        <label class="q1-opt correct-answer"><input type="radio" name="q1" value="b"> (b) (i), (ii) और
+                            (iii) तीनों</label>
+                        <label class="q1-opt"><input type="radio" name="q1" value="c"> (c) केवल (iii)</label>
+                        <label class="q1-opt"><input type="radio" name="q1" value="d"> (d) केवल (ii) और (iii)</label>
+                    </div>
+                    <div class="explanation">
+                        <strong>सही उत्तर:</strong> (b) <br>
+                        <strong>व्याख्या:</strong> दिए गए लेख के अनुसार, तीनों कथन (i), (ii) और (iii) विवाद की अवधि,
+                        सीमा निर्धारण पर नागालैंड की आपत्ति और हमले के सटीक स्थान (गोलाघाट जिला और 'बी सेक्टर') के
+                        संदर्भ में सही हैं।
+                    </div>
+                </div>
+
+                <div class="mcq-question">
+                    <h3>Q2. हालिया असम-नागालैंड अंतर-राज्यीय सीमा संघर्ष की घटना के संदर्भ में, निम्नलिखित में से कौन-सा
+                        यूपीएससी के 'आंतरिक सुरक्षा' (जीएस-III) विषय के लिए सबसे प्रासंगिक फोकस बिंदु है?</h3>
+                    <div class="options">
+                        <label class="q2-opt"><input type="radio" name="q2" value="a"> (a) संघवाद के सिद्धांत और
+                            केंद्र-राज्य वित्तीय संबंध।</label>
+                        <label class="q2-opt"><input type="radio" name="q2" value="b"> (b) विवादित क्षेत्रों में
+                            अल्पसंख्यक समूहों के लिए सामाजिक न्याय।</label>
+                        <label class="q2-opt correct-answer"><input type="radio" name="q2" value="c"> (c) अंतर-राज्यीय
+                            संघर्षों के प्रबंधन में केंद्रीय सशस्त्र पुलिस बलों (CAPFs) की भूमिका।</label>
+                        <label class="q2-opt"><input type="radio" name="q2" value="d"> (d) मुख्यमंत्री स्तर की वार्ता के
+                            लिए संवैधानिक प्रावधान।</label>
+                    </div>
+                    <div class="explanation">
+                        <strong>सही उत्तर:</strong> (c) <br>
+                        <strong>व्याख्या:</strong> सीआरपीएफ की तैनाती (CAPF) सीधे <strong>आंतरिक सुरक्षा</strong>
+                        (जीएस-III) और सीमा प्रबंधन में केंद्रीय बलों की भूमिका से संबंधित है, जैसा कि प्रासंगिकता
+                        मानचित्रण में बताया गया है। विकल्प (a), (b), और (d) क्रमशः जीएस-II, जीएस-I/II, और जीएस-II से
+                        अधिक संबंधित हैं।
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <hr>
+
+        <div class="footer">
+            <p>© 2025 यूपीएससी अध्ययन | सर्वाधिकार सुरक्षित।</p>
+        </div>
+
+    </div>
+
+    <script>
+        // Hamburger Menu Toggle
+        document.querySelector('.menu-toggle').addEventListener('click', function () {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+
+        // MCQ Submission/Validation Logic (Simplified for static HTML display)
+        // In a real application, this would involve server-side validation or more complex JS.
+        // For this task, we will simply reveal the correct answer and explanation.
+
+        document.querySelectorAll('.mcq-question').forEach(question => {
+            const options = question.querySelectorAll('.options input[type="radio"]');
+            options.forEach(option => {
+                option.addEventListener('change', function () {
+                    // Reveal the explanation and correct answer styling on any choice (for study mode)
+                    question.querySelector('.explanation').style.display = 'block';
+                    question.querySelector('.correct-answer').style.border = '2px solid darkgreen';
+                    question.querySelector('.correct-answer').style.fontWeight = '<strong>bold</strong>';
+                });
+            });
+            // Initial hide of explanations
+            question.querySelector('.explanation').style.display = 'none';
+        });
+
+    </script>
+
+</body>
+
+</html>

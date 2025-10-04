@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="hi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ऑपरेशन सिंदूर के बाद समुद्री संकेत: भारत-पाक तनाव का विश्लेषण</title>
+    <meta name="description"
+        content="मई 2025 के गतिरोध के बाद भारत और पाकिस्तान के बीच तनाव समुद्री क्षेत्र की ओर स्थानांतरित हो रहा है। नौसेना की क्षमता, बाहरी हस्तक्षेप और बदलते सिद्धांत का विश्लेषण।">
+    <meta name="keywords"
+        content="ऑपरेशन सिंदूर, भारत पाकिस्तान नौसेना, समुद्री तनाव, सर क्रीक, आईएनएस निस्तार, पीएनएस मंग्रो, हिंद-प्रशांत, PLAN">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-teal': '#06b6d4', /* Main accent color */
+                        'accent-orange': '#f97316', /* Orange for highlights/attention */
+                        'light-blue': '#f0f9ff', /* Light background */
+                        'light-teal': '#ccfbf1',
+                        'light-orange': '#ffedd5',
+                        'deep-blue': '#1e3a8a',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Styling for the MCQ options */
+        .mcq-option input[type="radio"] {
+            display: none;
+        }
+
+        .mcq-option label {
+            display: block;
+            cursor: pointer;
+            padding: 1rem;
+            border-radius: 0.75rem;
+            border: 2px solid transparent;
+            transition: all 0.2s;
+            background-color: white;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.06);
+        }
+
+        .mcq-option label:hover {
+            background-color: #f7f7f7;
+        }
+
+        /* Style for the selected (checked) option */
+        .mcq-option input[type="radio"]:checked+label {
+            border-color: #06b6d4;
+            background-color: #e0f2f7;
+            /* Light blue/teal background when checked */
+            font-weight: 600;
+        }
+
+        .mcq-question-block .correct label {
+            border-color: #10b981 !important;
+            /* Green border for correct answer */
+            background-color: #d1fae5 !important;
+            /* Light green background */
+        }
+
+        .mcq-question-block .incorrect input[type="radio"]:checked+label {
+            border-color: #ef4444 !important;
+            /* Red border for incorrect answer */
+            background-color: #fee2e2 !important;
+            /* Light red background */
+        }
+
+        /* Custom style for sticky TOC on desktop */
+        @media (min-width: 1024px) {
+            .toc-desktop-sticky {
+                position: -webkit-sticky;
+                position: sticky;
+                top: 5rem;
+                max-height: calc(100vh - 8rem);
+                overflow-y: auto;
+            }
+        }
+
+        /* Custom table styling for better look */
+        .styled-table thead tr {
+            background-color: #06b6d4;
+            color: #ffffff;
+            text-align: left;
+        }
+
+        .styled-table th,
+        .styled-table td {
+            padding: 12px 15px;
+        }
+
+        .styled-table tbody tr {
+            border-bottom: 1px solid #dddddd;
+        }
+
+        .styled-table tbody tr:nth-of-type(even) {
+            background-color: #f3f3f3;
+        }
+
+        .styled-table tbody tr:last-of-type {
+            border-bottom: 2px solid #06b6d4;
+        }
+    </style>
+</head>
+
+<body class="bg-light-blue text-gray-800 font-sans">
+
+    <!-- Navigation Bar -->
+    <nav class="sticky top-0 z-50 bg-white shadow-xl p-4 border-b-4 border-primary-teal">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="text-2xl font-extrabold text-deep-blue tracking-tight">
+                <span class="bg-primary-teal text-white px-2 py-1 rounded-lg mr-1 inline-block">स</span>मुद्री संकेत
+            </div>
+            <div class="hidden md:flex space-x-6 text-gray-600 font-medium">
+                <a href="../index.html" class="hover:text-primary-teal transition duration-150 p-2 rounded-lg">होम</a>
+                <a href="#" class="hover:text-primary-teal transition duration-150 p-2 rounded-lg">भू-राजनीति</a>
+                <a href="#" class="hover:text-primary-teal transition duration-150 p-2 rounded-lg">सुरक्षा</a>
+                <a href="#" class="hover:text-primary-teal transition duration-150 p-2 rounded-lg">विदेश नीति</a>
+            </div>
+            <button class="md:hidden text-gray-600 hover:text-primary-teal focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
+                    </path>
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Main Content Layout -->
+    <main class="max-w-7xl mx-auto p-4 md:p-8">
+        <div class="lg:grid lg:grid-cols-12 lg:gap-10">
+
+            <!-- Article Content -->
+            <article class="lg:col-span-8 space-y-8">
+                <header class="pb-4 border-b border-gray-300">
+                    <p class="text-sm text-gray-500 mb-1">
+                        सोर्स: द हिंदू | <strong>04 अक्टूबर, 2025</strong>
+                    </p>
+                    <h1 class="text-4xl sm:text-5xl font-extrabold leading-tight text-gray-900">
+                        <strong>ऑपरेशन सिंदूर</strong> के बाद समुद्री संकेत: भारत और पाकिस्तान के बीच तनाव के दौर में,
+                        सीमाएँ हवाई क्षेत्र से समुद्र की ओर स्थानांतरित हो रही हैं
+                    </h1>
+                    <div class="mt-4 flex items-center space-x-4 text-gray-600">
+                        <span class="text-sm"><strong>हमारे सुरक्षा संवाददाता</strong> द्वारा</span>
+                        <span class="text-sm text-primary-teal font-bold p-1 rounded-lg bg-light-teal/50">
+                            अनुमानित पठन समय: 6 मिनट
+                        </span>
+                    </div>
+                </header>
+
+                <section id="article-main" class="space-y-6">
+
+                    <a id="section-1-overview" class="anchor-link"></a>
+                    <p
+                        class="text-xl font-serif leading-relaxed bg-light-orange/50 p-4 rounded-xl border-l-4 border-accent-orange shadow-md">
+                        <em>मई 2025 के बाद भारत और पाकिस्तान के बीच तनाव के दौर में, सीमाएँ हवाई क्षेत्र से समुद्र की ओर
+                            स्थानांतरित हो रही हैं</em>
+                        <br>
+                        मई 2025 में पाकिस्तान के साथ गतिरोध की परिणति हवाई क्षेत्र में हुई, लेकिन बाद के घटनाक्रमों ने
+                        ध्यान समुद्री क्षेत्र की ओर मोड़ दिया है, जैसा कि भारत और पाकिस्तान दोनों की प्रमुख नौसैनिक
+                        गतिविधियों, क्षमता प्रदर्शनों और आधिकारिक बयानों से देखा जा सकता है, जहाँ दोनों नौसेनाएँ अपनी
+                        स्थिति में सुधार कर रही हैं और संभावित तनाव के लिए तत्परता का संकेत दे रही हैं।
+                    </p>
+
+                    <a id="section-2-indian-response" class="anchor-link"></a>
+                    <h2 class="text-3xl font-bold pt-4 text-primary-teal">
+                        भारत की प्रतिक्रिया और क्षमता निर्माण
+                    </h2>
+                    <p class="text-lg leading-relaxed">
+                        2 अक्टूबर को, रक्षा मंत्री राजनाथ सिंह ने 1965 के युद्ध का हवाला देते हुए पाकिस्तान को "करारा
+                        जवाब" देने की चेतावनी दी, जो सर क्रीक क्षेत्र में किसी भी दुस्साहस की स्थिति में उसके "इतिहास और
+                        भूगोल" को बदल सकता है - पाकिस्तान इस क्षेत्र में सैन्य बुनियादी ढाँचा का विस्तार कर रहा है, और
+                        यह सिलसिला 2023 से जारी है। ऐतिहासिक रूप से, पाकिस्तान को इस क्षेत्र में सैन्य बढ़त हासिल रही
+                        है। यह अगस्त में नौसेना प्रमुख एडमिरल दिनेश त्रिपाठी द्वारा दिए गए उस बयान के बाद आया है जिसमें
+                        उन्होंने कहा था कि भविष्य में किसी भी संघर्ष में पाकिस्तान के खिलाफ कार्रवाई करने वाली पहली
+                        नौसेना होगी। <strong>ऑपरेशन सिंदूर</strong> को नौसेना की अग्रिम निवारक स्थिति के लिए डिज़ाइन
+                        किया गया बताया गया था, जो मई में गतिरोध के दौरान की तुलना में 'अधिक सक्रिय भूमिका' के लिए
+                        तत्परता को दर्शाता है। पहले स्वदेशी रूप से डिज़ाइन किए गए डाइविंग सपोर्ट पोत, <strong>आईएनएस
+                            निस्तार</strong>, का शामिल होना और दक्षिण चीन सागर में फिलीपींस के साथ भारत का पहला संयुक्त
+                        गश्त, क्षमता निर्माण और व्यापक हिंद-प्रशांत रणनीति के साथ संरेखण, दोनों को दर्शाता है, जहाँ
+                        कराची और ग्वादर में चीनी उपस्थिति एक प्रमुख कारक बनी हुई है।
+                    </p>
+
+                    <a id="section-3-pak-signaling" class="anchor-link"></a>
+                    <h2 class="text-3xl font-bold pt-4 text-primary-teal">
+                        पाकिस्तान की समुद्री सिग्नलिंग
+                    </h2>
+                    <p class="text-lg leading-relaxed">
+                        पाकिस्तान ने अपने समुद्री सिग्नलिंग को भी मजबूत किया है। मई में, उसने भेद्यता को कम करने के लिए
+                        कराची से ग्वादर तक अपनी संपत्तियाँ तैनात कर दीं। तब से, उसने चीन निर्मित हैंगर-श्रेणी की
+                        पनडुब्बी, <strong>पीएनएस मैंग्रो</strong>, का प्रक्षेपण किया है और घरेलू रूप से विकसित
+                        <strong>पी282 जहाज-प्रक्षेपित बैलिस्टिक मिसाइल</strong> का प्रदर्शन किया है। इसके बाद के महीनों
+                        में, कई बार ओवरलैपिंग NOTAM, मिसाइल परीक्षण और लाइव-फायर अभ्यास भी हुए हैं – कभी-कभी केवल 60
+                        समुद्री मील की दूरी पर – जिससे अरब सागर में अलर्ट और परिचालन घर्षण का एक चक्र बना रहा।
+                    </p>
+
+                    <a id="section-4-strategic-importance" class="anchor-link"></a>
+                    <h2 class="text-3xl font-bold pt-4 text-primary-teal">
+                        नौसेना सिग्नलिंग का रणनीतिक महत्व
+                    </h2>
+                    <p class="text-lg leading-relaxed">
+                        <strong>ऑपरेशन सिंदूर</strong> के बाद नौसेना की गतिविधियों में वृद्धि एक बुनियादी सवाल उठाती है
+                        कि क्या ये समानांतर अभ्यास केवल नियमित गतिविधियाँ हैं या नौसेना क्षेत्र में भारत-पाकिस्तान के
+                        निवारक समीकरण में बदलाव का संकेत देने वाला एक सुनियोजित बल प्रदर्शन है। इसका उत्तर इसलिए
+                        महत्वपूर्ण है क्योंकि वर्तमान संकट, हालाँकि हवाई क्षेत्र में हल हो गया है, समुद्र में रणनीतिक
+                        अनिश्चितता का एक अवशेष छोड़ गया है। ऐसा प्रतीत होता है कि भारत और पाकिस्तान अपनी नौसैनिक स्थिति
+                        को नए सिरे से तैयार कर रहे हैं, न केवल निवारक के लिए, बल्कि इस संभावना के लिए भी कि समुद्री
+                        क्षेत्र में टकराव का अगला चरण सामने आ सकता है।
+                    </p>
+
+                    <p class="text-lg leading-relaxed">
+                        इस बदलाव को क्षमताओं के व्यापक संतुलन के संदर्भ में भी समझा जाना चाहिए। वायु क्षेत्र की तरह,
+                        समुद्री संतुलन भी अब 1999 के कारगिल युद्ध जैसी विषमताओं या 1971 में भारत की निर्णायक श्रेष्ठता
+                        जैसा नहीं माना जा सकता। भारत संख्यात्मक और भौगोलिक बढ़त बनाए हुए है, लेकिन उसका नौसैनिक बेड़ा
+                        <strong>पुराना होता जा रहा है</strong>, जिससे आधुनिकीकरण की चिंताएँ बढ़ रही हैं। पाकिस्तान
+                        लगातार अपनी क्षमताओं का विस्तार कर रहा है, चीन द्वारा डिज़ाइन की गई पनडुब्बियों और तुर्की से
+                        <strong>बाबर श्रेणी</strong> के युद्धपोतों को शामिल कर रहा है। उन्नत रडार, इलेक्ट्रॉनिक युद्धक
+                        उपकरण और बहुमुखी वायु-रोधी तथा सतह-रोधी हथियारों के साथ, ये सुविधाएँ महत्वपूर्ण हैं।
+                    </p>
+
+                    <a id="section-5-three-reasons" class="anchor-link"></a>
+                    <h2 class="text-3xl font-bold pt-4 text-primary-teal">
+                        तीन महत्वपूर्ण आयाम
+                    </h2>
+
+                    <h3 class="text-2xl font-semibold pt-4 text-deep-blue">1. तनाव नियंत्रण की समस्या</h3>
+                    <p class="text-lg leading-relaxed">
+                        पहला, समुद्र में तनाव नियंत्रण कहीं अधिक कठिन है। हवाई झड़पों के विपरीत, जिन्हें पहले से तय करके
+                        पीछे हटा जा सकता है, किसी भी नौसैनिक मुठभेड़ (जहाज-पर-जहाज या जहाज-पर-जमीन) में युद्ध की दहलीज
+                        पार करने का जोखिम ज़्यादा होता है। <strong>1971 की यादें</strong>, जब भारतीय नौसैनिक अभियानों ने
+                        संघर्ष को निर्णायक रूप से मोड़ दिया था, अतिरिक्त संवेदनशीलता पैदा करती हैं - यहाँ तक कि सीमित
+                        समुद्री कार्रवाई भी पाकिस्तान की रणनीतिक कल्पना में अस्तित्वगत जोखिम से जुड़ी है। तब से,
+                        पाकिस्तान की मुख्य समुद्री चिंता भारतीय नौसैनिक अभियानों के प्रति अपनी भेद्यता की पुनरावृत्ति को
+                        रोकना रही है, जो उसकी <strong>एंटी-एक्सेस/एरिया-डिनायल (A2/AD)</strong> क्षमताओं की खोज और
+                        निषेध-द्वारा-निवारण पर केंद्रित सिद्धांत के क्रमिक रूप से स्पष्टीकरण में दिखाई देती है।
+                    </p>
+                    <p class="text-lg leading-relaxed">
+                        चीन-पाकिस्तान आर्थिक गलियारे के ढाँचे के तहत ग्वादर के विकास को भी इसी निवारण तर्क के अंतर्गत
+                        समझा जाना चाहिए। पाकिस्तान के निर्णयकर्ता लंबे समय से कहते रहे हैं कि ग्वादर की उत्पत्ति बीजिंग
+                        की बजाय इस्लामाबाद की अपनी रणनीतिक गणनाओं में निहित है। इस प्रकार, ग्वादर और कराची केवल परिचालन
+                        या आर्थिक केंद्र ही नहीं, बल्कि मनोवैज्ञानिक दबाव बिंदु भी प्रतीत होते हैं। इस पृष्ठभूमि में,
+                        यदि भविष्य में भारतीय नौसेना को प्रत्यक्ष अभियानों में शामिल किया जाता है, तो युद्ध के अलावा
+                        किसी भी प्रकार के दबाव की गुंजाइश बहुत कम हो जाएगी, क्योंकि भारत को <strong>पीपुल्स लिबरेशन
+                            आर्मी नेवी (PLAN)</strong> की उपस्थिति और उसके हितों पर भी विचार करना होगा।
+                    </p>
+
+                    <h3 class="text-2xl font-semibold pt-4 text-deep-blue">2. बाहरी आयाम</h3>
+                    <p class="text-lg leading-relaxed">
+                        दूसरा, दोनों पक्षों द्वारा समानांतर अभ्यास और मिसाइल परीक्षण, केवल कुछेक अभ्यासों से कहीं अधिक
+                        को दर्शाते हैं, जो तत्परता प्रदर्शित करने और विरोधी के योजना चक्र को जटिल बनाने के जानबूझकर किए
+                        गए प्रयासों की ओर इशारा करते हैं। भारत के लिए, यह पैटर्न दबाव बनाए रखने और संकट के बाद की कहानी
+                        को आकार देने के प्रयास का संकेत दे सकता है, जो सिंदूर के बाद के परिणामों को जिस तरह से देखा जा
+                        रहा है, उससे बेचैनी को दर्शाता है। पाकिस्तान ने इस बात पर ज़ोर देने की कोशिश की है कि उसकी
+                        नौसेना अब 1971 जैसी कमज़ोर ताकत नहीं रही और वह समुद्री क्षेत्र में दबाव को रोकने और भारतीय
+                        परिचालन योजना को जटिल बनाने के लिए तैयारी का संकेत दे रही है। भारत अपनी क्षमता और जोखिम स्वीकार
+                        करने के स्पष्ट प्रदर्शन के माध्यम से पहल को बनाए रखने पर आमादा दिखाई देता है। यह समानता दर्शाती
+                        है कि दोनों पक्ष तैयारी का संकेत दे सकते हैं और समुद्र में भविष्य के "संघर्ष-स्वरूप" को आकार
+                        देने में भी सक्रिय रूप से निवेश कर सकते हैं।
+                    </p>
+
+                    <h3 class="text-2xl font-semibold pt-4 text-deep-blue">3. क्षमता और भू-राजनीति</h3>
+                    <p class="text-lg leading-relaxed">
+                        तीसरा, बाहरी आयाम तीखा होता जा रहा है। कराची और ग्वादर बंदरगाहों में चीन की दखलंदाज़ी, संकट के
+                        समय पाकिस्तान को <strong>PLAN</strong> के समर्थन का डर पैदा करके भारत के कथित प्रभुत्व को कमज़ोर
+                        कर रही है। तुर्की की उभरती भूमिका, भले ही आपूर्ति या प्रशिक्षण तक सीमित हो, अनिश्चितता की एक और
+                        परत जोड़ती है।
+                    </p>
+                    <p class="text-lg leading-relaxed">
+                        ये बदलाव इसलिए मायने रखते हैं क्योंकि ये दबाव और प्रतिरोध के तरीके को बदलते हैं। बताया गया है कि
+                        भारतीय तैनाती ने पाकिस्तान को कराची से अपना बेड़ा हटाने पर मजबूर कर दिया था, जिससे प्रभुत्व का
+                        प्रदर्शन हुआ और तनाव बढ़ाए बिना मनोवैज्ञानिक नुकसान हुआ, लेकिन अब यह रणनीति काम नहीं कर सकती।
+                        साथ ही, हाल ही में हुई ख़रीद और हाई-प्रोफ़ाइल इंडक्शन के अनुमानों ने भविष्य में एक ज़्यादा
+                        प्रमुख नौसैनिक भूमिका की उम्मीदों को हवा दी है, जिससे एक दुविधा पैदा हो रही है - दबाव का विकल्प
+                        भले ही कम हो रहा हो, लेकिन इसका इस्तेमाल करने का दबाव बढ़ रहा है।
+                    </p>
+
+                    <a id="section-6-conclusion" class="anchor-link"></a>
+                    <h2 class="text-3xl font-bold pt-4 text-primary-teal">
+                        व्यापक दृष्टिकोण और निष्कर्ष
+                    </h2>
+                    <p class="text-lg leading-relaxed">
+                        अंत में, रणनीतिक भटकाव की समस्या भी हो सकती है। ऐसा प्रतीत होता है कि दोनों सेनाएँ पिछले संकटों
+                        के उदाहरणों पर काम कर रही हैं, जबकि हाइपरसोनिक मिसाइलों से लेकर ड्रोन तक की नई क्षमताएँ इस
+                        उतार-चढ़ाव को बदल रही हैं। यदि संकटकालीन निर्णय लेने की प्रक्रिया पुरानी मान्यताओं पर ही टिकी
+                        रहती है, तो गलत आकलन का जोखिम बढ़ जाता है। वास्तव में, समुद्री क्षेत्र वह स्थान बनता जा रहा है
+                        जहाँ इस संज्ञानात्मक अंतर का परीक्षण होगा।
+                    </p>
+                    <p class="text-lg leading-relaxed">
+                        अगले भारत-पाकिस्तान संकट का नौसैनिक पहलू सीमित रहने की संभावना नहीं है। दोनों पक्ष न केवल मंचों
+                        का परीक्षण कर रहे होंगे, बल्कि समुद्र में उन सीमाओं का संकेत भी दे रहे होंगे, जहाँ गलत आकलन के
+                        जोखिम वायु क्षेत्र से गुणात्मक रूप से भिन्न हैं। हवाई झड़पों के विपरीत, नौसैनिक तैनाती निरंतर
+                        बनी रहती है, जो इरादे और संकल्प की धारणाओं को आकार देती है। फिर भी, विरोधाभासी रूप से, यही
+                        पैटर्न स्थिरीकरण प्रभाव भी ला सकता है। एक-दूसरे की रणनीति, युद्धाभ्यास और क्षमता के नए
+                        अनुप्रयोगों का परीक्षण और अवलोकन करके, दोनों नौसेनाएँ आपसी जागरूकता का निर्माण कर रही हैं जो समय
+                        के साथ युद्ध के कोहरे को कम कर सकती है। इस लिहाज से, भारतीय नौसेना अपने पाकिस्तानी समकक्ष के
+                        बारे में उस तरह की जानकारी हासिल कर रही है जो वायुसेना <strong>ऑपरेशन सिंदूर</strong> से पहले
+                        शायद हासिल नहीं कर पाई थी।
+                    </p>
+                    <p class="text-lg leading-relaxed">
+                        भारत के लिए चुनौती यह तय करने की होगी कि समुद्री क्षेत्र को शुरुआती संकेत देने के क्षेत्र के रूप
+                        में इस्तेमाल किया जाए या इसे तनाव बढ़ाने के एक आरक्षित क्षेत्र के रूप में रोका जाए। स्टील्थ
+                        फ्रिगेट का जलावतरण, व्यापक हिंद-प्रशांत क्षेत्र में संयुक्त गश्त पर ज़ोर, और स्वदेशी क्षमता के
+                        लिए प्रयास, यह संकेत देते हैं कि नई दिल्ली दोनों संभावनाओं के लिए तैयारी कर रही है: एक विस्तारित
+                        क्षेत्रीय भूमिका और संकट-विशिष्ट दबाव। ऐसे में सवाल यह है कि क्या नौसेना को पहले की तुलना में
+                        अग्रिम मोर्चे के अभियानों में पहले शामिल किया जाएगा।
+                    </p>
+                </section>
+
+                <section id="upsc-notes"
+                    class="mt-12 p-6 bg-white rounded-2xl shadow-xl border-t-8 border-accent-orange">
+                    <a id="notes-title" class="anchor-link"></a>
+                    <h3 class="text-3xl font-bold mb-6 text-gray-900">
+                        UPSC CSE नोट्स: समुद्री सिग्नलिंग का विश्लेषण
+                    </h3>
+
+                    <a id="notes-context" class="anchor-link"></a>
+                    <h4 class="text-2xl font-semibold mt-6 mb-3 text-primary-teal">
+                        संदर्भ
+                    </h4>
+                    <ul class="list-disc list-outside ml-6 space-y-2 text-lg">
+                        <li>मई 2025 के भारत-पाकिस्तान गतिरोध के बाद, ध्यान <strong>वायु क्षेत्र</strong> से हटकर
+                            <strong>समुद्री क्षेत्र</strong> पर केंद्रित हो रहा है।</li>
+                        <li><strong>ऑपरेशन सिंदूर</strong> ने भारत की अग्रिम नौसैनिक प्रतिरोधात्मक स्थिति को उजागर किया।
+                        </li>
+                        <li>दोनों देश उन्नत सिग्नलिंग, अभ्यास और क्षमता उन्नयन के साथ अपनी नौसैनिक रणनीतियों को पुनः
+                            संतुलित कर रहे हैं।</li>
+                    </ul>
+
+                    <a id="notes-table" class="anchor-link"></a>
+                    <h4 class="text-2xl font-semibold mt-8 mb-3 text-primary-teal">
+                        प्रमुख घटनाक्रम: भारत बनाम पाकिस्तान
+                    </h4>
+                    <div class="overflow-x-auto rounded-lg shadow-md mb-6">
+                        <table class="min-w-full divide-y divide-gray-200 styled-table">
+                            <thead>
+                                <tr>
+                                    <th class="px-6 py-3 text-xs font-medium uppercase tracking-wider">पहलू</th>
+                                    <th class="px-6 py-3 text-xs font-medium uppercase tracking-wider">भारत</th>
+                                    <th class="px-6 py-3 text-xs font-medium uppercase tracking-wider">पाकिस्तान</th>
+                                </tr>
+                            </thead>
+                            <tbody class="bg-white divide-y divide-gray-200">
+                                <tr>
+                                    <td class="px-6 py-4 whitespace-normal font-medium"><strong>रणनीतिक स्थिति</strong>
+                                    </td>
+                                    <td class="px-6 py-4 whitespace-normal"><strong>ऑपरेशन सिंदूर</strong>: अग्रिम
+                                        प्रतिरोध; नौसेना सक्रिय भूमिका के लिए तैयार (एडमिरल त्रिपाठी)</td>
+                                    <td class="px-6 py-4 whitespace-normal">सर क्रीक में विस्तारित बुनियादी ढाँचा;
+                                        ग्वादर में परिसंपत्तियों का वितरण (मई 2025)</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-6 py-4 whitespace-normal font-medium"><strong>नए शामिल किए गए
+                                            जहाज</strong></td>
+                                    <td class="px-6 py-4 whitespace-normal"><strong>आईएनएस निस्तार</strong> (गोताखोरी
+                                        सहायता पोत), स्टील्थ फ्रिगेट, हिंद-प्रशांत संयुक्त गश्त (फिलीपींस)</td>
+                                    <td class="px-6 py-4 whitespace-normal"><strong>पीएनएस मंग्रो</strong>
+                                        (हैंगोर-श्रेणी की पनडुब्बी), <strong>पी282</strong> जहाज से प्रक्षेपित बैलिस्टिक
+                                        मिसाइल, <strong>बाबर-श्रेणी</strong> के कोरवेट</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-6 py-4 whitespace-normal font-medium"><strong>बाहरी संबंध</strong>
+                                    </td>
+                                    <td class="px-6 py-4 whitespace-normal">हिंद-प्रशांत रणनीति के साथ संरेखण;
+                                        ग्वादर/कराची में <strong>पीएलएएन</strong> पर चिंताएँ</td>
+                                    <td class="px-6 py-4 whitespace-normal">चीनी डिज़ाइन की गई पनडुब्बियाँ,
+                                        <strong>पीएलएएन</strong> की उपस्थिति, तुर्की का समर्थन (प्रशिक्षण/आपूर्ति)</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <a id="notes-analysis" class="anchor-link"></a>
+                    <h4 class="text-2xl font-semibold mt-8 mb-3 text-primary-teal">
+                        सामरिक महत्व
+                    </h4>
+                    <ul class="list-disc list-outside ml-6 space-y-4 text-lg">
+                        <li><strong>1. बढ़ते तनाव पर नियंत्रण:</strong> नौसेना की संलग्नता से नियंत्रण से बाहर तेज़ी से
+                            तनाव बढ़ने का ख़तरा है। <strong>1971 के युद्ध</strong> की यादें: भारतीय नौसेना निर्णायक
+                            &rarr; पाकिस्तान समुद्री कमज़ोरियों के प्रति संवेदनशील। पाकिस्तान भारतीय दबाव को रोकने के
+                            लिए <strong>A2/AD (एंटी-एक्सेस/एरिया-डिनायल)</strong> में निवेश कर रहा है।</li>
+                        <li><strong>2. बाहरी आयाम:</strong> कराची और ग्वादर में चीन की <strong>PLAN</strong> उपस्थिति
+                            भारतीय प्रभुत्व को जटिल बनाती है। तुर्की की रक्षा आपूर्ति पाकिस्तान के नौसैनिक विकल्पों को
+                            और मज़बूत करती है। भारत हिंद-प्रशांत साझेदारी, जैसे कि फिलीपींस की गश्त, के माध्यम से संतुलन
+                            बनाता है।</li>
+                        <li><strong>3. क्षमता संतुलन:</strong> भारत: संख्यात्मक और भौगोलिक बढ़त, लेकिन <strong>पुराना
+                                बेड़ा, आधुनिकीकरण में पिछड़ापन</strong>। पाकिस्तान: तेज़ी से विस्तार &rarr; हैंगर श्रेणी
+                            की पनडुब्बियाँ, <strong>बाबर कोरवेट</strong>, EW सुइट। <strong>अंतर कम होता जा रहा
+                                है</strong>: भारत का निर्विवाद समुद्री प्रभुत्व अब सुनिश्चित नहीं है।</li>
+                    </ul>
+
+                    <a id="notes-challenges" class="anchor-link"></a>
+                    <h4 class="text-2xl font-semibold mt-8 mb-3 text-primary-teal">
+                        भारत के लिए चुनौतियाँ
+                    </h4>
+                    <div class="overflow-x-auto rounded-lg shadow-md mb-6">
+                        <table class="min-w-full divide-y divide-gray-200 styled-table">
+                            <thead>
+                                <tr>
+                                    <th class="px-6 py-3 text-xs font-medium uppercase tracking-wider">चुनौती</th>
+                                    <th class="px-6 py-3 text-xs font-medium uppercase tracking-wider">निहितार्थ</th>
+                                </tr>
+                            </thead>
+                            <tbody class="bg-white divide-y divide-gray-200">
+                                <tr>
+                                    <td class="px-6 py-4 whitespace-normal font-medium"><strong>पुराना बेड़ा</strong>
+                                    </td>
+                                    <td class="px-6 py-4 whitespace-normal">दीर्घकालिक निवारक विश्वसनीयता को कम करता है।
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="px-6 py-4 whitespace-normal font-medium"><strong>दोहरा मोर्चा (पाकिस्तान
+                                            + PLAN)</strong></td>
+                                    <td class="px-6 py-4 whitespace-normal">दोतरफा समुद्री चुनौती का जोखिम।</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-6 py-4 whitespace-normal font-medium"><strong>बढ़ते खतरे</strong></td>
+                                    <td class="px-6 py-4 whitespace-normal">हवाई घटनाओं की तुलना में नौसैनिक झड़पों को
+                                        कम करना अधिक कठिन।</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <a id="notes-policy" class="anchor-link"></a>
+                    <h4 class="text-2xl font-semibold mt-8 mb-3 text-primary-teal">
+                        नीतिगत निहितार्थ
+                    </h4>
+                    <ul class="list-disc list-outside ml-6 space-y-2 text-lg">
+                        <li><strong>आधुनिकीकरण को बढ़ावा</strong>: नौसेना के बेड़े के नवीनीकरण, भूमिगत प्रभुत्व और
+                            साइबर-इलेक्ट्रॉनिक युद्ध को प्राथमिकता दें।</li>
+                        <li><strong>बढ़ाव सिद्धांत</strong>: नौसेना के संकेत बनाम वास्तविक संलग्नता के लिए सीमाएँ
+                            निर्धारित करें।</li>
+                        <li><strong>बाह्य संतुलन</strong>: हिंद-प्रशांत साझेदारी के माध्यम से प्रति-योजना उपस्थिति।</li>
+                        <li><strong>एकीकृत निवारण</strong>: संयुक्त संकट प्रबंधन कार्ययोजना के लिए नौसेना को वायु सेना
+                            और थल सेना के साथ समन्वयित करें।</li>
+                    </ul>
+                </section>
+
+
+                <section id="mcq-quiz" class="mt-12">
+                    <a id="mcq" class="anchor-link"></a>
+                    <div class="bg-light-orange/30 p-6 rounded-2xl border-t-8 border-accent-orange shadow-xl">
+                        <h2 class="text-3xl font-bold mb-6 text-gray-900">
+                            <strong>अपने ज्ञान की जाँच करें: त्वरित प्रश्नोत्तरी</strong>
+                        </h2>
+                        <form id="mcq-form" class="space-y-6">
+
+                            <!-- Question 1 - Correct Answer: B -->
+                            <div class="mcq-question-block" data-correct-answer="B">
+                                <p class="mb-3 text-xl font-semibold">1. <strong>ऑपरेशन सिंदूर</strong> का प्राथमिक फोकस
+                                    क्या था?</p>
+                                <div class="space-y-3">
+                                    <div class="mcq-option">
+                                        <input type="radio" id="q1a" name="q1" value="A">
+                                        <label for="q1a">A. सर क्रीक क्षेत्र में सैन्य बुनियादी ढाँचे का विस्तार
+                                            करना।</label>
+                                    </div>
+                                    <div class="mcq-option">
+                                        <input type="radio" id="q1b" name="q1" value="B">
+                                        <label for="q1b">B. नौसेना की अग्रिम निवारक स्थिति को एक अधिक सक्रिय भूमिका के
+                                            लिए डिज़ाइन करना।</label>
+                                    </div>
+                                    <div class="mcq-option">
+                                        <input type="radio" id="q1c" name="q1" value="C">
+                                        <label for="q1c">C. कराची और ग्वादर बंदरगाहों में PLAN की उपस्थिति को सीधे
+                                            चुनौती देना।</label>
+                                    </div>
+                                    <div class="mcq-option">
+                                        <input type="radio" id="q1d" name="q1" value="D">
+                                        <label for="q1d">D. भारत का फिलीपींस के साथ पहला संयुक्त गश्त।</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Question 2 - Correct Answer: B -->
+                            <div class="mcq-question-block" data-correct-answer="B">
+                                <p class="mb-3 text-xl font-semibold">2. मई 2025 के बाद पाकिस्तान द्वारा शुरू की गई चीन
+                                    निर्मित हैंगर-श्रेणी की पनडुब्बी का क्या नाम है?</p>
+                                <div class="space-y-3">
+                                    <div class="mcq-option">
+                                        <input type="radio" id="q2a" name="q2" value="A">
+                                        <label for="q2a">A. बाबर श्रेणी का युद्धपोत</label>
+                                    </div>
+                                    <div class="mcq-option">
+                                        <input type="radio" id="q2b" name="q2" value="B">
+                                        <label for="q2b">B. पीएनएस मैंग्रो</label>
+                                    </div>
+                                    <div class="mcq-option">
+                                        <input type="radio" id="q2c" name="q2" value="C">
+                                        <label for="q2c">C. आईएनएस निस्तार</label>
+                                    </div>
+                                    <div class="mcq-option">
+                                        <input type="radio" id="q2d" name="q2" value="D">
+                                        <label for="q2d">D. पी282 बैलिस्टिक मिसाइल</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Question 3 - Correct Answer: C -->
+                            <div class="mcq-question-block" data-correct-answer="C">
+                                <p class="mb-3 text-xl font-semibold">3. विश्लेषण के अनुसार, समुद्री क्षेत्र में तनाव
+                                    नियंत्रण हवाई झड़पों की तुलना में अधिक कठिन क्यों है?</p>
+                                <div class="space-y-3">
+                                    <div class="mcq-option">
+                                        <input type="radio" id="q3a" name="q3" value="A">
+                                        <label for="q3a">A. भारतीय नौसेना का बेड़ा पुराना होता जा रहा है।</label>
+                                    </div>
+                                    <div class="mcq-option">
+                                        <input type="radio" id="q3b" name="q3" value="B">
+                                        <label for="q3b">B. चीन-पाकिस्तान आर्थिक गलियारा (CPEC) कारक।</label>
+                                    </div>
+                                    <div class="mcq-option">
+                                        <input type="radio" id="q3c" name="q3" value="C">
+                                        <label for="q3c">C. किसी भी नौसैनिक मुठभेड़ में युद्ध की दहलीज पार करने का जोखिम
+                                            अधिक होता है।</label>
+                                    </div>
+                                    <div class="mcq-option">
+                                        <input type="radio" id="q3d" name="q3" value="D">
+                                        <label for="q3d">D. दोनों पक्षों के बीच पारस्परिक जागरूकता में कमी।</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Question 4 - Correct Answer: A -->
+                            <div class="mcq-question-block" data-correct-answer="A">
+                                <p class="mb-3 text-xl font-semibold">4. क्षमता संतुलन के संदर्भ में, भारत के लिए कौन सी
+                                    प्रमुख चिंता उजागर की गई है?</p>
+                                <div class="space-y-3">
+                                    <div class="mcq-option">
+                                        <input type="radio" id="q4a" name="q4" value="A">
+                                        <label for="q4a">A. नौसैनिक बेड़े का पुराना होना और आधुनिकीकरण में
+                                            पिछड़ापन।</label>
+                                    </div>
+                                    <div class="mcq-option">
+                                        <input type="radio" id="q4b" name="q4" value="B">
+                                        <label for="q4b">B. हिंद महासागर में निर्विवाद प्रभुत्व का नुकसान।</label>
+                                    </div>
+                                    <div class="mcq-option">
+                                        <input type="radio" id="q4c" name="q4" value="C">
+                                        <label for="q4c">C. तुर्की से पाकिस्तानी नौसेना को लगातार समर्थन।</label>
+                                    </div>
+                                    <div class="mcq-option">
+                                        <input type="radio" id="q4d" name="q4" value="D">
+                                        <label for="q4d">D. हाइपरसोनिक मिसाइलों और ड्रोन जैसी नई तकनीकों का
+                                            अभाव।</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button type="button" onclick="checkAnswers()"
+                                class="w-full bg-primary-teal hover:bg-deep-blue text-white font-bold py-3 px-4 rounded-xl transition duration-300 shadow-lg mt-6">
+                                उत्तर जांचें
+                            </button>
+                            <div id="score-output"
+                                class="text-center mt-4 text-xl font-bold hidden p-3 rounded-lg bg-light-teal"></div>
+
+                            <!-- Section for showing correct answers, hidden by default -->
+                            <div class="mt-8 pt-4 border-t border-gray-400">
+                                <button type="button" onclick="toggleAnswers()"
+                                    class="text-primary-teal hover:text-deep-blue font-bold flex items-center">
+                                    <span id="toggle-icon">▼</span>&nbsp; सही उत्तर देखें
+                                </button>
+                                <div id="correct-answers-list" class="mt-4 p-4 bg-light-teal/50 rounded-lg hidden">
+                                    <p class="font-bold mb-2">सही उत्तर:</p>
+                                    <ul class="list-disc list-inside space-y-2">
+                                        <li>प्रश्न 1: <strong>B. नौसेना की अग्रिम निवारक स्थिति को एक अधिक सक्रिय भूमिका
+                                                के लिए डिज़ाइन करना।</strong></li>
+                                        <li>प्रश्न 2: <strong>B. पीएनएस मैंग्रो</strong></li>
+                                        <li>प्रश्न 3: <strong>C. किसी भी नौसैनिक मुठभेड़ में युद्ध की दहलीज पार करने का
+                                                जोखिम अधिक होता है।</strong></li>
+                                        <li>प्रश्न 4: <strong>A. नौसैनिक बेड़े का पुराना होना और आधुनिकीकरण में
+                                                पिछड़ापन।</strong></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </section>
+
+            </article>
+
+            <!-- Table of Contents (TOC) - Sticky on Desktop -->
+            <aside class="lg:col-span-4 mt-8 lg:mt-0">
+                <div id="toc"
+                    class="p-6 bg-white rounded-2xl shadow-xl border-t-4 border-accent-orange toc-desktop-sticky">
+                    <h3 class="text-2xl font-bold mb-4 text-gray-900 border-b pb-2">
+                        विषय सूची
+                    </h3>
+                    <ul class="space-y-3 text-lg">
+                        <li>
+                            <a href="#section-1-overview"
+                                class="text-gray-600 hover:text-primary-teal transition duration-150 block p-2 rounded-lg hover:bg-light-gray-blue/50">
+                                सारांश: तनाव का समुद्री बदलाव
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#section-2-indian-response"
+                                class="text-gray-600 hover:text-primary-teal transition duration-150 block p-2 rounded-lg hover:bg-light-gray-blue/50">
+                                भारत की प्रतिक्रिया और क्षमता
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#section-3-pak-signaling"
+                                class="text-gray-600 hover:text-primary-teal transition duration-150 block p-2 rounded-lg hover:bg-light-gray-blue/50">
+                                पाकिस्तान की समुद्री सिग्नलिंग
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#section-5-three-reasons"
+                                class="text-gray-600 hover:text-primary-teal transition duration-150 block p-2 rounded-lg hover:bg-light-gray-blue/50">
+                                तीन महत्वपूर्ण आयाम
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#notes-title"
+                                class="text-gray-800 font-bold hover:text-primary-teal transition duration-150 block p-2 rounded-lg hover:bg-light-teal">
+                                UPSC CSE नोट्स: विश्लेषण
+                            </a>
+                            <ul class="ml-4 mt-1 space-y-1 text-base">
+                                <li><a href="#notes-table" class="text-gray-600 hover:text-primary-teal block">प्रमुख
+                                        घटनाक्रम</a></li>
+                                <li><a href="#notes-analysis" class="text-gray-600 hover:text-primary-teal block">सामरिक
+                                        महत्व</a></li>
+                                <li><a href="#notes-challenges" class="text-gray-600 hover:text-primary-teal block">भारत
+                                        के लिए चुनौतियाँ</a></li>
+                                <li><a href="#notes-policy" class="text-gray-600 hover:text-primary-teal block">नीतिगत
+                                        निहितार्थ</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#mcq"
+                                class="text-gray-600 hover:text-primary-teal transition duration-150 block p-2 rounded-lg hover:bg-light-gray-blue/50">
+                                त्वरित प्रश्नोत्तरी
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <!-- JavaScript for MCQ Logic -->
+    <script>
+        function checkAnswers() {
+            const form = document.getElementById('mcq-form');
+            const scoreOutput = document.getElementById('score-output');
+            const questionBlocks = form.querySelectorAll('.mcq-question-block');
+            let score = 0;
+            const totalQuestions = questionBlocks.length;
+
+            questionBlocks.forEach(questionBlock => {
+                const correctValue = questionBlock.getAttribute('data-correct-answer');
+                const selectedRadio = questionBlock.querySelector('input[type="radio"]:checked');
+                const options = questionBlock.querySelectorAll('.mcq-option');
+
+                // 1. Reset all feedback styles and inline styles
+                options.forEach(option => {
+                    option.classList.remove('correct', 'incorrect');
+                    // Reset inline styles added for correctness visibility
+                    option.querySelector('label').style.border = "";
+                    option.querySelector('label').style.backgroundColor = "";
+                    option.querySelector('label').style.fontWeight = "";
+                });
+
+                if (selectedRadio) {
+                    if (selectedRadio.value === correctValue) {
+                        score++;
+                        selectedRadio.closest('.mcq-option').classList.add('correct');
+                    } else {
+                        selectedRadio.closest('.mcq-option').classList.add('incorrect');
+                        // Highlight the actual correct answer (using custom styling since it's not checked)
+                        const actualCorrectOption = questionBlock.querySelector(`input[type="radio"][value="${correctValue}"]`);
+                        if (actualCorrectOption) {
+                            const correctOptionDiv = actualCorrectOption.closest('.mcq-option');
+                            if (correctOptionDiv) {
+                                correctOptionDiv.classList.add('correct');
+                                // Ensure the label of the correct one is visibly highlighted even if not checked
+                                actualCorrectOption.nextElementSibling.style.border = "2px solid #10b981";
+                                actualCorrectOption.nextElementSibling.style.backgroundColor = "#d1fae5";
+                                actualCorrectOption.nextElementSibling.style.fontWeight = "600";
+                            }
+                        }
+                    }
+                } else {
+                    // If unanswered, highlight the correct one
+                    const actualCorrectOption = questionBlock.querySelector(`input[type="radio"][value="${correctValue}"]`);
+                    if (actualCorrectOption) {
+                        const correctOptionDiv = actualCorrectOption.closest('.mcq-option');
+                        if (correctOptionDiv) {
+                            correctOptionDiv.classList.add('correct');
+                            actualCorrectOption.nextElementSibling.style.border = "2px solid #10b981";
+                            actualCorrectOption.nextElementSibling.style.backgroundColor = "#d1fae5";
+                            actualCorrectOption.nextElementSibling.style.fontWeight = "600";
+                        }
+                    }
+                }
+            });
+
+            scoreOutput.textContent = `आपने ${totalQuestions} में से ${score} अंक प्राप्त किए।`;
+            scoreOutput.classList.remove('hidden');
+
+            // Simple message box (instead of alert)
+            const resultBox = document.createElement('div');
+            resultBox.className = 'fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 p-6 bg-primary-teal text-white rounded-lg shadow-2xl z-[100] text-center transition-opacity duration-300';
+            resultBox.innerHTML = `<p class="text-2xl font-bold mb-2">प्रश्नोत्तरी पूरी हुई!</p><p>आपने <strong>${score}/${totalQuestions}</strong> अंक प्राप्त किए।</p><button onclick="window.location.reload()" class="mt-4 bg-white text-primary-teal py-1 px-3 rounded-full font-semibold hover:bg-gray-100">पुनः प्रयास करें</button>`;
+            document.body.appendChild(resultBox);
+        }
+
+        function toggleAnswers() {
+            const answersList = document.getElementById('correct-answers-list');
+            const toggleIcon = document.getElementById('toggle-icon');
+            if (answersList.classList.contains('hidden')) {
+                answersList.classList.remove('hidden');
+                toggleIcon.textContent = '▲';
+            } else {
+                answersList.classList.add('hidden');
+                toggleIcon.textContent = '▼';
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="hi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>कालेश्वरम परियोजना की मरम्मत</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom styles for Inter font and general theme */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7fbfd;
+            /* Very light, colorful background */
+            color: #1f2937;
+        }
+
+        /* Styling for the content card */
+        .content-card {
+            background-color: #ffffff;
+            border-left: 6px solid #3b82f6;
+            /* Blue accent border */
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        /* MCQ Style */
+        .mcq-option {
+            cursor: pointer;
+            padding: 1rem;
+            margin-bottom: 0.75rem;
+            border-radius: 0.5rem;
+            border: 2px solid #e5e7eb;
+            transition: all 0.2s;
+            background-color: #f9fafb;
+        }
+
+        .mcq-option:hover {
+            border-color: #60a5fa;
+            /* Blue on hover */
+            background-color: #eff6ff;
+        }
+
+        .mcq-option.correct {
+            background-color: #d1fae5;
+            /* Light green for correct */
+            border-color: #10b981;
+            /* Green border */
+        }
+
+        .mcq-option.incorrect {
+            background-color: #fee2e2;
+            /* Light red for incorrect */
+            border-color: #ef4444;
+            /* Red border */
+        }
+
+        /* Anchor link styling */
+        .anchor-link {
+            color: #3b82f6;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .anchor-link:hover {
+            color: #1d4ed8;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body class="antialiased">
+
+    <!-- Navbar -->
+    <nav class="bg-indigo-600 shadow-lg sticky top-0 z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <span class="text-white text-2xl font-bold tracking-wider">कालेश्वरम बैराजों की मरम्मत</span>
+                </div>
+                <!-- Nav Links (hidden on mobile, visible on desktop) -->
+                <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
+                    <a href="../index.html"
+                        class="text-white hover:bg-indigo-700 px-3 py-2 rounded-md text-sm font-medium transition duration-150">होम</a>
+                    <a href="#"
+                        class="text-indigo-200 hover:bg-indigo-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition duration-150">राजनीति</a>
+                    <a href="#"
+                        class="text-indigo-200 hover:bg-indigo-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition duration-150">विकास</a>
+                    <a href="#"
+                        class="text-indigo-200 hover:bg-indigo-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition duration-150">संपर्क</a>
+                </div>
+                <!-- Mobile Menu Button (placeholder for functionality) -->
+                <div class="-mr-2 flex sm:hidden">
+                    <button
+                        class="inline-flex items-center justify-center p-2 rounded-md text-indigo-200 hover:text-white hover:bg-indigo-700 focus:outline-none transition duration-150">
+                        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16m-7 6h7" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content Container -->
+    <main class="max-w-4xl mx-auto p-4 sm:p-6 lg:p-8">
+
+        <!-- Header Section -->
+        <header class="mb-8 p-4 bg-white rounded-xl shadow-md border-b-4 border-teal-500">
+            <p class="text-sm text-gray-500 font-semibold mb-2">स्रोत: The Hindu | दिनांक: 04-10-2025</p>
+            <h1 class="text-4xl sm:text-5xl font-extrabold text-gray-900 mb-4 leading-tight">तेलंगाना सरकार कालेश्वरम
+                बैराजों की मरम्मत करेगी</h1>
+            <div class="flex items-center text-sm text-teal-600 font-medium space-x-4">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l3 3a1 1 0 001.414-1.414L11 9.586V6z"
+                        clip-rule="evenodd" />
+                </svg>
+                <span>अनुमानित पठन समय: <strong>1 मिनट</strong></span>
+            </div>
+        </header>
+
+        <!-- Sidebar / Table of Contents -->
+        <div class="bg-yellow-100 p-5 rounded-xl mb-8 border-l-4 border-yellow-500">
+            <h2 class="text-xl font-bold text-yellow-800 mb-3" id="toc">सामग्री तालिका (Table of Contents)</h2>
+            <nav class="space-y-2">
+                <p><a href="#article-summary" class="anchor-link">समाचार सारांश</a></p>
+                <p><a href="#mcq-quiz" class="anchor-link">बहुविकल्पीय प्रश्न (MCQs)</a></p>
+                <p><a href="#source-details" class="anchor-link">स्रोत विवरण</a></p>
+            </nav>
+        </div>
+
+        <!-- Article Content -->
+        <section id="article-summary" class="mb-10 content-card p-6 sm:p-8">
+            <h2 class="text-3xl font-bold text-indigo-700 mb-4">समाचार सारांश</h2>
+            <p class="text-lg leading-relaxed text-gray-700">
+                कालेश्वरम परियोजना के बैराजों की संरचनात्मक क्षमता को लेकर दो साल से चल रहे राजनीतिक और प्रशासनिक विवाद
+                के बाद, तेलंगाना सरकार ने राष्ट्रीय बांध सुरक्षा प्राधिकरण के सुझावों के आधार पर तीनों बैराजों की मरम्मत
+                करने का फैसला किया है।
+            </p>
+            <p class="mt-4 text-lg leading-relaxed text-gray-700">
+                सरकार ने मेदिगड्डा, अन्नाराम और सुंडिला बैराजों के पुनर्वास और जीर्णोद्धार डिज़ाइन तैयार करने के लिए
+                डिज़ाइन एजेंसियों से रुचि पत्र आमंत्रित किए हैं।
+            </p>
+        </section>
+
+        <!-- MCQ Quiz Section -->
+        <section id="mcq-quiz" class="mb-10 content-card p-6 sm:p-8">
+            <h2 class="text-3xl font-bold text-indigo-700 mb-6">बहुविकल्पीय प्रश्न (MCQs)</h2>
+
+            <div class="space-y-8" id="quiz-container">
+                <!-- Question 1 -->
+                <div class="bg-white p-5 rounded-lg shadow-inner">
+                    <p class="font-semibold text-xl mb-4 text-gray-800">1. कालेश्वरम परियोजना के बैराजों की मरम्मत का
+                        फैसला किस राज्य सरकार ने लिया है?</p>
+                    <div class="space-y-3" data-correct-option="c">
+                        <div class="mcq-option" onclick="checkAnswer(this)">
+                            (a) आंध्र प्रदेश
+                        </div>
+                        <div class="mcq-option" onclick="checkAnswer(this)">
+                            (b) कर्नाटक
+                        </div>
+                        <div class="mcq-option" onclick="checkAnswer(this)">
+                            (c) <strong>तेलंगाना</strong>
+                        </div>
+                        <div class="mcq-option" onclick="checkAnswer(this)">
+                            (d) महाराष्ट्र
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Question 2 -->
+                <div class="bg-white p-5 rounded-lg shadow-inner">
+                    <p class="font-semibold text-xl mb-4 text-gray-800">2. बैराजों की मरम्मत का निर्णय किस प्राधिकरण के
+                        सुझावों पर आधारित है?</p>
+                    <div class="space-y-3" data-correct-option="b">
+                        <div class="mcq-option" onclick="checkAnswer(this)">
+                            (a) केंद्रीय जल आयोग (CWC)
+                        </div>
+                        <div class="mcq-option" onclick="checkAnswer(this)">
+                            (b) <strong>राष्ट्रीय बांध सुरक्षा प्राधिकरण</strong>
+                        </div>
+                        <div class="mcq-option" onclick="checkAnswer(this)">
+                            (c) राज्य सिंचाई विभाग
+                        </div>
+                        <div class="mcq-option" onclick="checkAnswer(this)">
+                            (d) पर्यावरण मंत्रालय
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Question 3 -->
+                <div class="bg-white p-5 rounded-lg shadow-inner">
+                    <p class="font-semibold text-xl mb-4 text-gray-800">3. निम्नलिखित में से कौन-सा बैराज मरम्मत के लिए
+                        उल्लिखित तीनों बैराजों में शामिल है?</p>
+                    <div class="space-y-3" data-correct-option="a">
+                        <div class="mcq-option" onclick="checkAnswer(this)">
+                            (a) <strong>मेदिगड्डा</strong>
+                        </div>
+                        <div class="mcq-option" onclick="checkAnswer(this)">
+                            (b) पोलावरम
+                        </div>
+                        <div class="mcq-option" onclick="checkAnswer(this)">
+                            (c) भद्रा
+                        </div>
+                        <div class="mcq-option" onclick="checkAnswer(this)">
+                            (d) कृष्णा
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Custom Message Box for Feedback -->
+            <div id="feedback-message" class="mt-8 p-4 rounded-lg text-center font-bold hidden transition duration-300">
+            </div>
+
+        </section>
+
+        <!-- Source Details -->
+        <section id="source-details" class="content-card p-6 sm:p-8 bg-gray-100">
+            <h2 class="text-3xl font-bold text-indigo-700 mb-4">स्रोत विवरण</h2>
+            <p class="text-gray-700"><strong>स्रोत:</strong> The Hindu</p>
+            <p class="text-gray-700"><strong>दिनांक:</strong> 04-10-2025</p>
+            <p class="text-gray-700"><strong>विषय:</strong> जल संसाधन, सरकारी नीतियां</p>
+        </section>
+
+    </main>
+
+    <!-- Footer (Placeholder) -->
+    <footer class="bg-indigo-600 mt-10 p-4 text-center text-white text-sm">
+        <p>© 2025 समाचार | सभी अधिकार सुरक्षित।</p>
+    </footer>
+
+    <!-- JavaScript for MCQ functionality -->
+    <script>
+        // Function to convert base64 to ArrayBuffer (for potential future API use, though not needed here)
+        function base64ToArrayBuffer(base64) {
+            const binaryString = atob(base64);
+            const len = binaryString.length;
+            const bytes = new Uint8Array(len);
+            for (let i = 0; i < len; i++) {
+                bytes[i] = binaryString.charCodeAt(i);
+            }
+            return bytes.buffer;
+        }
+
+        // Global variables (Required for the collaborative environment)
+        const appId = typeof __app_id !== 'undefined' ? __app_id : 'default-app-id';
+        const apiKey = "";
+        const feedbackMessage = document.getElementById('feedback-message');
+
+        /**
+         * Handles the click event for an MCQ option, checks the answer, and provides feedback.
+         * @param {HTMLElement} element - The clicked div element (the option).
+         */
+        function checkAnswer(element) {
+            // Get the parent container of the options
+            const questionContainer = element.parentElement;
+            // Get the correct option letter ('a', 'b', 'c', or 'd')
+            const correctOption = questionContainer.getAttribute('data-correct-option');
+            // Get all options within this question
+            const allOptions = questionContainer.querySelectorAll('.mcq-option');
+
+            // Find the clicked option's letter (first character of the text content)
+            const clickedOptionText = element.textContent.trim();
+            const clickedOptionLetter = clickedOptionText.toLowerCase().charAt(1);
+
+            // Prevent re-clicking after an answer is set (optional, but good practice)
+            if (questionContainer.getAttribute('data-answered') === 'true') {
+                showMessage('आपने इस प्रश्न का उत्तर पहले ही दे दिया है।', 'bg-yellow-200 text-yellow-800');
+                return;
+            }
+
+            // Set the question as answered
+            questionContainer.setAttribute('data-answered', 'true');
+
+            // Logic to check and highlight
+            allOptions.forEach(option => {
+                const optionText = option.textContent.trim();
+                const optionLetter = optionText.toLowerCase().charAt(1);
+
+                // Disable clicking on all options in this question
+                option.onclick = null;
+
+                // Highlight the correct answer in green
+                if (optionLetter === correctOption) {
+                    option.classList.add('correct');
+                }
+
+                // Highlight the user's selected answer
+                if (option === element) {
+                    if (clickedOptionLetter === correctOption) {
+                        // Correct selection
+                        showMessage('सही उत्तर! बहुत बढ़िया।', 'bg-green-200 text-green-800');
+                    } else {
+                        // Incorrect selection
+                        option.classList.add('incorrect');
+                        showMessage('गलत उत्तर। सही विकल्प को हरे रंग में हाइलाइट किया गया है।', 'bg-red-200 text-red-800');
+                    }
+                }
+            });
+        }
+
+        /**
+         * Displays a temporary message to the user (instead of alert()).
+         * @param {string} message - The message to display.
+         * @param {string} classes - Tailwind classes for styling (e.g., 'bg-green-200 text-green-800').
+         */
+        function showMessage(message, classes) {
+            // Reset previous state
+            feedbackMessage.className = `mt-8 p-4 rounded-lg text-center font-bold hidden transition duration-300 ${classes}`;
+            feedbackMessage.textContent = message;
+
+            // Show the message
+            feedbackMessage.classList.remove('hidden');
+
+            // Hide the message after 4 seconds
+            setTimeout(() => {
+                feedbackMessage.classList.add('hidden');
+            }, 4000);
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="hi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>घरेलू निवेश में वृद्धि: भारत की आर्थिक जीवंतता और विदेशी संशय का विश्लेषण</title>
+    <meta name="description"
+        content="वित्त वर्ष 2026 की पहली छमाही में भारत के निवेश रुझानों का गहरा विश्लेषण। जानें क्यों घरेलू कंपनियाँ आशावादी हैं, जबकि विदेशी निवेश 5 साल के निचले स्तर पर है।">
+    <meta name="keywords"
+        content="घरेलू निवेश, विदेशी निवेश, एफडीआई, भारतीय अर्थव्यवस्था, विनिर्माण, जीएसटी कटौती, पूंजीगत व्यय">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-teal': '#06b6d4', /* Cyan/Teal for main accent */
+                        'accent-yellow': '#fbbf24', /* Amber for highlights */
+                        'light-gray-blue': '#f0f9ff', /* Light background */
+                        'light-teal': '#ccfbf1',
+                        'light-rose': '#ffe4e6',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Styling for the MCQ options */
+        .mcq-option input[type="radio"] {
+            display: none;
+        }
+
+        .mcq-option label {
+            display: block;
+            cursor: pointer;
+            padding: 1rem;
+            border-radius: 0.75rem;
+            border: 2px solid transparent;
+            transition: all 0.2s;
+            background-color: white;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.06);
+        }
+
+        .mcq-option label:hover {
+            background-color: #f7f7f7;
+        }
+
+        /* Style for the selected (checked) option */
+        .mcq-option input[type="radio"]:checked+label {
+            border-color: #06b6d4;
+            background-color: #e0f2f7;
+            /* Light blue/teal background when checked */
+            font-weight: 600;
+        }
+
+        .mcq-question-block .correct label {
+            border-color: #10b981 !important;
+            /* Green border for correct answer */
+            background-color: #d1fae5 !important;
+            /* Light green background */
+        }
+
+        .mcq-question-block .incorrect input[type="radio"]:checked+label {
+            border-color: #ef4444 !important;
+            /* Red border for incorrect answer */
+            background-color: #fee2e2 !important;
+            /* Light red background */
+        }
+
+        /* Custom style for sticky TOC on desktop */
+        @media (min-width: 1024px) {
+            .toc-desktop-sticky {
+                position: -webkit-sticky;
+                position: sticky;
+                top: 5rem;
+                max-height: calc(100vh - 8rem);
+                overflow-y: auto;
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-light-gray-blue text-gray-800 font-sans">
+
+    <!-- Navigation Bar -->
+    <nav class="sticky top-0 z-50 bg-white shadow-lg p-4 border-b-4 border-primary-teal">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="text-2xl font-extrabold text-primary-teal tracking-tight">
+                <span class="bg-accent-yellow px-2 py-1 rounded-lg mr-1 inline-block">आ</span>र्थिक विश्लेषण
+            </div>
+            <div class="hidden md:flex space-x-6 text-gray-600 font-medium">
+                <a href="../index.html" class="hover:text-primary-teal transition duration-150 p-2 rounded-lg">होम</a>
+                <a href="#" class="hover:text-primary-teal transition duration-150 p-2 rounded-lg">बाज़ार</a>
+                <a href="#" class="hover:text-primary-teal transition duration-150 p-2 rounded-lg">अर्थशास्त्र</a>
+                <a href="#" class="hover:text-primary-teal transition duration-150 p-2 rounded-lg">नीति</a>
+            </div>
+            <button class="md:hidden text-gray-600 hover:text-primary-teal focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
+                    </path>
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Main Content Layout -->
+    <main class="max-w-7xl mx-auto p-4 md:p-8">
+        <div class="lg:grid lg:grid-cols-12 lg:gap-10">
+
+            <!-- Article Content -->
+            <article class="lg:col-span-8 space-y-8">
+                <header class="pb-4 border-b border-gray-300">
+                    <p class="text-sm text-gray-500 mb-1">
+                        सोर्स: द हिंदू | <strong>10 अप्रैल, 2025</strong>
+                    </p>
+                    <h1 class="text-4xl sm:text-5xl font-extrabold leading-tight text-gray-900">
+                        <strong>घरेलू जीवंतता:</strong> भारतीय कंपनियाँ विदेशी निवेशकों की तुलना में भारत में अधिक
+                        विश्वास दिखाती हैं
+                    </h1>
+                    <div class="mt-4 flex items-center space-x-4 text-gray-600">
+                        <span class="text-sm"><strong>हमारे आर्थिक संपादक</strong> द्वारा</span>
+                        <span class="text-sm text-primary-teal font-bold p-1 rounded-lg bg-light-teal/50">
+                            अनुमानित पठन समय: 2 मिनट
+                        </span>
+                    </div>
+                </header>
+
+                <section id="article-main" class="space-y-6">
+
+                    <a id="section-1-summary" class="anchor-link"></a>
+                    <p
+                        class="text-xl font-serif leading-relaxed bg-light-rose/50 p-4 rounded-xl border-l-4 border-light-rose shadow-md">
+                        देश में निवेश घोषणाओं के नवीनतम आँकड़े मिश्रित तस्वीर पेश करते हैं, जिनके नीतिगत निहितार्थ
+                        अलग-अलग हैं। निजी क्षेत्र द्वारा घोषित नई परियोजनाओं की कुल संख्या इस वित्त वर्ष की पहली छमाही
+                        में लगभग <strong>15</strong> महीने के उच्चतम स्तर <strong>₹9.9 लाख करोड़</strong> पर पहुँच गई।
+                        इस तरह के निवेश ऐतिहासिक रूप से भारतीय कंपनियों द्वारा संचालित होते रहे हैं, लेकिन पिछले कुछ
+                        वर्षों में यह संकेंद्रण और बढ़ गया है। <strong>2018-19</strong> में निजी क्षेत्र की सभी घोषणाओं
+                        में भारतीय कंपनियों की हिस्सेदारी <strong>77%</strong> थी, जबकि चालू वित्त वर्ष की पहली छमाही
+                        में यह हिस्सेदारी <strong>94%</strong> थी। कुल मिलाकर, ये आँकड़े घरेलू और विदेशी कंपनियों द्वारा
+                        भारतीय अर्थव्यवस्था पर रखे गए बिल्कुल विपरीत दृष्टिकोण को रेखांकित करते हैं।
+                    </p>
+
+                    <a id="section-2-domestic" class="anchor-link"></a>
+                    <h2 class="text-3xl font-bold pt-4 text-primary-teal">
+                        घरेलू आत्मविश्वास की लहर
+                    </h2>
+                    <p class="text-lg leading-relaxed">
+                        घरेलू कंपनियाँ तेज़ी से आशावादी दिख रही हैं। यह देखना बाकी है कि इनमें से कितनी घोषणाएँ फलीभूत
+                        होती हैं, लेकिन आँकड़े बताते हैं कि भारतीय कंपनियों द्वारा वास्तव में पूरी की गई परियोजनाओं का
+                        मूल्य भी इस वित्त वर्ष में अब तक लगभग <strong>15</strong> महीने के उच्चतम स्तर पर था। यह सरकार
+                        के लिए राहत की बात होनी चाहिए, जो निजी क्षेत्र को और अधिक निवेश करने के लिए प्रेरित कर रही है।
+                        आँकड़े यह भी दर्शाते हैं कि इनमें से अधिकांश नए निवेश विनिर्माण क्षेत्र में होंगे - जो
+                        अर्थव्यवस्था के लिए एक और सकारात्मक पहलू है। इन नए निवेशों का एक बड़ा हिस्सा <strong>15</strong>
+                        अगस्त को जीएसटी दरों में कटौती की घोषणा से पहले घोषित किया गया था, जिसका अर्थ है कि निजी क्षेत्र
+                        का विश्वास अस्थायी माँग वृद्धि की अपेक्षा से कहीं अधिक गहरा है। यदि निवेश सफल होते हैं, तो सरकार
+                        के पास विकास और रक्षा संबंधी मुद्दों को हल करने के लिए अधिक वित्तीय गुंजाइश होगी, जिन दोनों पर
+                        उसे ध्यान देने की आवश्यकता है।
+                    </p>
+
+                    <a id="section-3-foreign" class="anchor-link"></a>
+                    <h2 class="text-3xl font-bold pt-4 text-primary-teal">
+                        विदेशी संशय और चिंताएँ
+                    </h2>
+                    <p class="text-lg leading-relaxed">
+                        दूसरी ओर, विदेशी कंपनियाँ भारत की स्थिति से उतनी आश्वस्त नहीं दिखतीं। विदेशी कंपनियों द्वारा
+                        घोषित परियोजनाओं का मूल्य वित्त वर्ष <strong>2026</strong> की पहली छमाही में घटकर <strong>₹0.6
+                            लाख करोड़</strong> रह गया, जो इस अवधि के दौरान लगातार तीसरे वर्ष गिरावट का संकेत है, और पाँच
+                        वर्षों का निचला स्तर भी है। <strong>COVID-19</strong> महामारी के बाद से कई वैश्विक कारकों ने
+                        निश्चित रूप से निवेशकों की धारणा को कमजोर किया है, लेकिन तथ्य यह है कि वैश्विक निवेश बहिर्वाह
+                        <strong>2024</strong> में <strong>11%</strong> और <strong>2023</strong> में <strong>3%</strong>
+                        बढ़ा है। हालांकि अमेरिका के साथ नवीनतम टैरिफ घर्षण ने इस वर्ष निवेश गंतव्य के रूप में भारत में
+                        कुछ विश्वास को हिला दिया होगा, सरकार को यह पता लगाने की जरूरत है कि विदेशी कंपनियां पहले ही कहीं
+                        और क्यों देख रही थीं। आंकड़ों से यह भी पता चलता है कि समीक्षाधीन अवधि में सरकार द्वारा की गई नई
+                        घोषणाएं **1.5** लाख करोड़ रुपये की थीं, जो पिछले साल की इसी अवधि की तुलना में
+                        <strong>71%</strong> कम है। यह केंद्र की चेतावनियों के अनुरूप है कि वह अपने पूंजीगत व्यय को पहले
+                        की तरह तेजी से नहीं बढ़ाएगा। हालांकि, सरकार और विदेशी कंपनियों के पीछे हटने से भारतीय फर्मों पर
+                        दबाव बढ़ जाता है।
+                    </p>
+                </section>
+
+                <section id="upsc-notes"
+                    class="mt-12 p-6 bg-white rounded-2xl shadow-xl border-t-8 border-primary-teal">
+                    <a id="notes-title" class="anchor-link"></a>
+                    <h3 class="text-3xl font-bold mb-6 text-gray-900">
+                        UPSC CSE नोट्स: भारत में निवेश परिदृश्य
+                    </h3>
+
+                    <a id="notes-table" class="anchor-link"></a>
+                    <h4 class="text-2xl font-semibold mt-6 mb-3 text-primary-teal">
+                        1. निवेश का संक्षिप्त विवरण (वित्त वर्ष 26 की पहली छमाही)
+                    </h4>
+                    <p class="mb-4 text-lg">
+                        आँकड़े मिश्रित तस्वीर पेश करते हैं, जो घरेलू निजी क्षेत्र में विश्वास का एक मज़बूत संकेंद्रण
+                        दर्शाते हैं, जो विदेशी निवेशकों की धारणा के बिल्कुल विपरीत है।
+                    </p>
+                    <div class="overflow-x-auto rounded-lg shadow-md">
+                        <table class="min-w-full divide-y divide-gray-200">
+                            <thead class="bg-gray-50">
+                                <tr>
+                                    <th
+                                        class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                        मीट्रिक</th>
+                                    <th
+                                        class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                        घरेलू कंपनियाँ</th>
+                                    <th
+                                        class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                        विदेशी कंपनियाँ</th>
+                                    <th
+                                        class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                        सरकार</th>
+                                </tr>
+                            </thead>
+                            <tbody class="bg-white divide-y divide-gray-200">
+                                <tr>
+                                    <td class="px-6 py-4 whitespace-nowrap font-medium">नई घोषणाएँ (मूल्य)</td>
+                                    <td class="px-6 py-4 whitespace-nowrap">₹9.9 लाख करोड़</td>
+                                    <td class="px-6 py-4 whitespace-nowrap">₹0.6 लाख करोड़</td>
+                                    <td class="px-6 py-4 whitespace-nowrap">₹1.5 लाख करोड़</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-6 py-4 whitespace-nowrap font-medium">रुझान / महत्व</td>
+                                    <td class="px-6 py-4 whitespace-nowrap">लगभग 15 महीने का उच्चतम स्तर; उच्च परियोजना
+                                        पूर्णता दर</td>
+                                    <td class="px-6 py-4 whitespace-nowrap">5 साल का निम्नतम स्तर; लगातार तीसरे वर्ष
+                                        गिरावट</td>
+                                    <td class="px-6 py-4 whitespace-nowrap">पिछले वर्ष की इसी अवधि की तुलना में
+                                        <strong>71%</strong> की कमी</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-6 py-4 whitespace-nowrap font-medium">निजी क्षेत्र की घोषणाओं का
+                                        हिस्सा</td>
+                                    <td class="px-6 py-4 whitespace-nowrap"><strong>94%</strong> (वित्त वर्ष
+                                        <strong>2019</strong> में <strong>77%</strong> से बढ़कर)</td>
+                                    <td class="px-6 py-4 whitespace-nowrap">6%</td>
+                                    <td class="px-6 py-4 whitespace-nowrap"><strong>प्रभाव:</strong> घरेलू फर्मों पर
+                                        विकास को बनाए रखने का दबाव बढ़ा है।</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <a id="notes-domestic-analysis" class="anchor-link"></a>
+                    <h4 class="text-2xl font-semibold mt-8 mb-3 text-primary-teal">
+                        2. घरेलू जीवन शक्ति का विश्लेषण
+                    </h4>
+                    <p class="text-lg leading-relaxed mb-4">
+                        भारतीय फर्में मज़बूत "उत्साही उत्साह" प्रदर्शित कर रही हैं, जो अर्थव्यवस्था में पूंजी निर्माण के
+                        प्राथमिक इंजन के रूप में कार्य कर रही हैं।
+                    </p>
+                    <!-- Domestic Analysis Table -->
+                    <div class="overflow-x-auto rounded-lg shadow-md mb-6">
+                        <table class="min-w-full divide-y divide-gray-200">
+                            <thead class="bg-gray-50">
+                                <tr>
+                                    <th
+                                        class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider w-1/3">
+                                        सकारात्मक संकेतक</th>
+                                    <th
+                                        class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider w-2/3">
+                                        अर्थव्यवस्था पर प्रभाव</th>
+                                </tr>
+                            </thead>
+                            <tbody class="bg-white divide-y divide-gray-200">
+                                <tr>
+                                    <td class="px-6 py-4 whitespace-normal font-medium"><strong>संरचनात्मक
+                                            विश्वास</strong></td>
+                                    <td class="px-6 py-4 whitespace-normal">जीएसटी दरों में कटौती से पहले की गई अधिकांश
+                                        घोषणाएँ सार्वजनिक थीं। इससे पता चलता है कि यह विश्वास दीर्घकालिक विकास क्षमता पर
+                                        आधारित है, न कि अस्थायी मांग प्रोत्साहन पर।</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-6 py-4 whitespace-normal font-medium"><strong>परियोजना फलन</strong>
+                                    </td>
+                                    <td class="px-6 py-4 whitespace-normal">भारतीय फर्मों द्वारा पूरी की गई परियोजनाओं
+                                        का मूल्य भी 15 महीने के उच्चतम स्तर पर है, जो घोषणाओं के वास्तविक निवेश में उच्च
+                                        रूपांतरण दर का संकेत है।</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-6 py-4 whitespace-normal font-medium"><strong>क्षेत्रीय फोकस</strong>
+                                    </td>
+                                    <td class="px-6 py-4 whitespace-normal">अधिकांश नए निवेश विनिर्माण क्षेत्र की ओर
+                                        निर्देशित हैं। यह रोज़गार सृजन और "मेक इन इंडिया" पहल के लक्ष्यों को प्राप्त
+                                        करने के लिए एक सकारात्मक पहल है।</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-6 py-4 whitespace-normal font-medium"><strong>राजकोषीय
+                                            स्वतंत्रता</strong></td>
+                                    <td class="px-6 py-4 whitespace-normal">यदि ये निवेश साकार होते हैं, तो सरकार को
+                                        महत्वपूर्ण विकासात्मक और रक्षा मुद्दों पर खर्च को प्राथमिकता देने के लिए
+                                        राजकोषीय गुंजाइश (सार्वजनिक पूंजीगत व्यय का कम दबाव) मिलेगी।</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+
+                    <a id="notes-foreign-concerns" class="anchor-link"></a>
+                    <h4 class="text-2xl font-semibold mt-8 mb-3 text-primary-teal">
+                        3. विदेशी निवेश संबंधी चिंताएँ
+                    </h4>
+                    <!-- Foreign Concerns Table -->
+                    <div class="overflow-x-auto rounded-lg shadow-md mb-6">
+                        <table class="min-w-full divide-y divide-gray-200">
+                            <thead class="bg-gray-50">
+                                <tr>
+                                    <th
+                                        class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider w-1/3">
+                                        चिंता / डेटा बिंदु</th>
+                                    <th
+                                        class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider w-2/3">
+                                        विश्लेषण और संदर्भ</th>
+                                </tr>
+                            </thead>
+                            <tbody class="bg-white divide-y divide-gray-200">
+                                <tr>
+                                    <td class="px-6 py-4 whitespace-normal font-medium"><strong>पाँच साल का निचला
+                                            स्तर</strong></td>
+                                    <td class="px-6 py-4 whitespace-normal">नई विदेशी परियोजनाओं की घोषणाएँ (₹0.6 लाख
+                                        करोड़) पाँच साल के निचले स्तर को दर्शाती हैं, जो अल्पकालिक अस्थिरता के बजाय
+                                        लगातार संरचनात्मक बाधाओं का संकेत देती हैं।</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-6 py-4 whitespace-normal font-medium"><strong>वैश्विक वियोग</strong>
+                                    </td>
+                                    <td class="px-6 py-4 whitespace-normal">वैश्विक निवेश बहिर्वाह <strong>2024</strong>
+                                        में <strong>11%</strong> और <strong>2023</strong> में <strong>3%</strong> बढ़ा।
+                                        भारत की गिरावट का अर्थ है कि वह अन्य गंतव्यों की तुलना में वैश्विक पूंजी आकर्षित
+                                        करने में अपनी प्रतिस्पर्धात्मकता खो रहा है।</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-6 py-4 whitespace-normal font-medium"><strong>टैरिफ घर्षण</strong>
+                                    </td>
+                                    <td class="px-6 py-4 whitespace-normal">अमेरिका के साथ हालिया टैरिफ घर्षण ने वैश्विक
+                                        आपूर्ति श्रृंखलाओं के लिए एक विश्वसनीय गंतव्य के रूप में भारत के प्रति विश्वास
+                                        को और हिला दिया है।</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-6 py-4 whitespace-normal font-medium"><strong>पहले से मौजूद
+                                            मुद्दे</strong></td>
+                                    <td class="px-6 py-4 whitespace-normal">सरकार को यह बताना होगा कि हालिया टैरिफ
+                                        मुद्दों से पहले ही विदेशी कंपनियां "अन्यत्र क्यों देख रही थीं", जो
+                                        <strong>व्यापार करने में आसानी</strong> पारिस्थितिकी तंत्र के साथ गहरे मुद्दों
+                                        की ओर इशारा करता है।</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <a id="notes-policy" class="anchor-link"></a>
+                    <h4 class="text-2xl font-semibold mt-8 mb-3 text-primary-teal">
+                        4. नीतिगत अनिवार्यताएँ और आगे की राह
+                    </h4>
+                    <p class="text-lg leading-relaxed mb-4">
+                        सरकार (पूंजीगत व्यय वृद्धि में कमी) और विदेशी फर्मों दोनों की ओर से एक साथ वापसी से घरेलू
+                        कंपनियों पर दबाव बढ़ रहा है। नीति को वैश्विक पूंजी को आक्रामक रूप से आकर्षित करते हुए घरेलू गति
+                        को बनाए रखने पर ध्यान केंद्रित करना चाहिए।
+                    </p>
+                    <ul class="list-disc list-outside ml-6 space-y-4">
+                        <li><strong>क. घरेलू निवेश को बनाए रखना (अल्पकालिक फोकस):</strong>
+                            <ul class="list-disc list-inside ml-4 mt-1 space-y-1 text-gray-700">
+                                <li><strong>अनुमोदनों में तेज़ी लाना:</strong> उच्च फलन दर बनाए रखने के लिए घोषित ₹9.9
+                                    लाख करोड़ मूल्य की घरेलू परियोजनाओं के लिए पर्यावरणीय, भूमि और नियामक मंज़ूरी में
+                                    तेज़ी लाना।</li>
+                                <li><strong>ऋण प्रवाह:</strong> विनिर्माण क्षेत्र, जो नए निवेश का प्रमुख प्राप्तकर्ता
+                                    है, को पर्याप्त और किफायती ऋण सुनिश्चित करना।</li>
+                            </ul>
+                        </li>
+                        <li><strong>ख. विदेशी निवेश आकर्षित करना (दीर्घकालिक/संरचनात्मक फोकस):</strong>
+                            <ul class="list-disc list-inside ml-4 mt-1 space-y-1 text-gray-700">
+                                <li><strong>ईओडीबी सुधारों को गहरा करना:</strong> रैंकिंग सुधारों से आगे बढ़कर ज़मीनी
+                                    स्तर पर संरचनात्मक सुधारों पर ध्यान केंद्रित करना, विशेष रूप से इन पर ध्यान केंद्रित
+                                    करना: अनुबंधों का तेज़ प्रवर्तन (न्यायिक सुधार); कर और शुल्क नीतियों में पूर्वानुमान
+                                    और स्थिरता; सरलीकृत श्रम और भूमि अधिग्रहण प्रक्रियाएँ।</li>
+                                <li><strong>व्यापार संबंधी मुद्दों का समाधान:</strong> टैरिफ संबंधी विवादों को सुलझाने
+                                    और एक स्थिर, वैश्विक रूप से एकीकृत निवेश केंद्र के रूप में भारत की विश्वसनीयता को
+                                    पुनः स्थापित करने के लिए प्रमुख व्यापारिक साझेदारों (जैसे, अमेरिका) के साथ सक्रिय
+                                    रूप से जुड़ें।</li>
+                            </ul>
+                        </li>
+                        <li><strong>ग. राजकोषीय प्रबंधन:</strong>
+                            <ul class="list-disc list-inside ml-4 mt-1 space-y-1 text-gray-700">
+                                <li><strong>रणनीतिक सार्वजनिक पूंजीगत व्यय:</strong> यद्यपि विकास धीमा हो रहा है, फिर भी
+                                    प्रमुख <strong>बुनियादी ढाँचे की बाधाओं</strong> (लॉजिस्टिक्स, कनेक्टिविटी) में
+                                    सार्वजनिक निवेश जारी रहना चाहिए ताकि आगे निजी निवेश को "आकर्षित" (सुगम) किया जा सके।
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+
+                <section id="mcq-quiz" class="mt-12">
+                    <a id="mcq" class="anchor-link"></a>
+                    <div class="bg-accent-yellow/30 p-6 rounded-2xl border-t-8 border-accent-yellow shadow-xl">
+                        <h2 class="text-3xl font-bold mb-6 text-gray-900">
+                            <strong>अपने ज्ञान की जाँच करें: त्वरित प्रश्नोत्तरी</strong>
+                        </h2>
+                        <form id="mcq-form" class="space-y-6">
+
+                            <!-- Question 1 - Correct Answer: B (₹9.9 लाख करोड़) -->
+                            <div class="mcq-question-block" data-correct-answer="B">
+                                <p class="mb-3 text-xl font-semibold">1. चालू वित्त वर्ष की पहली छमाही में निजी क्षेत्र
+                                    द्वारा घोषित नई परियोजनाओं का कुल मूल्य लगभग कितना था?</p>
+                                <div class="space-y-3">
+                                    <div class="mcq-option">
+                                        <input type="radio" id="q1a" name="q1" value="A">
+                                        <label for="q1a">A. ₹7.7 लाख करोड़</label>
+                                    </div>
+                                    <div class="mcq-option">
+                                        <input type="radio" id="q1b" name="q1" value="B">
+                                        <label for="q1b">B. ₹9.9 लाख करोड़</label>
+                                    </div>
+                                    <div class="mcq-option">
+                                        <input type="radio" id="q1c" name="q1" value="C">
+                                        <label for="q1c">C. ₹0.6 लाख करोड़</label>
+                                    </div>
+                                    <div class="mcq-option">
+                                        <input type="radio" id="q1d" name="q1" value="D">
+                                        <label for="q1d">D. ₹1.5 लाख करोड़</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Question 2 - Correct Answer: C (94%) -->
+                            <div class="mcq-question-block" data-correct-answer="C">
+                                <p class="mb-3 text-xl font-semibold">2. चालू वित्त वर्ष की पहली छमाही में निजी क्षेत्र
+                                    की कुल निवेश घोषणाओं में भारतीय कंपनियों की हिस्सेदारी कितनी थी?</p>
+                                <div class="space-y-3">
+                                    <div class="mcq-option">
+                                        <input type="radio" id="q2a" name="q2" value="A">
+                                        <label for="q2a">A. 77%</label>
+                                    </div>
+                                    <div class="mcq-option">
+                                        <input type="radio" id="q2b" name="q2" value="B">
+                                        <label for="q2b">B. 85%</label>
+                                    </div>
+                                    <div class="mcq-option">
+                                        <input type="radio" id="q2c" name="q2" value="C">
+                                        <label for="q2c">C. 94%</label>
+                                    </div>
+                                    <div class="mcq-option">
+                                        <input type="radio" id="q2d" name="q2" value="D">
+                                        <label for="q2d">D. 6%</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Question 3 - Correct Answer: C (₹0.6 लाख करोड़; लगातार तीसरे वर्ष) -->
+                            <div class="mcq-question-block" data-correct-answer="C">
+                                <p class="mb-3 text-xl font-semibold">3. विदेशी कंपनियों द्वारा घोषित परियोजनाओं का
+                                    मूल्य वित्त वर्ष <strong>2026</strong> की पहली छमाही में कितना रहा, जो कि लगातार
+                                    कितने वर्ष गिरावट का संकेत है?</p>
+                                <div class="space-y-3">
+                                    <div class="mcq-option">
+                                        <input type="radio" id="q3a" name="q3" value="A">
+                                        <label for="q3a">A. ₹1.5 लाख करोड़; लगातार दूसरे वर्ष</label>
+                                    </div>
+                                    <div class="mcq-option">
+                                        <input type="radio" id="q3b" name="q3" value="B">
+                                        <label for="q3b">B. ₹9.9 लाख करोड़; लगातार तीसरे वर्ष</label>
+                                    </div>
+                                    <div class="mcq-option">
+                                        <input type="radio" id="q3c" name="q3" value="C">
+                                        <label for="q3c">C. ₹0.6 लाख करोड़; लगातार तीसरे वर्ष</label>
+                                    </div>
+                                    <div class="mcq-option">
+                                        <input type="radio" id="q3d" name="q3" value="D">
+                                        <label for="q3d">D. ₹0.6 लाख करोड़; लगातार पाँचवें वर्ष</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button type="button" onclick="checkAnswers()"
+                                class="w-full bg-primary-teal hover:bg-primary-teal/90 text-white font-bold py-3 px-4 rounded-xl transition duration-300 shadow-lg mt-6">
+                                उत्तर जांचें
+                            </button>
+                            <div id="score-output"
+                                class="text-center mt-4 text-xl font-bold hidden p-3 rounded-lg bg-light-teal"></div>
+
+                            <!-- Section for showing correct answers, hidden by default -->
+                            <div class="mt-8 pt-4 border-t border-gray-400">
+                                <button type="button" onclick="toggleAnswers()"
+                                    class="text-primary-teal hover:text-primary-teal/80 font-bold flex items-center">
+                                    <span id="toggle-icon">▼</span>&nbsp; सही उत्तर देखें
+                                </button>
+                                <div id="correct-answers-list" class="mt-4 p-4 bg-light-teal/50 rounded-lg hidden">
+                                    <p class="font-bold mb-2">सही उत्तर:</p>
+                                    <ul class="list-disc list-inside space-y-2">
+                                        <li>प्रश्न 1: <strong>B. ₹9.9 लाख करोड़</strong> (अनुच्छेद 1)</li>
+                                        <li>प्रश्न 2: <strong>C. 94%</strong> (अनुच्छेद 1)</li>
+                                        <li>प्रश्न 3: <strong>C. ₹0.6 लाख करोड़; लगातार तीसरे वर्ष</strong> (अनुच्छेद 3)
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </section>
+
+            </article>
+
+            <!-- Table of Contents (TOC) - Sticky on Desktop -->
+            <aside class="lg:col-span-4 mt-8 lg:mt-0">
+                <div id="toc"
+                    class="p-6 bg-white rounded-2xl shadow-xl border-t-4 border-accent-yellow toc-desktop-sticky">
+                    <h3 class="text-2xl font-bold mb-4 text-gray-900 border-b pb-2">
+                        विषय सूची
+                    </h3>
+                    <ul class="space-y-3 text-lg">
+                        <li>
+                            <a href="#section-1-summary"
+                                class="text-gray-600 hover:text-primary-teal transition duration-150 block p-2 rounded-lg hover:bg-light-gray-blue/50">
+                                घरेलू आत्मविश्वास का सारांश
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#section-2-domestic"
+                                class="text-gray-600 hover:text-primary-teal transition duration-150 block p-2 rounded-lg hover:bg-light-gray-blue/50">
+                                घरेलू आत्मविश्वास की लहर
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#section-3-foreign"
+                                class="text-gray-600 hover:text-primary-teal transition duration-150 block p-2 rounded-lg hover:bg-light-gray-blue/50">
+                                विदेशी संशय और चिंताएँ
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#notes-title"
+                                class="text-gray-800 font-bold hover:text-primary-teal transition duration-150 block p-2 rounded-lg hover:bg-light-teal">
+                                UPSC CSE नोट्स: निवेश परिदृश्य
+                            </a>
+                            <ul class="ml-4 mt-1 space-y-1 text-base">
+                                <li><a href="#notes-table" class="text-gray-600 hover:text-primary-teal block">1. निवेश
+                                        का संक्षिप्त विवरण</a></li>
+                                <li><a href="#notes-domestic-analysis"
+                                        class="text-gray-600 hover:text-primary-teal block">2. घरेलू जीवन शक्ति का
+                                        विश्लेषण</a></li>
+                                <li><a href="#notes-foreign-concerns"
+                                        class="text-gray-600 hover:text-primary-teal block">3. विदेशी निवेश संबंधी
+                                        चिंताएँ</a></li>
+                                <li><a href="#notes-policy" class="text-gray-600 hover:text-primary-teal block">4.
+                                        नीतिगत अनिवार्यताएँ</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#mcq"
+                                class="text-gray-600 hover:text-primary-teal transition duration-150 block p-2 rounded-lg hover:bg-light-gray-blue/50">
+                                त्वरित प्रश्नोत्तरी
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <!-- JavaScript for MCQ Logic -->
+    <script>
+        function checkAnswers() {
+            const form = document.getElementById('mcq-form');
+            const scoreOutput = document.getElementById('score-output');
+            const questionBlocks = form.querySelectorAll('.mcq-question-block');
+            let score = 0;
+            const totalQuestions = questionBlocks.length;
+
+            questionBlocks.forEach(questionBlock => {
+                const correctValue = questionBlock.getAttribute('data-correct-answer');
+                const selectedRadio = questionBlock.querySelector('input[type="radio"]:checked');
+                const options = questionBlock.querySelectorAll('.mcq-option');
+
+                // 1. Reset all feedback styles and inline styles
+                options.forEach(option => {
+                    option.classList.remove('correct', 'incorrect');
+                    option.querySelector('label').style.border = "";
+                    option.querySelector('label').style.backgroundColor = "";
+                });
+
+                if (selectedRadio) {
+                    if (selectedRadio.value === correctValue) {
+                        score++;
+                        selectedRadio.closest('.mcq-option').classList.add('correct');
+                    } else {
+                        selectedRadio.closest('.mcq-option').classList.add('incorrect');
+
+                        // Highlight the actual correct answer (using custom styling since it's not checked)
+                        const actualCorrectOption = questionBlock.querySelector(`input[type="radio"][value="${correctValue}"]`);
+                        if (actualCorrectOption) {
+                            // Find the container div for the correct option and add 'correct' class
+                            const correctOptionDiv = actualCorrectOption.closest('.mcq-option');
+                            if (correctOptionDiv) {
+                                correctOptionDiv.classList.add('correct');
+                                // Ensure the label of the correct one is visibly highlighted even if not checked
+                                actualCorrectOption.nextElementSibling.style.border = "2px solid #10b981";
+                                actualCorrectOption.nextElementSibling.style.backgroundColor = "#d1fae5";
+                            }
+                        }
+                    }
+                } else {
+                    // If unanswered, highlight the correct one
+                    const actualCorrectOption = questionBlock.querySelector(`input[type="radio"][value="${correctValue}"]`);
+                    if (actualCorrectOption) {
+                        const correctOptionDiv = actualCorrectOption.closest('.mcq-option');
+                        if (correctOptionDiv) {
+                            correctOptionDiv.classList.add('correct');
+                            actualCorrectOption.nextElementSibling.style.border = "2px solid #10b981";
+                            actualCorrectOption.nextElementSibling.style.backgroundColor = "#d1fae5";
+                        }
+                    }
+                }
+            });
+
+            scoreOutput.textContent = `आपने ${totalQuestions} में से ${score} अंक प्राप्त किए।`;
+            scoreOutput.classList.remove('hidden');
+
+            // Disable the check button after submission to prevent re-checking
+            form.querySelector('button[onclick="checkAnswers()"]').disabled = true;
+
+            // Simple message box (instead of alert)
+            const resultBox = document.createElement('div');
+            resultBox.className = 'fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 p-6 bg-primary-teal text-white rounded-lg shadow-2xl z-[100] text-center transition-opacity duration-300';
+            resultBox.innerHTML = `<p class="text-2xl font-bold mb-2">प्रश्नोत्तरी पूरी हुई!</p><p>आपने <strong>${score}/${totalQuestions}</strong> अंक प्राप्त किए।</p><button onclick="window.location.reload()" class="mt-4 bg-white text-primary-teal py-1 px-3 rounded-full font-semibold hover:bg-gray-100">पुनः प्रयास करें</button>`;
+            document.body.appendChild(resultBox);
+        }
+
+        function toggleAnswers() {
+            const answersList = document.getElementById('correct-answers-list');
+            const toggleIcon = document.getElementById('toggle-icon');
+            if (answersList.classList.contains('hidden')) {
+                answersList.classList.remove('hidden');
+                toggleIcon.textContent = '▲';
+            } else {
+                answersList.classList.add('hidden');
+                toggleIcon.textContent = '▼';
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="hi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>वरिष्ठ पत्रकार टी.जे.एस. जॉर्ज का निधन | UPSC नोट्स</title>
+    <style>
+        /* Base Styling */
+        :root {
+            --primary-color: #007bff;
+            /* Blue for links/accents */
+            --secondary-color: #28a745;
+            /* Green for highlights */
+            --bg-light-color: #f8f9fa;
+            /* Very light background */
+            --text-color: #343a40;
+            /* Dark grey for body text */
+            --header-bg-color: #ffe0b2;
+            /* Light Orange/Peach for navbar */
+            --section-bg-color: #e3f2fd;
+            /* Very light Blue for sections */
+            --table-header-bg: #bbdefb;
+            /* Light Blue for table headers */
+            --toc-bg-color: #fff3e0;
+            /* Light Cream/Yellow for TOC */
+            --read-time-bg: #c8e6c9;
+            /* Light Green for Read Time */
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-light-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            scroll-behavior: smooth;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 15px;
+        }
+
+        /* Navbar Styling */
+        .navbar {
+            background-color: var(--header-bg-color);
+            padding: 10px 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar-logo {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        .navbar-links a {
+            color: var(--text-color);
+            text-decoration: none;
+            padding: 8px 15px;
+            margin-left: 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .navbar-links a:hover {
+            background-color: #ffd8a9;
+            /* Slightly darker header color */
+        }
+
+        /* Estimated Read Time */
+        .read-time {
+            background-color: var(--read-time-bg);
+            padding: 10px 15px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            font-weight: bold;
+            color: var(--secondary-color);
+            display: inline-block;
+        }
+
+        /* Table of Contents (TOC) */
+        .toc-section {
+            background-color: var(--toc-bg-color);
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+        }
+
+        .toc-section h2 {
+            color: var(--primary-color);
+            margin-top: 0;
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 5px;
+        }
+
+        .toc-section ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .toc-section ul li a {
+            text-decoration: none;
+            color: var(--text-color);
+            padding: 5px 0;
+            display: block;
+            transition: color 0.3s;
+        }
+
+        .toc-section ul li a:hover {
+            color: var(--primary-color);
+            font-weight: bold;
+        }
+
+        /* Headings and Sections */
+        h1 {
+            color: var(--primary-color);
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        h2,
+        h3 {
+            color: var(--primary-color);
+            border-bottom: 2px solid #ccc;
+            padding-bottom: 5px;
+            margin-top: 30px;
+        }
+
+        /* Content Styling */
+        .article-content p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        em {
+            font-style: italic;
+            color: #6c757d;
+            /* Lighter grey for emphasis */
+        }
+
+        /* Table Styling */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+        }
+
+        th,
+        td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: var(--table-header-bg);
+            color: var(--text-color);
+            font-weight: bold;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+            /* Subtle stripe effect */
+        }
+
+        /* List Styling */
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        /* MCQ Styling */
+        .mcq-section {
+            background-color: var(--section-bg-color);
+            padding: 25px;
+            border-radius: 8px;
+            margin-top: 30px;
+        }
+
+        .mcq-question {
+            margin-bottom: 25px;
+            padding: 15px;
+            border: 1px solid var(--primary-color);
+            border-radius: 5px;
+            background-color: #ffffff;
+        }
+
+        .mcq-question p {
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: var(--primary-color);
+        }
+
+        .mcq-options label {
+            display: block;
+            margin-bottom: 8px;
+            cursor: pointer;
+            padding: 5px;
+            border-radius: 3px;
+            transition: background-color 0.3s;
+        }
+
+        .mcq-options label:hover {
+            background-color: #e9ecef;
+        }
+
+        .mcq-options input[type="radio"] {
+            margin-right: 10px;
+        }
+
+        /* Separator Line */
+        hr {
+            border: 0;
+            height: 1px;
+            background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 123, 255, 0.75), rgba(0, 0, 0, 0));
+            margin: 30px 0;
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 600px) {
+            .navbar {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .navbar-links {
+                margin-top: 10px;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+            }
+
+            .navbar-links a {
+                margin: 5px 0;
+                width: 100%;
+                text-align: center;
+                border-bottom: 1px solid #ddd;
+            }
+
+            h1 {
+                font-size: 1.8em;
+            }
+
+            th,
+            td {
+                padding: 8px;
+                display: block;
+                /* Make table cells block-level for stacking */
+                width: 100%;
+                box-sizing: border-box;
+            }
+
+            table,
+            thead,
+            tbody,
+            th,
+            td,
+            tr {
+                display: block;
+            }
+
+            thead tr {
+                position: absolute;
+                top: -9999px;
+                left: -9999px;
+            }
+
+            tr {
+                margin-bottom: 10px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                display: block;
+            }
+
+            td:before {
+                /* For mobile view, use data attribute to display column name */
+                content: attr(data-label);
+                float: left;
+                font-weight: bold;
+                text-transform: uppercase;
+                margin-right: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="navbar-logo">टी.जे.एस. जॉर्ज</div>
+        <div class="navbar-links">
+            <a href="../index.html">होम</a>
+            <a href="#toc">विषय-सूची</a>
+            <a href="#">MCQ</a>
+            <a href="#">संपर्क</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="read-time">⏳ अनुमानित पठन समय: ~3 मिनट</div>
+
+        <h1>वरिष्ठ पत्रकार टी.जे.एस. जॉर्ज का निधन</h1>
+        <p style="text-align: center; color: #6c757d;">स्रोत: The Hindu | दिनांक: 04-10-2025</p>
+
+        <hr>
+
+        <div class="article-content">
+            <p><em>प्रसिद्ध पत्रकार और लेखक टी.जे.एस. जॉर्ज का 97 वर्ष की आयु में सर्जरी के बाद निधन हो गया; वे अपनी
+                    तीखी टिप्पणियों, स्वतंत्र लेखन और पद्म भूषण सहित कई पुरस्कारों के लिए जाने जाते थे।</em></p>
+
+            <p>वरिष्ठ पत्रकार, जीवनी लेखक और स्तंभकार टी.जे.एस. जॉर्ज, जिन्होंने अपनी तीखी टिप्पणियों और बेबाक
+                स्वतंत्रता के माध्यम से भारतीय अंग्रेजी पत्रकारिता पर अपनी छाप छोड़ी, का शुक्रवार को आयु संबंधी जटिलताओं
+                के कारण निधन हो गया। वे 97 वर्ष के थे।</p>
+
+            <p>पारिवारिक सूत्रों के अनुसार, उनकी गुर्दे की सर्जरी हुई थी और वे एक सप्ताह से एक निजी अस्पताल में भर्ती
+                थे।</p>
+
+            <p>जॉर्ज ने भारत और विदेशों में वरिष्ठ संपादकीय पदों पर कार्य किया। उन्होंने एक पेशेवर लेखक, राजनीतिक
+                स्तंभकार और जीवनी लेखक के रूप में कई प्रमुख पुस्तकों के माध्यम से अंतरराष्ट्रीय स्तर पर ख्याति अर्जित
+                की।</p>
+
+            <p>द न्यू इंडियन एक्सप्रेस में उनका साप्ताहिक <strong><em>'पॉइंट ऑफ़ व्यू'</em></strong> कॉलम 25 वर्षों तक
+                चला और जून 2022 में
+                समाप्त हो गया।</p>
+
+            <p>2011 में उन्हें पद्म भूषण से सम्मानित किए जाने के अलावा, पत्रकारिता और साहित्य में उनके योगदान के लिए
+                उन्हें 2007 में राज्योत्सव पुरस्कार से भी सम्मानित किया गया।</p>
+        </div>
+
+        <hr>
+
+        <section class="upsc-notes-section">
+            <h2 id="upsc-notes">UPSC CSE नोट्स</h2>
+            <h3 id="samandarh">संदर्भ</h3>
+            <ul>
+                <li><strong>प्रसिद्ध पत्रकार, स्तंभकार और लेखक टी.जे.एस. जॉर्ज (1928-2025)</strong> का गुर्दे की सर्जरी
+                    के बाद उम्र संबंधी जटिलताओं के कारण 97 वर्ष की आयु में निधन हो गया।</li>
+            </ul>
+
+            <hr>
+
+            <div class="toc-section" id="toc">
+                <h2>विषय-सूची (Table of Contents)</h2>
+                <ul>
+                    <li><a href="#samandarh">संदर्भ</a></li>
+                    <li><a href="#pramukh-yogdan">प्रमुख योगदान</a></li>
+                    <li><a href="#puraskar-samman">पुरस्कार और सम्मान</a></li>
+                    <li><a href="#virasat-prasangikta">विरासत और प्रासंगिकता</a></li>
+                    <li><a href="#upsc-prasangikta">यूपीएससी प्रासंगिकता</a></li>
+                    <li><a href="#mcq-quiz">MCQ (बहुविकल्पीय प्रश्न)</a></li>
+                </ul>
+            </div>
+
+            <hr>
+
+            <h2 id="pramukh-yogdan">प्रमुख योगदान</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>पहलू</th>
+                        <th>विवरण</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-label="पहलू"><strong>पत्रकारिता करियर</strong></td>
+                        <td data-label="विवरण">भारत और विदेशों में वरिष्ठ संपादकीय पदों पर रहे; <strong>स्वतंत्र और तीखी
+                                टिप्पणियों</strong> के लिए स्थापित प्रतिष्ठा।</td>
+                    </tr>
+                    <tr>
+                        <td data-label="पहलू"><strong>स्तंभकार</strong></td>
+                        <td data-label="विवरण"><em>द न्यू इंडियन एक्सप्रेस</em> में उनका साप्ताहिक <strong>“पॉइंट ऑफ़
+                                व्यू”</strong> स्तंभ 25 वर्षों (जून 2022 तक) तक प्रकाशित हुआ।</td>
+                    </tr>
+                    <tr>
+                        <td data-label="पहलू"><strong>लेखक और जीवनी लेखक</strong></td>
+                        <td data-label="विवरण">कई महत्वपूर्ण पुस्तकें, जीवनियाँ और राजनीतिक टिप्पणियाँ लिखीं जिन्होंने
+                            जनसंवाद को प्रभावित किया।</td>
+                    </tr>
+                    <tr>
+                        <td data-label="पहलू"><strong>संपादकीय स्वतंत्रता</strong></td>
+                        <td data-label="विवरण">राजनीतिक पत्रकारिता में अडिग रुख, विश्लेषणात्मक गहराई और स्पष्टता के लिए
+                            जाने जाते हैं।</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <hr>
+
+            <h2 id="puraskar-samman">पुरस्कार और सम्मान</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>वर्ष</th>
+                        <th>पुरस्कार</th>
+                        <th>योगदान</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-label="वर्ष">2007</td>
+                        <td data-label="पुरस्कार"><strong>राज्योत्सव पुरस्कार</strong> (कर्नाटक)</td>
+                        <td data-label="योगदान">पत्रकारिता और साहित्य में योगदान</td>
+                    </tr>
+                    <tr>
+                        <td data-label="वर्ष">2011</td>
+                        <td data-label="पुरस्कार"><strong>पद्म भूषण</strong></td>
+                        <td data-label="योगदान">पत्रकारिता में विशिष्ट सेवा</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <hr>
+
+            <h2 id="virasat-prasangikta">विरासत और प्रासंगिकता</h2>
+            <ul>
+                <li><strong>भारतीय अंग्रेजी पत्रकारिता</strong>: स्वतंत्रता के बाद के भारत में निडर, स्वतंत्र विश्लेषण
+                    का बीड़ा उठाया।</li>
+                <li><strong>सार्वजनिक विमर्श</strong>: तीखी टिप्पणियों के माध्यम से राजनीति, समाज और शासन पर बहसों को
+                    प्रभावित किया।</li>
+                <li><strong>पत्रकारिता मूल्य</strong>: स्वतंत्रता, निष्पक्षता और बौद्धिक ईमानदारी की नैतिकता को मूर्त
+                    रूप दिया।</li>
+                <li><strong>संस्थागत स्मृति</strong>: उनके लेखन भारतीय राजनीतिक और सामाजिक परिवर्तनों का एक संग्रह हैं।
+                </li>
+            </ul>
+
+            <hr>
+
+            <h2 id="upsc-prasangikta">यूपीएससी प्रासंगिकता</h2>
+            <ul>
+                <li><strong>सामान्य अध्ययन प्रश्नपत्र I</strong>: स्वतंत्रता-पश्चात भारतीय समाज - मीडिया और
+                    बुद्धिजीवियों की भूमिका।</li>
+                <li><strong>सामान्य अध्ययन प्रश्नपत्र II</strong>: शासन - लोकतंत्र में स्वतंत्र मीडिया का महत्व।</li>
+                <li><strong>निबंध पत्र</strong>: <em>“प्रेस की स्वतंत्रता”</em>, <em>“लोकतंत्र में बुद्धिजीवियों की
+                        भूमिका”</em> पर विषय।</li>
+            </ul>
+
+            <hr>
+        </section>
+
+        <section class="mcq-section">
+            <h2 id="mcq-quiz">MCQ (बहुविकल्पीय प्रश्न)</h2>
+            <div class="mcq-question">
+                <p>Q1. टी.जे.एस. जॉर्ज के संदर्भ में निम्नलिखित कथनों पर विचार कीजिए:</p>
+                <ol type="i">
+                    <li>उन्हें 2011 में पद्म भूषण से सम्मानित किया गया था।</li>
+                    <li>उनका साप्ताहिक कॉलम 'पॉइंट ऑफ़ व्यू' द न्यू इंडियन एक्सप्रेस में प्रकाशित होता था।</li>
+                    <li>उन्हें केवल पत्रकारिता के क्षेत्र में उनके योगदान के लिए जाना जाता था, साहित्य के लिए नहीं।</li>
+                </ol>
+                <p>उपरोक्त कथनों में से कौन-सा/से <strong>सही</strong> है/हैं?</p>
+                <div class="mcq-options">
+                    <label><input type="radio" name="mcq1" value="a"> केवल i</label>
+                    <label><input type="radio" name="mcq1" value="b"> केवल i और ii</label>
+                    <label><input type="radio" name="mcq1" value="c"> केवल ii और iii</label>
+                    <label><input type="radio" name="mcq1" value="d"> i, ii और iii</label>
+                </div>
+                <p style="color: #6c757d; font-size: 0.9em;">(सही उत्तर: b - उन्हें साहित्य में भी योगदान के लिए 2007
+                    में राज्योत्सव पुरस्कार मिला था, इसलिए कथन iii गलत है।)</p>
+            </div>
+
+            <div class="mcq-question">
+                <p>Q2. टी.जे.एस. जॉर्ज का निधन भारतीय लोकतंत्र में मीडिया की भूमिका के किस पहलू से सबसे अधिक प्रासंगिक
+                    है?</p>
+                <div class="mcq-options">
+                    <label><input type="radio" name="mcq2" value="a"> पत्रकारिता में विशिष्ट सेवा के लिए पद्म पुरस्कारों
+                        का महत्व।</label>
+                    <label><input type="radio" name="mcq2" value="b"> एक स्वतंत्र और निष्पक्ष प्रेस के माध्यम से
+                        <strong>सार्वजनिक विमर्श</strong> को प्रभावित करने की क्षमता।</label>
+                    <label><input type="radio" name="mcq2" value="c"> राजनीतिक स्तंभकारों के लिए अधिकतम आयु सीमा की
+                        आवश्यकता।</label>
+                    <label><input type="radio" name="mcq2" value="d"> क्षेत्रीय (राज्योत्सव) पुरस्कारों की तुलना में
+                        राष्ट्रीय पुरस्कारों का अधिक महत्व।</label>
+                </div>
+                <p style="color: #6c757d; font-size: 0.9em;">(सही उत्तर: b - उनकी विरासत का मुख्य पहलू उनकी तीखी,
+                    स्वतंत्र टिप्पणियों के माध्यम से सार्वजनिक विमर्श को प्रभावित करना था, जो GS II के शासन के लिए
+                    प्रासंगिक है।)</p>
+            </div>
+
+            <div class="mcq-question">
+                <p>Q3. टी.जे.एस. जॉर्ज की विरासत UPSC सामान्य अध्ययन प्रश्नपत्र I के किस विषय से सबसे निकटता से संबंधित
+                    है?</p>
+                <div class="mcq-options">
+                    <label><input type="radio" name="mcq3" value="a"> भारतीय संस्कृति का इतिहास</label>
+                    <label><input type="radio" name="mcq3" value="b"> स्वतंत्रता-पश्चात भारतीय समाज - मीडिया और
+                        बुद्धिजीवियों की भूमिका</label>
+                    <label><input type="radio" name="mcq3" value="c"> विश्व का इतिहास</label>
+                    <label><input type="radio" name="mcq3" value="d"> भारतीय समाज की मुख्य विशेषताएँ</label>
+                </div>
+                <p style="color: #6c757d; font-size: 0.9em;">(सही उत्तर: b - यह सीधे तौर पर "यूपीएससी प्रासंगिकता"
+                    अनुभाग में उल्लेखित है।)</p>
+            </div>
+        </section>
+
+        <hr>
+
+        <footer style="text-align: center; padding: 15px; font-size: 0.8em; color: #6c757d;">
+            © 2025 UPSC Notes. All rights reserved. Content based on The Hindu article dated 04-10-2025.
+        </footer>
+    </div>
+</body>
+
+</html>

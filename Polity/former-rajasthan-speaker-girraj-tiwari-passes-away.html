@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="hi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>राजस्थान के पूर्व स्पीकर गिरिराज तिवारी का निधन</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Configure Tailwind to use a bright, light theme and Inter font -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-blue': '#4c6ef5',
+                        'accent-yellow': '#ffe066',
+                        'light-pink': '#ffd8d8',
+                        'light-green': '#d8f5d8',
+                        'light-purple': '#e0cffc',
+                        'background-light': '#f8f9fa',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Custom CSS for smooth scrolling for anchor links */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Styling for the MCQ options */
+        .mcq-option input[type="radio"] {
+            display: none;
+            /* Hide the default radio button */
+        }
+
+        .mcq-option label {
+            display: block;
+            cursor: pointer;
+            padding: 1rem;
+            border-radius: 0.75rem;
+            /* rounded-xl */
+            border: 2px solid transparent;
+            transition: all 0.2s;
+            background-color: white;
+            /* Default background */
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Hover effect for all options */
+        .mcq-option label:hover {
+            background-color: #f0f0f0;
+        }
+
+        /* Style for the selected (checked) option */
+        .mcq-option input[type="radio"]:checked+label {
+            border-color: #4c6ef5;
+            /* Primary blue border when checked */
+            background-color: #e0cffc;
+            /* Light purple background when checked */
+            font-weight: 600;
+        }
+
+        /* Styling for the correct/incorrect feedback, shown on check */
+        .mcq-option.correct input[type="radio"]:checked+label {
+            border-color: #40c057;
+            /* Green border for correct answer */
+            background-color: #d8f5d8;
+            /* Light green background */
+        }
+
+        .mcq-option.incorrect input[type="radio"]:checked+label {
+            border-color: #fa5252;
+            /* Red border for incorrect answer */
+            background-color: #ffd8d8;
+            /* Light pink background */
+        }
+
+        /* Custom style for sticky TOC on desktop */
+        @media (min-width: 1024px) {
+            .toc-desktop-sticky {
+                position: -webkit-sticky;
+                position: sticky;
+                top: 5rem;
+                /* Offset from sticky navbar */
+                max-height: calc(100vh - 8rem);
+                overflow-y: auto;
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-background-light text-gray-800 font-sans">
+
+    <!-- 1. Navigation Bar (Colorful and Responsive) -->
+    <nav class="sticky top-0 z-50 bg-white shadow-lg p-4 border-b-4 border-primary-blue">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="text-2xl font-extrabold text-primary-blue tracking-tight">
+                <span class="bg-accent-yellow px-2 py-1 rounded-lg mr-1 inline-block">द</span> हिंदू
+            </div>
+            <div class="hidden md:flex space-x-6 text-gray-600 font-medium">
+                <a href="../index.html" class="hover:text-primary-blue transition duration-150">होम</a>
+                <a href="#" class="hover:text-primary-blue transition duration-150">राष्ट्रीय</a>
+                <a href="#" class="hover:text-primary-blue transition duration-150">राजनीति</a>
+                <a href="#" class="hover:text-primary-blue transition duration-150">श्रद्धांजलि</a>
+            </div>
+            <!-- Mobile Menu Placeholder -->
+            <button class="md:hidden text-gray-600 hover:text-primary-blue focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
+                    </path>
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Main Content Layout -->
+    <main class="max-w-7xl mx-auto p-4 md:p-8">
+        <div class="lg:grid lg:grid-cols-12 lg:gap-10">
+
+            <!-- Article Content (Spans all columns on mobile/tablet, 8 columns on desktop) -->
+            <article class="lg:col-span-8 space-y-8">
+                <header class="pb-4 border-b border-gray-300">
+                    <p class="text-sm text-gray-500 mb-1">
+                        द हिंदू, दिल्ली संस्करण | <strong>10 अप्रैल, 2025</strong>
+                    </p>
+                    <h1 class="text-4xl sm:text-5xl font-extrabold leading-tight text-gray-900">
+                        राजस्थान के पूर्व स्पीकर <strong>गिर्राज प्रसाद तिवारी</strong> का 105 वर्ष की आयु में निधन
+                    </h1>
+                    <div class="mt-4 flex items-center space-x-4 text-gray-600">
+                        <span class="text-sm"><strong>हमारे राजनीतिक संवाददाता</strong> द्वारा</span>
+                        <span class="text-sm text-primary-blue font-bold p-1 rounded-lg bg-light-purple/50">
+                            अनुमानित पठन समय: 3 मिनट
+                        </span>
+                    </div>
+                </header>
+
+                <p
+                    class="text-xl font-serif leading-relaxed bg-light-pink/50 p-4 rounded-xl border-l-4 border-light-pink shadow-md">
+                    <strong>जयपुर, 10 अप्रैल, 2025:</strong> राजस्थान के राजनीतिक परिदृश्य ने अपने सबसे सम्मानित
+                    दिग्गजों में से एक, पूर्व विधानसभा अध्यक्ष <strong>गिर्राज प्रसाद तिवारी</strong> के निधन पर शोक
+                    व्यक्त किया है, जिनका गुरुवार देर रात भरतपुर में 105 वर्ष की श्रद्धेय आयु में निधन हो गया। संसदीय
+                    मर्यादा के प्रति उनके अटूट समर्पण और गहन कानूनी विशेषज्ञता के लिए जाने जाने वाले तिवारी का जाना,
+                    राज्य की राजनीति में एक युग के अंत का प्रतीक है।
+                </p>
+
+                <!-- Article Body Sections with Anchor Links -->
+                <section id="article-body" class="space-y-6">
+
+                    <a id="section-1" class="anchor-link"></a>
+                    <h2 class="text-3xl font-bold pt-4 text-primary-blue">
+                        <strong>सेवा को समर्पित जीवन</strong>
+                    </h2>
+                    <p class="text-lg leading-relaxed">
+                        1920 में भरतपुर जिले के बिड्यारी गाँव में जन्मे तिवारी ने एक सफल वकील के रूप में अपना पेशेवर
+                        जीवन शुरू किया। सार्वजनिक जीवन में उनके परिवर्तन ने उन्हें पंचायत समिति प्रधान और जिला प्रमुख
+                        सहित महत्वपूर्ण स्थानीय पदों पर कार्य करते देखा। वह पहली बार 1972 से 1977 तक बयाना निर्वाचन
+                        क्षेत्र से विधायक चुने गए थे। उनकी लंबी उम्र और प्रतिबद्धता ने उन्हें स्वतंत्रता-पूर्व युग से
+                        लेकर आधुनिक लोकतंत्र तक भारत के राजनीतिक विकास को देखने की अनुमति दी। अपनी शतायु में भी,
+                        उन्होंने तेज याददाश्त बनाए रखी और अक्सर राजनीति की बदलती प्रकृति पर आलोचनात्मक टिप्पणी करते थे।
+                    </p>
+
+                    <a id="section-2" class="anchor-link"></a>
+                    <h2 class="text-3xl font-bold pt-4 text-primary-blue">
+                        <strong>संसदीय विरासत</strong>
+                    </h2>
+                    <p class="text-lg leading-relaxed">
+                        तिवारी का सबसे महत्वपूर्ण योगदान राजस्थान विधान सभा के भीतर था। उन्होंने 29 मार्च, 1985 से 31
+                        जनवरी, 1986 तक उपसभापति के रूप में विशिष्ट सेवा की। इसके बाद, वह विधानसभा अध्यक्ष की भूमिका में
+                        आसीन हुए, 1986 से 1990 तक इस पद पर रहे। अपने कार्यकाल के दौरान, उन्हें अपने निष्पक्ष आचरण और
+                        विधायी परंपराओं को लगन से बनाए रखने के लिए सर्वत्र सराहा गया। उनके प्रयासों ने यह सुनिश्चित किया
+                        कि सदन तीव्र बहस के क्षणों के दौरान भी अपनी गरिमा बनाए रखे, जो भविष्य की पीढ़ियों के कानून
+                        निर्माताओं के लिए एक मिसाल कायम करता है।
+                    </p>
+
+                    <a id="section-3" class="anchor-link"></a>
+                    <h2 class="text-3xl font-bold pt-4 text-primary-blue">
+                        <strong>द्विदलीय सद्भाव का व्यक्तिगत किस्सा</strong>
+                    </h2>
+                    <p class="text-lg leading-relaxed">
+                        सौहार्द के लिए तिवारी की प्रतिष्ठा राजनीतिक गलियारों से परे तक फैली हुई थी। एक व्यापक रूप से
+                        बताई गई कहानी में पूर्व भाजपा मुख्यमंत्री और बाद में उपराष्ट्रपति, भैरों सिंह शेखावत के साथ
+                        विधानसभा के पटल पर हुई एक भयंकर बहस शामिल है। बहस की गर्मी पौराणिक थी, लेकिन इसके बाद जो हुआ वह
+                        तिवारी के सौम्य स्वभाव की विशेषता थी: सदन स्थगित होने के कुछ ही क्षण बाद, दोनों नेताओं को एक
+                        'पान' साझा करते हुए और एक साथ हंसते हुए देखा गया, जो उस पीढ़ी की राजनीति को परिभाषित करने वाले
+                        आपसी सम्मान को दर्शाता है, एक परंपरा जिसका अनुकरण करने की वर्तमान नेता आशा करते हैं।
+                    </p>
+
+                    <a id="section-4" class="anchor-link"></a>
+                    <h2 class="text-3xl font-bold pt-4 text-primary-blue">
+                        <strong>शोक संवेदनाएं व्यक्त</strong>
+                    </h2>
+                    <p class="text-lg leading-relaxed">
+                        सभी दलों के नेताओं ने शोक संवेदनाएं व्यक्त कीं। मुख्यमंत्री भजन लाल शर्मा और राज्यपाल हरिभाऊ
+                        बागड़े ने गहरा दुःख व्यक्त किया, संसदीय परंपराओं के मशालची के रूप में तिवारी की भूमिका पर प्रकाश
+                        डाला। पूर्व मुख्यमंत्री अशोक गहलोत ने तिवारी की प्रशंसा करते हुए कहा कि उन्होंने 105 वर्ष का
+                        "शानदार जीवन" जिया और वह अनुशासन और जीवंतता का एक उदाहरण थे। विधानसभा अध्यक्ष वासुदेव देवनानी ने
+                        दिवंगत नेता के सम्मान में विधानसभा सचिवालय में छुट्टी की घोषणा की, यह पुष्टि करते हुए कि तिवारी
+                        का अंतिम संस्कार उनके पैतृक गांव बिड्यारी में हुआ। राज्य ने वास्तव में नैतिक और सैद्धांतिक
+                        राजनीति के एक मार्गदर्शक प्रकाश को खो दिया है।
+                    </p>
+
+                    <a id="mcq"></a>
+                    <div class="bg-accent-yellow/30 p-6 rounded-2xl mt-10 border-t-8 border-accent-yellow shadow-xl">
+                        <h2 class="text-3xl font-bold mb-6 text-gray-900">
+                            <strong>अपने ज्ञान की जाँच करें: त्वरित प्रश्नोत्तरी</strong>
+                        </h2>
+                        <form id="mcq-form" class="space-y-6">
+
+                            <!-- Question 1 - Correct Answer: B (1920) -->
+                            <div class="mcq-question-block" data-correct-answer="B">
+                                <p class="mb-3 text-xl font-semibold">1. <strong>गिर्राज प्रसाद तिवारी</strong> का जन्म
+                                    किस वर्ष हुआ था?</p>
+                                <div class="space-y-3">
+                                    <div class="mcq-option">
+                                        <input type="radio" id="q1a" name="q1" value="A">
+                                        <label for="q1a">A. 1910</label>
+                                    </div>
+                                    <div class="mcq-option">
+                                        <input type="radio" id="q1b" name="q1" value="B">
+                                        <label for="q1b">B. 1920</label>
+                                    </div>
+                                    <div class="mcq-option">
+                                        <input type="radio" id="q1c" name="q1" value="C">
+                                        <label for="q1c">C. 1930</label>
+                                    </div>
+                                    <div class="mcq-option">
+                                        <input type="radio" id="q1d" name="q1" value="D">
+                                        <label for="q1d">D. 1940</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Question 2 - Correct Answer: C (बयाना) -->
+                            <div class="mcq-question-block" data-correct-answer="C">
+                                <p class="mb-3 text-xl font-semibold">2. <strong>गिर्राज प्रसाद तिवारी</strong> ने अपने
+                                    पहले कार्यकाल (1972-1977) में विधायक के रूप में किस प्राथमिक निर्वाचन क्षेत्र का
+                                    प्रतिनिधित्व किया?</p>
+                                <div class="space-y-3">
+                                    <div class="mcq-option">
+                                        <input type="radio" id="q2a" name="q2" value="A">
+                                        <label for="q2a">A. भरतपुर</label>
+                                    </div>
+                                    <div class="mcq-option">
+                                        <input type="radio" id="q2b" name="q2" value="B">
+                                        <label for="q2b">B. जयपुर</label>
+                                    </div>
+                                    <div class="mcq-option">
+                                        <input type="radio" id="q2c" name="q2" value="C">
+                                        <label for="q2c">C. बयाना</label>
+                                    </div>
+                                    <div class="mcq-option">
+                                        <input type="radio" id="q2d" name="q2" value="D">
+                                        <label for="q2d">D. वैर</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Question 3 - Correct Answer: C (1986 से 1990) -->
+                            <div class="mcq-question-block" data-correct-answer="C">
+                                <p class="mb-3 text-xl font-semibold">3. <strong>गिर्राज प्रसाद तिवारी</strong> ने
+                                    राजस्थान विधान सभा के अध्यक्ष के रूप में किस अवधि के लिए कार्य किया?</p>
+                                <div class="space-y-3">
+                                    <div class="mcq-option">
+                                        <input type="radio" id="q3a" name="q3" value="A">
+                                        <label for="q3a">A. 1972 से 1977</label>
+                                    </div>
+                                    <div class="mcq-option">
+                                        <input type="radio" id="q3b" name="q3" value="B">
+                                        <label for="q3b">B. 1985 से 1986 (उपसभापति)</label>
+                                    </div>
+                                    <div class="mcq-option">
+                                        <input type="radio" id="q3c" name="q3" value="C">
+                                        <label for="q3c">C. 1986 से 1990</label>
+                                    </div>
+                                    <div class="mcq-option">
+                                        <input type="radio" id="q3d" name="q3" value="D">
+                                        <label for="q3d">D. 1990 से 1994</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button type="button" onclick="checkAnswers()"
+                                class="w-full bg-primary-blue hover:bg-primary-blue/90 text-white font-bold py-3 px-4 rounded-xl transition duration-300 shadow-lg mt-6">
+                                उत्तर जांचें
+                            </button>
+                            <div id="score-output"
+                                class="text-center mt-4 text-xl font-bold hidden p-3 rounded-lg bg-light-purple"></div>
+
+                            <!-- Section for showing correct answers, hidden by default -->
+                            <div class="mt-8 pt-4 border-t border-gray-400">
+                                <button type="button" onclick="toggleAnswers()"
+                                    class="text-primary-blue hover:text-primary-blue/80 font-bold flex items-center">
+                                    <span id="toggle-icon">▼</span>&nbsp; सही उत्तर देखें
+                                </button>
+                                <div id="correct-answers-list" class="mt-4 p-4 bg-light-green/50 rounded-lg hidden">
+                                    <p class="font-bold mb-2">सही उत्तर:</p>
+                                    <ul class="list-disc list-inside space-y-2">
+                                        <li>प्रश्न 1: <strong>B. 1920</strong> (लेख के भाग 1 में उल्लेखित)</li>
+                                        <li>प्रश्न 2: <strong>C. बयाना</strong> (लेख के भाग 1 में उल्लेखित)</li>
+                                        <li>प्रश्न 3: <strong>C. 1986 से 1990</strong> (लेख के भाग 2 में उल्लेखित)</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                </section>
+            </article>
+
+            <!-- Table of Contents (TOC) - Sticky on Desktop -->
+            <aside class="lg:col-span-4 mt-8 lg:mt-0">
+                <div id="toc"
+                    class="p-6 bg-white rounded-2xl shadow-xl border-t-4 border-accent-yellow toc-desktop-sticky">
+                    <h3 class="text-2xl font-bold mb-4 text-gray-900 border-b pb-2">
+                        विषय सूची
+                    </h3>
+                    <ul class="space-y-3 text-lg">
+                        <li>
+                            <a href="#section-1"
+                                class="text-gray-600 hover:text-primary-blue transition duration-150 block p-2 rounded-lg hover:bg-light-purple/30">
+                                <strong>सेवा को समर्पित जीवन</strong>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#section-2"
+                                class="text-gray-600 hover:text-primary-blue transition duration-150 block p-2 rounded-lg hover:bg-light-purple/30">
+                                <strong>संसदीय विरासत</strong>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#section-3"
+                                class="text-gray-600 hover:text-primary-blue transition duration-150 block p-2 rounded-lg hover:bg-light-purple/30">
+                                <strong>द्विदलीय सद्भाव का व्यक्तिगत किस्सा</strong>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#section-4"
+                                class="text-gray-600 hover:text-primary-blue transition duration-150 block p-2 rounded-lg hover:bg-light-purple/30">
+                                <strong>शोक संवेदनाएं व्यक्त</strong>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#mcq"
+                                class="text-gray-600 hover:text-primary-blue transition duration-150 block p-2 rounded-lg hover:bg-light-purple/30">
+                                <strong>क्विक क्विज</strong>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <!-- JavaScript for MCQ Logic -->
+    <script>
+        // NOTE: The JavaScript logic remains in English for functionality, as requested by the original layout instructions.
+        function checkAnswers() {
+            const form = document.getElementById('mcq-form');
+            const scoreOutput = document.getElementById('score-output');
+            // Now querying for the question blocks instead of individual options
+            const questionBlocks = form.querySelectorAll('.mcq-question-block');
+            let score = 0;
+            const totalQuestions = questionBlocks.length;
+
+            questionBlocks.forEach(questionBlock => {
+                const correctValue = questionBlock.getAttribute('data-correct-answer');
+                const selectedRadio = questionBlock.querySelector('input[type="radio"]:checked');
+                const options = questionBlock.querySelectorAll('.mcq-option');
+
+                // 1. Reset all feedback styles for options in this block
+                options.forEach(option => {
+                    option.classList.remove('correct', 'incorrect');
+                    // Reset inline styles for the label to remove non-selected correct highlighting
+                    option.querySelector('label').style.border = "";
+                    option.querySelector('label').style.backgroundColor = "";
+                });
+
+                if (selectedRadio) {
+                    // Check if selected answer is correct
+                    if (selectedRadio.value === correctValue) {
+                        score++;
+                        // Apply the 'correct' class which uses CSS :checked + label for styling
+                        selectedRadio.closest('.mcq-option').classList.add('correct');
+                    } else {
+                        // Mark the selected (incorrect) option as incorrect
+                        selectedRadio.closest('.mcq-option').classList.add('incorrect');
+
+                        // Highlight the actual correct answer (using custom styling since it's not checked)
+                        const actualCorrectOption = questionBlock.querySelector(`input[type="radio"][value="${correctValue}"]`);
+                        if (actualCorrectOption) {
+                            // Apply custom inline styles to label of the correct option
+                            actualCorrectOption.nextElementSibling.style.border = "2px solid #40c057";
+                            actualCorrectOption.nextElementSibling.style.backgroundColor = "#d8f5d8";
+                        }
+                    }
+                } else {
+                    // If question is unanswered, still highlight the correct one
+                    const actualCorrectOption = questionBlock.querySelector(`input[type="radio"][value="${correctValue}"]`);
+                    if (actualCorrectOption) {
+                        // Apply custom inline styles to label of the correct option
+                        actualCorrectOption.nextElementSibling.style.border = "2px solid #40c057";
+                        actualCorrectOption.nextElementSibling.style.backgroundColor = "#d8f5d8";
+                    }
+                }
+            });
+
+            scoreOutput.textContent = `आपने ${totalQuestions} में से ${score} अंक प्राप्त किए।`; // Hindi score display
+            scoreOutput.classList.remove('hidden');
+
+            // Disable the check button after submission to prevent re-checking
+            form.querySelector('button').disabled = true;
+
+            // Simple message box (instead of alert)
+            const resultBox = document.createElement('div');
+            resultBox.className = 'fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 p-6 bg-primary-blue text-white rounded-lg shadow-2xl z-[100] text-center transition-opacity duration-300';
+            resultBox.innerHTML = `<p class="text-2xl font-bold mb-2">प्रश्नोत्तरी पूरी हुई!</p><p>आपने <strong>${score}/${totalQuestions}</strong> अंक प्राप्त किए।</p><button onclick="window.location.reload()" class="mt-4 bg-white text-primary-blue py-1 px-3 rounded-full font-semibold">पुनः प्रयास करें</button>`;
+            document.body.appendChild(resultBox);
+        }
+
+        // New function to toggle the visibility of correct answers
+        function toggleAnswers() {
+            const answersList = document.getElementById('correct-answers-list');
+            const toggleIcon = document.getElementById('toggle-icon');
+            if (answersList.classList.contains('hidden')) {
+                answersList.classList.remove('hidden');
+                toggleIcon.textContent = '▲';
+            } else {
+                answersList.classList.add('hidden');
+                toggleIcon.textContent = '▼';
+            }
+        }
+    </script>
+</body>
+
+</html>

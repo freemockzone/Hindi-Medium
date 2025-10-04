@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="hi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>स्वच्छ ऊर्जा में वृद्धि के लिए जलवायु वित्त का विस्तार: भारत का विश्लेषण | The Hindu</title>
+    <meta name="description"
+        content="भारत के स्वच्छ ऊर्जा परिवर्तन और जलवायु वित्त अंतर का विश्लेषण। जानें 2030 तक 2.5 ट्रिलियन डॉलर की आवश्यकता और निजी पूंजी जुटाने की रणनीतियाँ।">
+    <meta name="keywords"
+        content="जलवायु वित्त, स्वच्छ ऊर्जा भारत, नवीकरणीय ऊर्जा, ग्रीन बॉन्ड, आईआरईएनए, ईएसजी, मिश्रित वित्त, ईपीएफओ, एलआईसी, कार्बन बाज़ार">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-green': '#10b981', /* Main accent color (Emerald) */
+                        'accent-yellow': '#f59e0b', /* Yellow for highlights/attention */
+                        'light-gray': '#f9fafb', /* Very light background */
+                        'light-green': '#d1fae5',
+                        'light-yellow': '#fffbeb',
+                        'deep-green': '#065f46',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Custom styling for all metric/currency values (Replaces '$' display) */
+        .currency-val,
+        .metric-val {
+            font-weight: 700;
+            color: #065f46;
+            /* Deep green to highlight key numbers */
+        }
+
+        /* Styling for the MCQ options */
+        .mcq-option input[type="radio"] {
+            display: none;
+        }
+
+        .mcq-option label {
+            display: block;
+            cursor: pointer;
+            padding: 1rem;
+            border-radius: 0.75rem;
+            border: 2px solid transparent;
+            transition: all 0.2s;
+            background-color: white;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.06);
+        }
+
+        .mcq-option label:hover {
+            background-color: #f7f7f7;
+        }
+
+        /* Style for the selected (checked) option */
+        .mcq-option input[type="radio"]:checked+label {
+            border-color: #10b981;
+            background-color: #ecfdf5;
+            /* Light green background when checked */
+            font-weight: 600;
+        }
+
+        .mcq-question-block .correct label {
+            border-color: #065f46 !important;
+            /* Deep green border for correct answer */
+            background-color: #d1fae5 !important;
+            /* Light green background */
+        }
+
+        .mcq-question-block .incorrect input[type="radio"]:checked+label {
+            border-color: #ef4444 !important;
+            /* Red border for incorrect answer */
+            background-color: #fee2e2 !important;
+            /* Light red background */
+        }
+
+        /* Custom style for sticky TOC on desktop */
+        @media (min-width: 1024px) {
+            .toc-desktop-sticky {
+                position: -webkit-sticky;
+                position: sticky;
+                top: 5rem;
+                max-height: calc(100vh - 8rem);
+                overflow-y: auto;
+            }
+        }
+
+        /* Custom table styling for better look */
+        .styled-table thead tr {
+            background-color: #10b981;
+            color: #ffffff;
+            text-align: left;
+        }
+
+        .styled-table th,
+        .styled-table td {
+            padding: 12px 15px;
+        }
+
+        .styled-table tbody tr {
+            border-bottom: 1px solid #dddddd;
+        }
+
+        .styled-table tbody tr:nth-of-type(even) {
+            background-color: #f3f3f3;
+        }
+
+        .styled-table tbody tr:last-of-type {
+            border-bottom: 2px solid #10b981;
+        }
+    </style>
+</head>
+
+<body class="bg-light-gray text-gray-800 font-sans">
+
+    <!-- Navigation Bar -->
+    <nav class="sticky top-0 z-50 bg-white shadow-xl p-4 border-b-4 border-primary-green">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="text-2xl font-extrabold text-deep-green tracking-tight">
+                <span class="bg-primary-green text-white px-2 py-1 rounded-lg mr-1 inline-block">ऊ</span>र्जा संक्रमण
+            </div>
+            <div class="hidden md:flex space-x-6 text-gray-600 font-medium">
+                <a href="../index.html" class="hover:text-primary-green transition duration-150 p-2 rounded-lg">होम</a>
+                <a href="#" class="hover:text-primary-green transition duration-150 p-2 rounded-lg">जलवायु नीति</a>
+                <a href="#" class="hover:text-primary-green transition duration-150 p-2 rounded-lg">अर्थव्यवस्था</a>
+                <a href="#" class="hover:text-primary-green transition duration-150 p-2 rounded-lg">विकास</a>
+            </div>
+            <button class="md:hidden text-gray-600 hover:text-primary-green focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
+                    </path>
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Main Content Layout -->
+    <main class="max-w-7xl mx-auto p-4 md:p-8">
+        <div class="lg:grid lg:grid-cols-12 lg:gap-10">
+
+            <!-- Article Content -->
+            <article class="lg:col-span-8 space-y-8">
+                <header class="pb-4 border-b border-gray-300">
+                    <p class="text-sm text-gray-500 mb-1">
+                        सोर्स: द हिंदू | <strong>04 अक्टूबर, 2025</strong>
+                    </p>
+                    <h1 class="text-4xl sm:text-5xl font-extrabold leading-tight text-gray-900">
+                        स्वच्छ ऊर्जा में इस वृद्धि के लिए <strong>जलवायु वित्त</strong> के विस्तार की आवश्यकता है
+                    </h1>
+                    <div class="mt-4 flex items-center space-x-4 text-gray-600">
+                        <span class="text-sm"><strong>हमारे संवाददाता</strong> द्वारा</span>
+                        <span class="text-sm text-primary-green font-bold p-1 rounded-lg bg-light-green/50">
+                            अनुमानित पठन समय: 7 मिनट
+                        </span>
+                    </div>
+                </header>
+
+                <section id="article-main" class="space-y-6">
+
+                    <a id="section-1-overview" class="anchor-link"></a>
+                    <p
+                        class="text-xl font-serif leading-relaxed bg-light-yellow/50 p-4 rounded-xl border-l-4 border-accent-yellow shadow-md">
+                        <em>भारत का स्वच्छ ऊर्जा परिवर्तन महत्वपूर्ण है, लेकिन इसके विस्तार के लिए जलवायु वित्त, निजी
+                            क्षेत्र की भागीदारी, नवीन साधनों और नीतिगत समर्थन में वृद्धि की आवश्यकता है।</em>
+                        <br>
+                        भारत का स्वच्छ ऊर्जा परिवर्तन गति पकड़ रहा है। 2024 में, भारत ने <strong
+                            class="metric-val">24.5</strong> गीगावाट (GW) सौर ऊर्जा क्षमता जोड़ी, जिससे यह चीन और
+                        संयुक्त राज्य अमेरिका के बाद वैश्विक स्तर पर <strong>तीसरा सबसे बड़ा योगदानकर्ता</strong> बन
+                        गया, जिससे यह नवीकरणीय ऊर्जा की ओर वैश्विक बदलाव में एक प्रमुख खिलाड़ी बन गया।
+                    </p>
+
+                    <p class="text-lg leading-relaxed">
+                        संयुक्त राष्ट्र महासचिव की 2025 की जलवायु रिपोर्ट में भारत को, ब्राज़ील और चीन के साथ, सौर और
+                        पवन ऊर्जा के विस्तार में एक <strong>अग्रणी विकासशील देश</strong> के रूप में मान्यता दी गई है।
+                        2023 में, नवीकरणीय ऊर्जा क्षेत्र ने <strong class="metric-val">1</strong> मिलियन से अधिक लोगों
+                        को रोजगार दिया, जो सकल घरेलू उत्पाद की वृद्धि में <strong class="metric-val">5%</strong> का
+                        योगदान देता है। इसमें से, अकेले ऑफ-ग्रिड सौर ऊर्जा ने 2021 में <strong
+                            class="metric-val">80,000</strong> से अधिक लोगों को रोजगार दिया। अंतर्राष्ट्रीय सौर गठबंधन
+                        (ISA) की स्थापना में भारत का नेतृत्व प्रशंसनीय है।
+                    </p>
+
+                    <a id="section-2-gap" class="anchor-link"></a>
+                    <h2 class="text-3xl font-bold pt-4 text-primary-green">
+                        महत्वपूर्ण अंतर: वित्त की गंभीर कमी
+                    </h2>
+                    <p class="text-lg leading-relaxed">
+                        लेकिन इस प्रभावशाली गति को निरंतर बढ़ावा देने की आवश्यकता है। सुर्खियों के पीछे एक गंभीर कमी
+                        छिपी है - इस बदलाव को बनाए रखने और बढ़ाने के लिए आवश्यक <strong>वित्तीय ढाँचा</strong>। जलवायु
+                        वित्त के नाटकीय विस्तार के बिना, भारत अपने जलवायु लक्ष्यों को पूरा करने के लिए संघर्ष करेगा।
+                    </p>
+
+                    <p class="text-lg leading-relaxed">
+                        स्वच्छ ऊर्जा के आर्थिक पक्ष का ठोस आधार है। अंतर्राष्ट्रीय नवीकरणीय ऊर्जा एजेंसी (IRENA) के
+                        अनुसार, यदि भारत <strong class="metric-val">1.5°C</strong>-संरेखित मार्ग का अनुसरण करता है, तो
+                        वह 2050 तक <strong class="metric-val">2.8%</strong> की औसत वार्षिक सकल घरेलू उत्पाद वृद्धि
+                        प्राप्त कर सकता है, जो G-20 औसत से दोगुनी से भी अधिक है। फिर भी, यह गति जलवायु वित्त के लुप्त
+                        हिस्से पर निर्भर करती है।
+                    </p>
+
+                    <p
+                        class="text-lg leading-relaxed bg-light-green/50 p-3 rounded-lg border-l-4 border-primary-green shadow-sm">
+                        भारत के जलवायु वित्त अंतर का आकार बहुत बड़ा है। हाल के अनुमानों के अनुसार, <strong
+                            class="metric-val">1.5°C</strong> के मार्ग पर बने रहने के लिए 2030 तक <strong><strong
+                                class="currency-val">1.5 ट्रिलियन</strong> डॉलर</strong> की आवश्यकता है, जबकि वित्त
+                        मंत्रालय राष्ट्रीय लक्ष्यों को पूरा करने के लिए 2030 तक यह आँकड़ा <strong><strong
+                                class="currency-val">2.5 ट्रिलियन</strong> डॉलर</strong> से अधिक बताता है। जलवायु वित्त
+                        का वर्तमान प्रवाह इस लक्ष्य से काफ़ी कम है।
+                    </p>
+                    <p class="text-lg leading-relaxed">
+                        दिसंबर 2024 तक, भारत का संचयी संरेखित हरित, सामाजिक, सततता और सततता-संबंधी (GSS+) ऋण निर्गमन
+                        <strong class="currency-val">55.9 बिलियन डॉलर</strong> तक पहुँच गया था, जो 2021 से <strong
+                            class="metric-val">186%</strong> की वृद्धि दर्शाता है।
+                        हालाँकि, बड़े कॉर्पोरेट्स से आगे विस्तार करने की चुनौती अभी भी मौजूद है। यद्यपि कुल ग्रीन बॉन्ड
+                        जारी करने में निजी क्षेत्र का योगदान <strong class="metric-val">84%</strong> रहा, फिर भी
+                        सूक्ष्म, लघु एवं मध्यम उद्यमों, कृषि-तकनीक नवप्रवर्तकों और स्थानीय अवसंरचना विकासकर्ताओं की
+                        पहुँच को रियायती वित्त और जोखिम-साझाकरण तंत्रों के माध्यम से बढ़ाने की आवश्यकता बनी हुई है।
+                    </p>
+
+
+                    <a id="section-3-strategy" class="anchor-link"></a>
+                    <h2 class="text-3xl font-bold pt-4 text-primary-green">
+                        रणनीति में बदलाव: अंतराल को पाटना
+                    </h2>
+                    <p class="text-lg leading-relaxed">
+                        वित्त में इस अंतर को पाटने के लिए, भारत को अपनी जलवायु वित्त रणनीति में विविधता लानी होगी और उसे
+                        और गहरा करना होगा, जिसकी शुरुआत <strong>सार्वजनिक वित्त</strong> से होगी। राष्ट्रीय और राज्य
+                        सरकारें निजी पूंजी को आकर्षित करने और हरित निवेशों के जोखिम को कम करने के लिए बजट आवंटन और
+                        राजकोषीय साधनों का उपयोग कर सकती हैं।
+                    </p>
+
+                    <h3 class="text-2xl font-semibold pt-4 text-deep-green">मिश्रित वित्त की भूमिका</h3>
+                    <p class="text-lg leading-relaxed">
+                        मिश्रित वित्त इस अंतर को पाट सकता है। <strong>आंशिक गारंटी</strong> या <strong>अधीनस्थ
+                            ऋण</strong> जैसे ऋण वृद्धि उपकरण हरित परियोजनाओं के जोखिम-प्रतिफल प्रोफाइल में सुधार कर सकते
+                        हैं, जिससे वे निजी ऋणदाताओं के लिए अधिक आकर्षक बन सकते हैं। इसी प्रकार, <strong>प्रदर्शन या ऋण
+                            गारंटी</strong>, द्वितीय और तृतीय श्रेणी के शहरों में मध्यम आकार के स्वच्छ ऊर्जा बुनियादी
+                        ढाँचे के लिए वित्त को खोल सकती है।
+                    </p>
+
+                    <h3 class="text-2xl font-semibold pt-4 text-deep-green">घरेलू संस्थागत पूंजी का दोहन</h3>
+                    <p class="text-lg leading-relaxed">
+                        ऐसे मॉडलों को बढ़ाने के लिए पेंशन फंड, बीमा कंपनियों और सॉवरेन वेल्थ फंडों से घरेलू संस्थागत
+                        पूंजी को खोलना होगा। भारत भी अपने संस्थागत निवेशकों, जैसे <strong>कर्मचारी भविष्य निधि संगठन
+                            (ईपीएफओ)</strong> या <strong>भारतीय जीवन बीमा निगम (एलआईसी)</strong>, को अपने पोर्टफोलियो का
+                        एक हिस्सा जलवायु-संरेखित निवेशों में आवंटित करने में सक्षम बनाकर इसी तरह की क्षमता को खोल सकता
+                        है। इसके लिए स्पष्ट <strong>पर्यावरण, सामाजिक और प्रशासनिक (ईएसजी)</strong> निवेश दिशानिर्देश और
+                        <strong>नियामक सुधारों</strong> की आवश्यकता होगी।
+                    </p>
+
+                    <a id="section-4-carbon" class="anchor-link"></a>
+                    <h2 class="text-3xl font-bold pt-4 text-primary-green">
+                        कार्बन बाज़ारों का दोहन और नवाचार
+                    </h2>
+                    <p class="text-lg leading-relaxed">
+                        नीतिगत और संस्थागत समर्थन महत्वपूर्ण हैं। कार्बन बाज़ार एक और रास्ता प्रदान करते हैं। भारत की नई
+                        <strong>कार्बन क्रेडिट ट्रेडिंग योजना (सीसीटीएस)</strong>, यदि पारदर्शी, सुविनियमित और न्यायसंगत
+                        हो, तो नए वित्तीय स्रोतों को खोल सकती है।
+                    </p>
+                    <p class="text-lg leading-relaxed">
+                        भारत को न केवल स्वच्छ ऊर्जा, बल्कि <strong>जलवायु वित्त नवाचार</strong> में भी अग्रणी होना
+                        चाहिए। यह जलवायु वित्त पर नज़र रखने के लिए <strong>ब्लॉकचेन</strong>, हरित पोर्टफोलियो के लिए
+                        <strong>कृत्रिम बुद्धिमत्ता (एआई)-संचालित जोखिम मूल्यांकन</strong>, या भारत की अनूठी
+                        वास्तविकताओं को प्रतिबिंबित करने वाले अनुकूलित मिश्रित वित्त मॉडल के माध्यम से हो सकता है।
+                    </p>
+
+                    <em class="block text-sm text-gray-500 mt-4">व्यक्त विचार व्यक्तिगत हैं</em>
+                </section>
+
+
+                <section id="upsc-notes"
+                    class="mt-12 p-6 bg-white rounded-2xl shadow-xl border-t-8 border-accent-yellow">
+                    <a id="notes-title" class="anchor-link"></a>
+                    <h3 class="text-3xl font-bold mb-6 text-gray-900">
+                        UPSC CSE नोट्स: भारत के ऊर्जा परिवर्तन के लिए <strong>जलवायु वित्त</strong>
+                    </h3>
+
+                    <a id="notes-1-speed" class="anchor-link"></a>
+                    <h4 class="text-2xl font-semibold mt-6 mb-3 text-primary-green">
+                        1. भारत की गति: उपलब्धियाँ और आर्थिक प्रभाव
+                    </h4>
+                    <div class="overflow-x-auto rounded-lg shadow-md mb-6">
+                        <table class="min-w-full divide-y divide-gray-200 styled-table">
+                            <thead>
+                                <tr>
+                                    <th class="px-6 py-3 text-xs font-medium uppercase tracking-wider">उपलब्धि/मीट्रिक
+                                    </th>
+                                    <th class="px-6 py-3 text-xs font-medium uppercase tracking-wider">डेटा पॉइंट</th>
+                                    <th class="px-6 py-3 text-xs font-medium uppercase tracking-wider">वैश्विक महत्व
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody class="bg-white divide-y divide-gray-200">
+                                <tr>
+                                    <td class="px-6 py-4 whitespace-normal font-medium"><strong>नई सौर क्षमता
+                                            (2024)</strong></td>
+                                    <td class="px-6 py-4 whitespace-normal"><strong class="metric-val">24.5</strong>
+                                        गीगावाट (GW) जोड़ा गया</td>
+                                    <td class="px-6 py-4 whitespace-normal">वैश्विक स्तर पर <strong>तीसरा सबसे बड़ा
+                                            योगदानकर्ता</strong> (चीन और अमेरिका के बाद)</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-6 py-4 whitespace-normal font-medium"><strong>जीडीपी योगदान</strong>
+                                    </td>
+                                    <td class="px-6 py-4 whitespace-normal">नवीकरणीय क्षेत्र ने जीडीपी वृद्धि (2023) में
+                                        <strong class="metric-val">5%</strong> का योगदान दिया।</td>
+                                    <td class="px-6 py-4 whitespace-normal">परिवर्तन के लिए मजबूत आर्थिक मामला।</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-6 py-4 whitespace-normal font-medium"><strong>आर्थिक क्षमता
+                                            (आईआरईएनए)</strong></td>
+                                    <td class="px-6 py-4 whitespace-normal"><strong
+                                            class="metric-val">1.5°C</strong>-संरेखित मार्ग से 2050 तक <strong
+                                            class="metric-val">2.8%</strong> औसत वार्षिक सकल घरेलू उत्पाद वृद्धि।</td>
+                                    <td class="px-6 py-4 whitespace-normal">जी-20 औसत से दोगुने से भी अधिक।</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <a id="notes-2-gap" class="anchor-link"></a>
+                    <h4 class="text-2xl font-semibold mt-8 mb-3 text-primary-green">
+                        2. महत्वपूर्ण जलवायु वित्त अंतराल
+                    </h4>
+                    <p class="text-lg leading-relaxed font-semibold">आवश्यकता का परिमाणीकरण (2030 तक):</p>
+                    <ul class="list-disc list-outside ml-6 space-y-2 text-lg mb-4">
+                        <li><strong class="metric-val">1.5°C</strong> मार्ग (IRENA) के लिए: <strong><strong
+                                    class="currency-val">1.5 ट्रिलियन</strong> डॉलर</strong></li>
+                        <li>राष्ट्रीय लक्ष्य (वित्त मंत्रालय) के लिए: <strong>> <strong class="currency-val">2.5
+                                    ट्रिलियन</strong> डॉलर</strong></li>
+                    </ul>
+
+                    <p class="text-lg leading-relaxed font-semibold mt-4">वर्तमान हरित वित्त प्रवाह:</p>
+                    <ul class="list-disc list-outside ml-6 space-y-2 text-lg">
+                        <li>GSS+ ऋण निर्गम (दिसंबर 2024 तक संचयी): <strong><strong class="currency-val">55.9
+                                    बिलियन</strong> डॉलर</strong> (<strong class="metric-val">2021</strong> से <strong
+                                class="metric-val">186%</strong> की वृद्धि)।</li>
+                        <li>हरित बांड हिस्सेदारी: कुल संरेखित निर्गम का <strong><strong
+                                    class="metric-val">83%</strong></strong>।</li>
+                        <li>चुनौती: एमएसएमई, कृषि-तकनीक और टियर II/III शहरों में वित्तीय पहुँच का विस्तार करना।</li>
+                    </ul>
+
+                    <a id="notes-3-strategy" class="anchor-link"></a>
+                    <h4 class="text-2xl font-semibold mt-8 mb-3 text-primary-green">
+                        3. जलवायु वित्त विस्तार की रणनीति (नीतिगत अनिवार्यताएँ)
+                    </h4>
+
+                    <p class="text-lg leading-relaxed font-semibold">मिश्रित वित्त तंत्र:</p>
+                    <ul class="list-disc list-outside ml-6 space-y-2 text-lg mb-4">
+                        <li><strong>ऋण संवर्धन उपकरण</strong> (Credit Enhancement): <strong>आंशिक गारंटी</strong> और
+                            <strong>अधीनस्थ ऋण</strong> &rarr; निजी ऋणदाताओं के लिए जोखिम-वापसी प्रोफ़ाइल में सुधार।
+                        </li>
+                        <li><strong>गारंटी</strong>: <strong>प्रदर्शन या ऋण गारंटी</strong> &rarr; मध्यम आकार के स्वच्छ
+                            ऊर्जा बुनियादी ढाँचे के लिए आवश्यक, खासकर द्वितीय और तृतीय श्रेणी के शहरों में।</li>
+                    </ul>
+
+                    <p class="text-lg leading-relaxed font-semibold">घरेलू संस्थागत पूँजी जुटाना:</p>
+                    <ul class="list-disc list-outside ml-6 space-y-2 text-lg">
+                        <li>नियामक सुधारों के माध्यम से <strong>ईपीएफओ</strong> और <strong>एलआईसी</strong> जैसे संस्थागत
+                            निवेशकों को जलवायु-संरेखित निवेशों में पूँजी आवंटित करने में सक्षम बनाना।</li>
+                        <li>स्पष्ट <strong>ईएसजी</strong> (ESG) निवेश दिशानिर्देश प्रस्तुत करना।</li>
+                    </ul>
+
+                    <p class="text-lg leading-relaxed font-semibold mt-4">बाज़ार और नवाचार:</p>
+                    <ul class="list-disc list-outside ml-6 space-y-2 text-lg">
+                        <li><strong>कार्बन क्रेडिट ट्रेडिंग योजना (सीसीटीएस)</strong> की पारदर्शिता सुनिश्चित करना।</li>
+                        <li>ट्रैकिंग के लिए <strong>ब्लॉकचेन</strong> और जोखिम मूल्यांकन के लिए <strong>एआई</strong>
+                            (AI) का उपयोग करके जलवायु वित्त नवाचार को बढ़ावा देना।</li>
+                    </ul>
+
+                </section>
+
+
+                <section id="mcq-quiz" class="mt-12">
+                    <a id="mcq" class="anchor-link"></a>
+                    <div class="bg-light-green/30 p-6 rounded-2xl border-t-8 border-primary-green shadow-xl">
+                        <h2 class="text-3xl font-bold mb-6 text-gray-900">
+                            <strong>अपने ज्ञान की जाँच करें: त्वरित प्रश्नोत्तरी</strong>
+                        </h2>
+                        <form id="mcq-form" class="space-y-6">
+
+                            <!-- Question 1 - Correct Answer: A -->
+                            <div class="mcq-question-block" data-correct-answer="A">
+                                <p class="mb-3 text-xl font-semibold">1. 2024 में <strong
+                                        class="metric-val">24.5</strong> GW सौर ऊर्जा क्षमता जोड़कर, भारत वैश्विक स्तर
+                                    पर कौन सा सबसे बड़ा योगदानकर्ता बन गया?</p>
+                                <div class="space-y-3">
+                                    <div class="mcq-option">
+                                        <input type="radio" id="q1a" name="q1" value="A">
+                                        <label for="q1a">A. तीसरा</label>
+                                    </div>
+                                    <div class="mcq-option">
+                                        <input type="radio" id="q1b" name="q1" value="B">
+                                        <label for="q1b">B. चौथा</label>
+                                    </div>
+                                    <div class="mcq-option">
+                                        <input type="radio" id="q1c" name="q1" value="C">
+                                        <label for="q1c">C. पहला</label>
+                                    </div>
+                                    <div class="mcq-option">
+                                        <input type="radio" id="q1d" name="q1" value="D">
+                                        <label for="q1d">D. दूसरा</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Question 2 - Correct Answer: B -->
+                            <div class="mcq-question-block" data-correct-answer="B">
+                                <p class="mb-3 text-xl font-semibold">2. वित्त मंत्रालय के अनुमानों के अनुसार, राष्ट्रीय
+                                    जलवायु लक्ष्यों को पूरा करने के लिए भारत को 2030 तक <strong>कितने</strong> ट्रिलियन
+                                    डॉलर से अधिक की आवश्यकता है?</p>
+                                <div class="space-y-3">
+                                    <div class="mcq-option">
+                                        <input type="radio" id="q2a" name="q2" value="A">
+                                        <label for="q2a">A. <strong class="currency-val">1.5 ट्रिलियन</strong>
+                                            डॉलर</label>
+                                    </div>
+                                    <div class="mcq-option">
+                                        <input type="radio" id="q2b" name="q2" value="B">
+                                        <label for="q2b">B. <strong class="currency-val">2.5 ट्रिलियन</strong>
+                                            डॉलर</label>
+                                    </div>
+                                    <div class="mcq-option">
+                                        <input type="radio" id="q2c" name="q2" value="C">
+                                        <label for="q2c">C. <strong class="currency-val">55.9 बिलियन</strong>
+                                            डॉलर</label>
+                                    </div>
+                                    <div class="mcq-option">
+                                        <input type="radio" id="q2d" name="q2" value="D">
+                                        <label for="q2d">D. <strong class="currency-val">100 बिलियन</strong>
+                                            डॉलर</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Question 3 - Correct Answer: C -->
+                            <div class="mcq-question-block" data-correct-answer="C">
+                                <p class="mb-3 text-xl font-semibold">3. मिश्रित वित्त रणनीति के तहत, हरित परियोजनाओं के
+                                    जोखिम-प्रतिफल प्रोफाइल में सुधार के लिए कौन सा ऋण वृद्धि उपकरण (Credit Enhancement
+                                    Tool) महत्वपूर्ण है?</p>
+                                <div class="space-y-3">
+                                    <div class="mcq-option">
+                                        <input type="radio" id="q3a" name="q3" value="A">
+                                        <label for="q3a">A. सॉवरेन ग्रीन बॉन्ड</label>
+                                    </div>
+                                    <div class="mcq-option">
+                                        <input type="radio" id="q3b" name="q3" value="B">
+                                        <label for="q3b">B. कार्बन क्रेडिट ट्रेडिंग योजना</label>
+                                    </div>
+                                    <div class="mcq-option">
+                                        <input type="radio" id="q3c" name="q3" value="C">
+                                        <label for="q3c">C. अधीनस्थ ऋण (Subordinate Debt)</label>
+                                    </div>
+                                    <div class="mcq-option">
+                                        <input type="radio" id="q3d" name="q3" value="D">
+                                        <label for="q3d">D. विकेन्द्रीकृत ग्रिड</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Question 4 - Correct Answer: D -->
+                            <div class="mcq-question-block" data-correct-answer="D">
+                                <p class="mb-3 text-xl font-semibold">4. <strong>ईपीएफओ</strong> और
+                                    <strong>एलआईसी</strong> जैसी घरेलू संस्थागत पूंजी को जलवायु निवेश में लगाने के लिए
+                                    किस प्रकार के सुधारों की आवश्यकता बताई गई है?</p>
+                                <div class="space-y-3">
+                                    <div class="mcq-option">
+                                        <input type="radio" id="q4a" name="q4" value="A">
+                                        <label for="q4a">A. सब्सिडी वाले टैरिफ</label>
+                                    </div>
+                                    <div class="mcq-option">
+                                        <input type="radio" id="q4b" name="q4" value="B">
+                                        <label for="q4b">B. कार्बन बाज़ार का निजीकरण</label>
+                                    </div>
+                                    <div class="mcq-option">
+                                        <input type="radio" id="q4c" name="q4" value="C">
+                                        <label for="q4c">C. ऑफ-ग्रिड सौर ऊर्जा का विस्तार</label>
+                                    </div>
+                                    <div class="mcq-option">
+                                        <input type="radio" id="q4d" name="q4" value="D">
+                                        <label for="q4d">D. स्पष्ट ईएसजी निवेश दिशानिर्देश और नियामक सुधार</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button type="button" onclick="checkAnswers()"
+                                class="w-full bg-primary-green hover:bg-deep-green text-white font-bold py-3 px-4 rounded-xl transition duration-300 shadow-lg mt-6">
+                                उत्तर जांचें
+                            </button>
+                            <div id="score-output"
+                                class="text-center mt-4 text-xl font-bold hidden p-3 rounded-lg bg-light-green"></div>
+
+                            <!-- Section for showing correct answers, hidden by default -->
+                            <div class="mt-8 pt-4 border-t border-gray-400">
+                                <button type="button" onclick="toggleAnswers()"
+                                    class="text-primary-green hover:text-deep-green font-bold flex items-center">
+                                    <span id="toggle-icon">▼</span>&nbsp; सही उत्तर देखें
+                                </button>
+                                <div id="correct-answers-list" class="mt-4 p-4 bg-light-green/50 rounded-lg hidden">
+                                    <p class="font-bold mb-2">सही उत्तर:</p>
+                                    <ul class="list-disc list-inside space-y-2">
+                                        <li>प्रश्न 1: <strong>A. तीसरा</strong></li>
+                                        <li>प्रश्न 2: <strong>B. <strong class="currency-val">2.5 ट्रिलियन</strong>
+                                                डॉलर</strong></li>
+                                        <li>प्रश्न 3: <strong>C. अधीनस्थ ऋण (Subordinate Debt)</strong></li>
+                                        <li>प्रश्न 4: <strong>D. स्पष्ट ईएसजी निवेश दिशानिर्देश और नियामक सुधार</strong>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </section>
+
+            </article>
+
+            <!-- Table of Contents (TOC) - Sticky on Desktop -->
+            <aside class="lg:col-span-4 mt-8 lg:mt-0">
+                <div id="toc"
+                    class="p-6 bg-white rounded-2xl shadow-xl border-t-4 border-accent-yellow toc-desktop-sticky">
+                    <h3 class="text-2xl font-bold mb-4 text-gray-900 border-b pb-2">
+                        विषय सूची
+                    </h3>
+                    <ul class="space-y-3 text-lg">
+                        <li>
+                            <a href="#section-1-overview"
+                                class="text-gray-600 hover:text-primary-green transition duration-150 block p-2 rounded-lg hover:bg-gray-100">
+                                सारांश: स्वच्छ ऊर्जा परिवर्तन
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#section-2-gap"
+                                class="text-gray-600 hover:text-primary-green transition duration-150 block p-2 rounded-lg hover:bg-gray-100">
+                                महत्वपूर्ण अंतर: वित्त की कमी
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#section-3-strategy"
+                                class="text-gray-600 hover:text-primary-green transition duration-150 block p-2 rounded-lg hover:bg-gray-100">
+                                रणनीति में बदलाव: अंतराल को पाटना
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#section-4-carbon"
+                                class="text-gray-600 hover:text-primary-green transition duration-150 block p-2 rounded-lg hover:bg-gray-100">
+                                कार्बन बाज़ारों का दोहन
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#notes-title"
+                                class="text-gray-800 font-bold hover:text-primary-green transition duration-150 block p-2 rounded-lg hover:bg-light-green">
+                                UPSC CSE नोट्स: मुख्य बिंदु
+                            </a>
+                            <ul class="ml-4 mt-1 space-y-1 text-base">
+                                <li><a href="#notes-1-speed" class="text-gray-600 hover:text-primary-green block">1.
+                                        भारत की गति: उपलब्धियाँ</a></li>
+                                <li><a href="#notes-2-gap" class="text-gray-600 hover:text-primary-green block">2.
+                                        महत्वपूर्ण जलवायु वित्त अंतराल</a></li>
+                                <li><a href="#notes-3-strategy" class="text-gray-600 hover:text-primary-green block">3.
+                                        विस्तार की रणनीति</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#mcq"
+                                class="text-gray-600 hover:text-primary-green transition duration-150 block p-2 rounded-lg hover:bg-gray-100">
+                                त्वरित प्रश्नोत्तरी
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <!-- JavaScript for MCQ Logic -->
+    <script>
+        // Function to decode HTML entities for display in the simple modal
+        function decodeHtml(html) {
+            const txt = document.createElement("textarea");
+            txt.innerHTML = html;
+            return txt.value;
+        }
+
+        function checkAnswers() {
+            const form = document.getElementById('mcq-form');
+            const scoreOutput = document.getElementById('score-output');
+            const questionBlocks = form.querySelectorAll('.mcq-question-block');
+            let score = 0;
+            const totalQuestions = questionBlocks.length;
+
+            questionBlocks.forEach(questionBlock => {
+                const correctValue = questionBlock.getAttribute('data-correct-answer');
+                const selectedRadio = questionBlock.querySelector('input[type="radio"]:checked');
+                const options = questionBlock.querySelectorAll('.mcq-option');
+
+                // 1. Reset all feedback styles and inline styles
+                options.forEach(option => {
+                    option.classList.remove('correct', 'incorrect');
+                    // Reset inline styles added for correctness visibility
+                    option.querySelector('label').style.border = "";
+                    option.querySelector('label').style.backgroundColor = "";
+                    option.querySelector('label').style.fontWeight = "";
+                });
+
+                if (selectedRadio) {
+                    if (selectedRadio.value === correctValue) {
+                        score++;
+                        selectedRadio.closest('.mcq-option').classList.add('correct');
+                    } else {
+                        selectedRadio.closest('.mcq-option').classList.add('incorrect');
+                        // Highlight the actual correct answer (using custom styling since it's not checked)
+                        const actualCorrectOption = questionBlock.querySelector(`input[type="radio"][value="${correctValue}"]`);
+                        if (actualCorrectOption) {
+                            const correctOptionDiv = actualCorrectOption.closest('.mcq-option');
+                            if (correctOptionDiv) {
+                                correctOptionDiv.classList.add('correct');
+                                // Ensure the label of the correct one is visibly highlighted even if not checked
+                                actualCorrectOption.nextElementSibling.style.border = "2px solid #065f46";
+                                actualCorrectOption.nextElementSibling.style.backgroundColor = "#d1fae5";
+                                actualCorrectOption.nextElementSibling.style.fontWeight = "600";
+                            }
+                        }
+                    }
+                } else {
+                    // If unanswered, highlight the correct one
+                    const actualCorrectOption = questionBlock.querySelector(`input[type="radio"][value="${correctValue}"]`);
+                    if (actualCorrectOption) {
+                        const correctOptionDiv = actualCorrectOption.closest('.mcq-option');
+                        if (correctOptionDiv) {
+                            correctOptionDiv.classList.add('correct');
+                            actualCorrectOption.nextElementSibling.style.border = "2px solid #065f46";
+                            actualCorrectOption.nextElementSibling.style.backgroundColor = "#d1fae5";
+                            actualCorrectOption.nextElementSibling.style.fontWeight = "600";
+                        }
+                    }
+                }
+            });
+
+            scoreOutput.textContent = `आपने ${totalQuestions} में से ${score} अंक प्राप्त किए।`;
+            scoreOutput.classList.remove('hidden');
+
+            // Simple message box (instead of alert)
+            const resultBox = document.createElement('div');
+            resultBox.className = 'fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 p-6 bg-primary-green text-white rounded-lg shadow-2xl z-[100] text-center transition-opacity duration-300';
+            resultBox.innerHTML = `<p class="text-2xl font-bold mb-2">प्रश्नोत्तरी पूरी हुई!</p><p>आपने <strong>${score}/${totalQuestions}</strong> अंक प्राप्त किए।</p><button onclick="window.location.reload()" class="mt-4 bg-white text-primary-green py-1 px-3 rounded-full font-semibold hover:bg-gray-100">पुनः प्रयास करें</button>`;
+            document.body.appendChild(resultBox);
+        }
+
+        function toggleAnswers() {
+            const answersList = document.getElementById('correct-answers-list');
+            const toggleIcon = document.getElementById('toggle-icon');
+            if (answersList.classList.contains('hidden')) {
+                answersList.classList.remove('hidden');
+                toggleIcon.textContent = '▲';
+            } else {
+                answersList.classList.add('hidden');
+                toggleIcon.textContent = '▼';
+            }
+        }
+    </script>
+</body>
+
+</html>

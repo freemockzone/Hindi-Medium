@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="hi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DVC जल उत्सर्जन संघर्ष: एक UPSC केस स्टडी</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7fbfd;
+            /* Very light, colorful background (Slate-50 equivalent) */
+            color: #1f2937;
+        }
+
+        /* User-provided CSS adapted */
+        .info-card {
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        }
+
+        .info-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+
+        .conflict-box {
+            cursor: pointer;
+            transition: all 0.2s ease-in-out;
+            border-width: 2px;
+        }
+
+        .conflict-box.active,
+        .conflict-box:hover {
+            background-color: #e0f2fe;
+            /* sky-100 */
+            border-color: #38bdf8;
+            /* Sky-400 */
+        }
+
+        .connector {
+            width: 2px;
+            height: 2rem;
+            background-color: #cbd5e1;
+            /* Slate-300 */
+        }
+
+        @media (min-width: 768px) {
+            .connector {
+                width: 4rem;
+                height: 2px;
+            }
+        }
+
+        /* MCQ Style */
+        .mcq-option {
+            cursor: pointer;
+            padding: 1rem;
+            margin-bottom: 0.75rem;
+            border-radius: 0.5rem;
+            border: 2px solid #e5e7eb;
+            transition: all 0.2s;
+            background-color: #f9fafb;
+        }
+
+        .mcq-option:hover {
+            border-color: #60a5fa;
+            /* Blue on hover */
+            background-color: #eff6ff;
+        }
+
+        .mcq-option.correct {
+            background-color: #d1fae5;
+            /* Light green for correct */
+            border-color: #10b981;
+            /* Green border */
+        }
+
+        .mcq-option.incorrect {
+            background-color: #fee2e2;
+            /* Light red for incorrect */
+            border-color: #ef4444;
+            /* Red border */
+        }
+
+        .anchor-link {
+            color: #3b82f6;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .anchor-link:hover {
+            color: #1d4ed8;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body class="text-slate-800">
+
+    <!-- Navbar -->
+    <nav class="bg-indigo-600 shadow-lg sticky top-0 z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <span class="text-white text-2xl font-bold tracking-wider">DVC जल उत्सर्जन संघर्ष: एक UPSC केस
+                        स्टडी</span>
+                </div>
+                <!-- Nav Links -->
+                <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
+                    <a href="../index.html"
+                        class="text-white hover:bg-indigo-700 px-3 py-2 rounded-md text-sm font-medium transition duration-150">होम</a>
+                    <a href="#"
+                        class="text-indigo-200 hover:bg-indigo-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition duration-150">यूपीएससी</a>
+                    <a href="#"
+                        class="text-indigo-200 hover:bg-indigo-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition duration-150">भूगोल</a>
+                </div>
+                <!-- Mobile Menu Button (Placeholder) -->
+                <div class="-mr-2 flex sm:hidden">
+                    <button
+                        class="inline-flex items-center justify-center p-2 rounded-md text-indigo-200 hover:text-white hover:bg-indigo-700 focus:outline-none transition duration-150">
+                        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16m-7 6h7" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mx-auto max-w-6xl p-4 sm:p-6 md:p-8">
+
+        <!-- Header Section -->
+        <header class="text-center mb-12 p-4 bg-white rounded-xl shadow-md border-b-4 border-teal-500">
+            <p class="text-sm text-gray-500 font-semibold mb-2">स्रोत: The Hindu | दिनांक: 04-10-2025</p>
+            <h1 class="text-3xl md:text-4xl font-bold text-slate-900">बंगाल में भारी बारिश की चेतावनी के बीच ममता ने
+                केंद्र सरकार द्वारा संचालित डीवीसी पर बांध का पानी छोड़ने का आरोप लगाया</h1>
+            <p class="text-lg text-slate-600 mt-2"><strong>यूपीएससी</strong> उम्मीदवारों के लिए केंद्र-राज्य टकराव पर एक
+                इंटरैक्टिव केस स्टडी।</p>
+            <div class="flex items-center justify-center text-sm text-teal-600 font-medium space-x-2 mt-4">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l3 3a1 1 0 001.414-1.414L11 9.586V6z"
+                        clip-rule="evenodd" />
+                </svg>
+                <span>अनुमानित पठन समय: <strong>3 मिनट</strong></span>
+            </div>
+        </header>
+
+        <main class="space-y-16">
+
+            <!-- Table of Contents Section -->
+            <section class="bg-yellow-100 p-5 rounded-xl mb-8 border-l-4 border-yellow-500">
+                <h2 class="text-xl font-bold text-yellow-800 mb-3" id="toc">सामग्री तालिका</h2>
+                <nav class="space-y-2">
+                    <p><a href="#news-summary" class="anchor-link">समाचार सारांश और विस्तृत आरोप</a></p>
+                    <p><a href="#flashpoint" class="anchor-link">फ़्लैशपॉइंट: घटना के मुख्य तथ्य</a></p>
+                    <p><a href="#conflict" class="anchor-link">प्रशासनिक टकराव का मानचित्रण</a></p>
+                    <p><a href="#institution" class="anchor-link">प्रमुख संस्थान: DVC</a></p>
+                    <p><a href="#relevance" class="anchor-link"><strong>यूपीएससी</strong> प्रासंगिकता</a></p>
+                    <p><a href="#mcq-quiz" class="anchor-link">बहुविकल्पीय प्रश्न (MCQs)</a></p>
+                </nav>
+            </section>
+
+            <!-- News Summary Section (UPDATED with full text) -->
+            <section id="news-summary" class="p-6 sm:p-8 bg-white rounded-xl shadow-lg border border-slate-200">
+                <h2 class="text-2xl font-bold mb-4 text-indigo-700">समाचार सारांश और विस्तृत आरोप</h2>
+
+                <!-- Initial Quote/Summary -->
+                <p class="text-lg leading-relaxed text-gray-700 mb-4">
+                    पश्चिम बंगाल की मुख्यमंत्री ममता बनर्जी ने शुक्रवार को दामोदर घाटी निगम (डीवीसी) पर अपने बांधों से
+                    65,000 क्यूसेक पानी छोड़कर राज्य को <strong>"तत्काल संकट"</strong> में डालने का आरोप लगाया और राज्य
+                    में भारी बारिश और आंधी-तूफान के पूर्वानुमान के बीच पश्चिम बंगाल में बाढ़ की संभावना को बढ़ा दिया।
+                </p>
+                <p class="text-lg leading-relaxed text-gray-700 mb-4 italic border-l-4 border-pink-500 pl-4">
+                    <strong>ममता बनर्जी ने डीवीसी पर भारी बारिश के दौरान बाढ़ का खतरा पैदा करने के लिए लापरवाही से पानी
+                        छोड़ने का आरोप लगाया और दुर्गा पूजा समारोह में किसी भी तरह के व्यवधान का विरोध करने का संकल्प
+                        लिया।</strong>
+                </p>
+
+                <!-- DVC Action Allegations -->
+                <p class="text-lg leading-relaxed text-gray-700 mb-4">
+                    दुर्गा पूजा उत्सव समाप्त होने के एक दिन बाद शुक्रवार को एक सोशल मीडिया पोस्ट में मुख्यमंत्री ने
+                    लिखा, <strong>"विजय दशमी दुर्गा पूजा के समापन का प्रतीक है - जो आनंद, उल्लास और नई आशा का समय है।
+                        फिर भी, पश्चिम बंगाल के लोगों को शांतिपूर्वक त्योहार मनाने देने के बजाय, डीवीसी ने राज्य को बिना
+                        किसी पूर्व सूचना के 65,000 क्यूसेक पानी छोड़ दिया। यह लापरवाही हमारे पवित्र उत्सवों के दौरान दुख
+                        पहुँचाने की कोशिश से कम नहीं है।"</strong>
+                </p>
+
+                <!-- Shameful Act Section -->
+                <h3 class="text-xl font-bold mt-6 mb-3 text-red-700">'शर्मनाक कार्रवाई' पर बयान</h3>
+                <p class="text-lg leading-relaxed text-gray-700 mb-4">
+                    अपनी पोस्ट में, सुश्री बनर्जी ने डीवीसी के कार्यों को <strong>"शर्मनाक और अस्वीकार्य"</strong> बताया
+                    और आरोप लगाया कि कोई भी आसन्न प्राकृतिक आपदा <strong>डीवीसी द्वारा निर्मित आपदा</strong> होगी।
+                </p>
+                <p class="text-lg leading-relaxed text-gray-700 mb-4 italic border-l-4 border-red-500 pl-4">
+                    उन्होंने कहा, "मैं स्पष्ट कर दूँ: मैं किसी को भी बंगाल का विसर्जन नहीं करने दूँगी। हमारे लोगों के
+                    खिलाफ हर साजिश का पूरी ताकत से विरोध किया जाएगा। छल पर सत्य की जीत होगी और बुराई पर अच्छाई की जीत
+                    होगी।"
+                </p>
+
+                <!-- DVC Background (for context) -->
+                <p class="text-lg leading-relaxed text-gray-700 border-t pt-4 mt-4">
+                    <strong>डीवीसी केंद्रीय विद्युत मंत्रालय</strong> के अधीन एक बहुउद्देशीय नदी घाटी परियोजना है जो
+                    झारखंड और पश्चिम बंगाल में फैले दामोदर नदी घाटी क्षेत्र में बांधों के नेटवर्क का प्रबंधन करती है।
+                </p>
+
+            </section>
+
+
+            <!-- खंड 1: फ्लैशपॉइंट (User Provided Structure) -->
+            <section id="flashpoint">
+                <h2 class="text-2xl font-bold mb-2 text-center">फ़्लैशपॉइंट: एक "निर्मित आपदा"</h2>
+                <p class="text-center max-w-3xl mx-auto text-slate-600 mb-8">
+                    इस मुद्दे का मूल मुद्दा पश्चिम बंगाल सरकार द्वारा दामोदर घाटी निगम (DVC), जो एक केंद्रीय निकाय है,
+                    पर लगाया गया आरोप है। राज्य का आरोप है कि बाँध के पानी को लापरवाही से छोड़े जाने से उसके नागरिकों को
+                    एक महत्वपूर्ण समय में खतरा पैदा हो गया। ये कार्ड घटना के प्रमुख तथ्यों को उजागर करते हैं।
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+                    <div class="info-card bg-white p-6 rounded-lg shadow-md border border-slate-200">
+                        <h3 class="font-bold text-2xl text-sky-600">65,000 क्यूसेक</h3>
+                        <p class="text-slate-500 mt-1">डीवीसी बांधों से छोड़ा गया पानी</p>
+                    </div>
+                    <div class="info-card bg-white p-6 rounded-lg shadow-md border border-slate-200">
+                        <h3 class="font-bold text-lg text-sky-600">महत्वपूर्ण समय</h3>
+                        <p class="text-slate-500 mt-1">भारी बारिश की चेतावनी और दुर्गा पूजा के बाद के उत्सवों के बीच
+                            जारी</p>
+                    </div>
+                    <div class="info-card bg-white p-6 rounded-lg shadow-md border border-slate-200">
+                        <h3 class="font-bold text-lg text-sky-600">गंभीर आरोप</h3>
+                        <p class="text-slate-500 mt-1">कार्रवाई को <strong>"शर्मनाक"</strong> माना गया और <strong>"राज्य
+                                को पूर्व सूचना दिए बिना"</strong> किया गया</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- खंड 2: संघर्ष आरेख (User Provided Structure) -->
+            <section id="conflict">
+                <h2 class="text-2xl font-bold mb-2 text-center">प्रशासनिक टकराव का मानचित्रण</h2>
+                <p class="text-center max-w-3xl mx-auto text-slate-600 mb-8">
+                    यह घटना एक राज्य सरकार और एक केंद्रीय एजेंसी के बीच साझा संसाधनों को लेकर हुए संघर्ष का एक उदाहरण
+                    है। नीचे दिया गया चित्र इस विवाद के दो मुख्य स्तंभों को दर्शाता है: एक प्रक्रियात्मक विफलता और एक
+                    गहरा संघीय मुद्दा। उनकी भूमिका और दृष्टिकोण को समझने के लिए प्रत्येक इकाई पर क्लिक करें।
+                </p>
+
+                <div class="flex flex-col md:flex-row items-center justify-center gap-4 text-center">
+                    <div id="box-state"
+                        class="conflict-box bg-white p-6 rounded-lg shadow-md border-transparent w-full md:w-1/3">
+                        <h3 class="font-bold text-lg">पश्चिम बंगाल सरकार</h3>
+                        <p class="text-sm text-slate-500">पीड़ित पक्ष</p>
+                    </div>
+                    <div class="connector"></div>
+                    <div id="box-dvc"
+                        class="conflict-box bg-white p-6 rounded-lg shadow-md border-transparent w-full md:w-1/3">
+                        <h3 class="font-bold text-lg">दामोदर घाटी निगम (DVC)</h3>
+                        <p class="text-sm text-slate-500">केंद्रीय एजेंसी</p>
+                    </div>
+                </div>
+
+                <div id="details-box"
+                    class="mt-8 bg-white p-6 rounded-lg shadow-inner border border-slate-200 min-h-[150px] flex items-center justify-center">
+                    <p class="text-slate-500 text-center">संघर्ष का विवरण देखने के लिए ऊपर दिए गए बॉक्स पर क्लिक करें।
+                    </p>
+                </div>
+            </section>
+
+            <!-- अनुभाग 3: प्रमुख संस्थान (User Provided Structure) -->
+            <section id="institution" class="bg-white p-8 rounded-lg shadow-lg border border-slate-200">
+                <h2 class="text-2xl font-bold mb-4 text-center">दामोदर घाटी निगम (DVC) को समझना</h2>
+                <p class="text-center max-w-3xl mx-auto text-slate-600 mb-6">
+                    इस संघर्ष का विश्लेषण करने के लिए, डीवीसी की प्रकृति और अधिदेश को समझना आवश्यक है। यह केवल एक बिजली
+                    कंपनी नहीं है, बल्कि एक आधारभूत, बहुउद्देशीय नदी घाटी परियोजना है जिसकी भूमिका जटिल है।
+                </p>
+                <div class="max-w-2xl mx-auto space-y-4">
+                    <div class="flex justify-between border-b pb-2">
+                        <span class="font-semibold">प्रकृति:</span>
+                        <span>बहुउद्देशीय नदी घाटी परियोजना</span>
+                    </div>
+                    <div class="flex justify-between border-b pb-2">
+                        <span class="font-semibold">नियंत्रण प्राधिकरण:</span>
+                        <span>केंद्रीय विद्युत मंत्रालय</span>
+                    </div>
+                    <div class="flex justify-between border-b pb-2">
+                        <span class="font-semibold">कार्यक्षेत्र:</span>
+                        <span>दामोदर नदी घाटी (झारखंड और पश्चिम बंगाल)</span>
+                    </div>
+                    <div class="flex justify-between">
+                        <span class="font-semibold">प्राथमिक अधिदेश:</span>
+                        <span>बाढ़ नियंत्रण, सिंचाई, विद्युत उत्पादन</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- खंड 4: यूपीएससी प्रासंगिकता (User Provided Structure) -->
+            <section id="relevance">
+                <h2 class="text-2xl font-bold mb-2 text-center"><strong>यूपीएससी</strong> सिविल सेवा परीक्षा के लिए
+                    प्रासंगिकता</h2>
+                <p class="text-center max-w-3xl mx-auto text-slate-600 mb-8">
+                    यह केस स्टडी मुख्य परीक्षा, विशेषकर सामान्य अध्ययन प्रश्नपत्र II और III के लिए अत्यंत प्रासंगिक है।
+                    यह संघवाद, शासन और आपदा प्रबंधन से संबंधित विषयों के लिए ठोस उदाहरण प्रदान करती है।
+                </p>
+                <div class="overflow-x-auto bg-white p-2 rounded-lg shadow-lg border border-slate-200">
+                    <table class="w-full text-left border-collapse">
+                        <thead>
+                            <tr class="bg-slate-100">
+                                <th class="p-4 font-bold text-slate-700">GS पेपर</th>
+                                <th class="p-4 font-bold text-slate-700">विषय क्षेत्र</th>
+                                <th class="p-4 font-bold text-slate-700">उदाहरणात्मक बिंदु</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-slate-200">
+                            <tr>
+                                <td class="p-4 font-semibold text-sky-700">GS-II</td>
+                                <td class="p-4">शासन और संघवाद</td>
+                                <td class="p-4">केंद्र-राज्य संघर्ष, वैधानिक निकायों की भूमिका, अंतर-राज्यीय नदी प्रबंधन
+                                    के मुद्दे।</td>
+                            </tr>
+                            <tr>
+                                <td class="p-4 font-semibold text-sky-700">GS-III</td>
+                                <td class="p-4">आपदा प्रबंधन</td>
+                                <td class="p-4">बाढ़ प्रबंधन के लिए पूर्व चेतावनी प्रणालियों, बांध सुरक्षा और संस्थागत
+                                    समन्वय की आवश्यकता।</td>
+                            </tr>
+                            <tr>
+                                <td class="p-4 font-semibold text-sky-700">GS-I</td>
+                                <td class="p-4">भूगोल</td>
+                                <td class="p-4">मानव-भूगोल अंतरापृष्ठ, नदी घाटी परियोजनाओं का अनुप्रवाह क्षेत्रों पर
+                                    प्रभाव।</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- MCQ Quiz Section -->
+            <section id="mcq-quiz" class="mb-10 p-6 sm:p-8 bg-blue-50 rounded-xl shadow-lg border-2 border-blue-200">
+                <h2 class="text-3xl font-bold text-indigo-700 mb-6 text-center">अभ्यास: बहुविकल्पीय प्रश्न (MCQs)</h2>
+
+                <div class="space-y-8" id="quiz-container">
+                    <!-- Question 1 -->
+                    <div class="bg-white p-5 rounded-lg shadow-md">
+                        <p class="font-semibold text-xl mb-4 text-gray-800">1. पश्चिम बंगाल की मुख्यमंत्री ममता बनर्जी
+                            ने किस केंद्रीय एजेंसी पर बांध का पानी छोड़कर राज्य में बाढ़ का खतरा पैदा करने का आरोप लगाया
+                            है?</p>
+                        <div class="space-y-3" data-correct-option="b">
+                            <div class="mcq-option" onclick="checkAnswer(this)">
+                                (a) राष्ट्रीय जल विकास एजेंसी (NWDA)
+                            </div>
+                            <div class="mcq-option" onclick="checkAnswer(this)">
+                                (b) <strong>दामोदर घाटी निगम (DVC)</strong>
+                            </div>
+                            <div class="mcq-option" onclick="checkAnswer(this)">
+                                (c) भाखड़ा ब्यास प्रबंधन बोर्ड (BBMB)
+                            </div>
+                            <div class="mcq-option" onclick="checkAnswer(this)">
+                                (d) केंद्रीय जल आयोग (CWC)
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Question 2 -->
+                    <div class="bg-white p-5 rounded-lg shadow-md">
+                        <p class="font-semibold text-xl mb-4 text-gray-800">2. ममता बनर्जी के अनुसार, डीवीसी द्वारा पानी
+                            छोड़ने की अनुमानित मात्रा कितनी थी?</p>
+                        <div class="space-y-3" data-correct-option="c">
+                            <div class="mcq-option" onclick="checkAnswer(this)">
+                                (a) 15,000 क्यूसेक
+                            </div>
+                            <div class="mcq-option" onclick="checkAnswer(this)">
+                                (b) 30,000 क्यूसेक
+                            </div>
+                            <div class="mcq-option" onclick="checkAnswer(this)">
+                                (c) <strong>65,000 क्यूसेक</strong>
+                            </div>
+                            <div class="mcq-option" onclick="checkAnswer(this)">
+                                (d) 1,00,000 क्यूसेक
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Question 3 -->
+                    <div class="bg-white p-5 rounded-lg shadow-md">
+                        <p class="font-semibold text-xl mb-4 text-gray-800">3. दामोदर घाटी निगम (DVC) किस केंद्रीय
+                            मंत्रालय के अधीन एक बहुउद्देशीय नदी घाटी परियोजना है?</p>
+                        <div class="space-y-3" data-correct-option="c">
+                            <div class="mcq-option" onclick="checkAnswer(this)">
+                                (a) जल शक्ति मंत्रालय
+                            </div>
+                            <div class="mcq-option" onclick="checkAnswer(this)">
+                                (b) गृह मंत्रालय
+                            </div>
+                            <div class="mcq-option" onclick="checkAnswer(this)">
+                                (c) <strong>केंद्रीय विद्युत मंत्रालय</strong>
+                            </div>
+                            <div class="mcq-option" onclick="checkAnswer(this)">
+                                (d) पर्यावरण, वन और जलवायु परिवर्तन मंत्रालय
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Custom Message Box for Feedback -->
+                <div id="feedback-message"
+                    class="mt-8 p-4 rounded-lg text-center font-bold hidden transition duration-300"></div>
+
+            </section>
+        </main>
+
+        <footer class="text-center mt-16 text-slate-500 text-sm">
+            <p>पश्चिम बंगाल-डीवीसी संघर्ष पर आधारित इंटरैक्टिव डैशबोर्ड। शैक्षिक उद्देश्यों के लिए बनाया गया।</p>
+        </footer>
+
+    </div>
+
+    <!-- JavaScript for Interactivity and MCQ functionality -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+
+            // Interactivity for Conflict Diagram
+            const conflictData = {
+                state: {
+                    title: "राज्य का दृष्टिकोण: प्रक्रियात्मक चूक",
+                    content: "पश्चिम बंगाल सरकार की मुख्य शिकायत पूर्व सूचना का कथित अभाव है। समन्वय में यह विफलता राज्य की समय पर आपदा प्रबंधन कार्रवाई करने की क्षमता को कमजोर करती है, जैसे कि चेतावनी जारी करना और असुरक्षित आबादी को निकालना। यह बाढ़ नियंत्रण के लिए मानक संचालन प्रक्रियाओं में एक गंभीर कमी को उजागर करता है।"
+                },
+                dvc: {
+                    title: "डीवीसी की स्थिति: संघीय दृष्टिकोण",
+                    content: "केंद्रीय विद्युत मंत्रालय के अधीन एक निकाय के रूप में, डीवीसी का संचालन केंद्रीय नियंत्रण में आता है, जो एक विशिष्ट संघीय गतिशीलता को दर्शाता है। जहाँ जल राज्य सूची का विषय है, वहीं अंतर-राज्यीय नदी विनियमन संघ सूची के अंतर्गत है। यह घटना उस प्रशासनिक टकराव को उजागर करती है जो तब उत्पन्न हो सकता है जब किसी केंद्रीय संस्था की कार्रवाइयाँ सीधे तौर पर राज्य की सार्वजनिक व्यवस्था और सुरक्षा को प्रभावित करती हैं, जिससे जवाबदेही और सहकारी संघवाद पर सवाल उठते हैं।"
+                }
+            };
+
+            const detailsBox = document.getElementById('details-box');
+            const boxState = document.getElementById('box-state');
+            const boxDvc = document.getElementById('box-dvc');
+
+            function updateDetails(key) {
+                const data = conflictData[key];
+                detailsBox.innerHTML = `<div class='text-left'><h4 class='font-bold text-lg mb-2 text-slate-800'>${data.title}</h4><p class='text-slate-600'>${data.content}</p></div>`;
+
+                boxState.classList.remove('active');
+                boxDvc.classList.remove('active');
+
+                if (key === 'state') {
+                    boxState.classList.add('active');
+                } else if (key === 'dvc') {
+                    boxDvc.classList.add('active');
+                }
+            }
+
+            // Set initial message for interaction
+            detailsBox.innerHTML = `<p class="text-slate-500 text-center">संघर्ष का विवरण देखने के लिए ऊपर दिए गए बॉक्स पर क्लिक करें।</p>`;
+
+            boxState.addEventListener('click', () => updateDetails('state'));
+            boxDvc.addEventListener('click', () => updateDetails('dvc'));
+
+            // --- MCQ Logic ---
+
+            const feedbackMessage = document.getElementById('feedback-message');
+
+            /**
+             * Handles the click event for an MCQ option, checks the answer, and provides feedback.
+             * @param {HTMLElement} element - The clicked div element (the option).
+             */
+            window.checkAnswer = function (element) {
+                const questionContainer = element.parentElement;
+                const correctOption = questionContainer.getAttribute('data-correct-option');
+                const allOptions = questionContainer.querySelectorAll('.mcq-option');
+
+                // Determine the clicked option's letter (first character of the text content, assuming format "(a) Text")
+                const clickedOptionText = element.textContent.trim();
+                const clickedOptionLetter = clickedOptionText.toLowerCase().charAt(1);
+
+                // Prevent re-clicking after an answer is set
+                if (questionContainer.getAttribute('data-answered') === 'true') {
+                    showMessage('आपने इस प्रश्न का उत्तर पहले ही दे दिया है।', 'bg-yellow-200 text-yellow-800');
+                    return;
+                }
+
+                // Set the question as answered
+                questionContainer.setAttribute('data-answered', 'true');
+
+                // Logic to check and highlight
+                allOptions.forEach(option => {
+                    const optionText = option.textContent.trim();
+                    const optionLetter = optionText.toLowerCase().charAt(1);
+
+                    // Disable clicking on all options in this question
+                    option.onclick = null;
+
+                    // Highlight the correct answer in green
+                    if (optionLetter === correctOption) {
+                        option.classList.add('correct');
+                    }
+
+                    // Highlight the user's selected answer
+                    if (option === element) {
+                        if (clickedOptionLetter === correctOption) {
+                            // Correct selection
+                            showMessage('सही उत्तर! बहुत बढ़िया।', 'bg-green-200 text-green-800');
+                        } else {
+                            // Incorrect selection
+                            option.classList.add('incorrect');
+                            showMessage('गलत उत्तर। सही विकल्प को हरे रंग में हाइलाइट किया गया है।', 'bg-red-200 text-red-800');
+                        }
+                    }
+                });
+            }
+
+            /**
+             * Displays a temporary message to the user (instead of alert()).
+             * @param {string} message - The message to display.
+             * @param {string} classes - Tailwind classes for styling.
+             */
+            function showMessage(message, classes) {
+                // Reset previous state
+                feedbackMessage.className = `mt-8 p-4 rounded-lg text-center font-bold hidden transition duration-300 ${classes}`;
+                feedbackMessage.textContent = message;
+
+                // Show the message
+                feedbackMessage.classList.remove('hidden');
+
+                // Hide the message after 4 seconds
+                setTimeout(() => {
+                    feedbackMessage.classList.add('hidden');
+                }, 4000);
+            }
+        });
+    </script>
+</body>
+
+</html>
